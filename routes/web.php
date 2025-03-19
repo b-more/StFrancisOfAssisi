@@ -68,9 +68,10 @@ Route::get('/contact', function () {
 Route::post('/contact', [ContactController::class, 'store'])->name('contact.submit');
 
 // Gallery route
-Route::get('/gallery', [GalleryController::class, 'index'])->name('gallery');
-Route::get('/gallery/{slug}', [GalleryController::class, 'show'])->name('gallery.show');
+Route::get('/gallery/category/{category}', [GalleryController::class, 'category'])->name('gallery.category');
 Route::get('/gallery/photo/{id}', [GalleryController::class, 'photo'])->name('gallery.photo');
+Route::get('/gallery/{slug}', [GalleryController::class, 'show'])->name('gallery.show');
+Route::get('/gallery', [GalleryController::class, 'index'])->name('gallery.index');
 
 // Events routes
 Route::get('/events', [EventsController::class, 'index'])->name('events.index');
@@ -157,6 +158,6 @@ Route::get('/services/{service}', [ServiceController::class, 'show'])->name('ser
 Route::post('/contact', [GetInTouchController::class, 'store'])->name('contact.submit');
 
 
-Route::get('/gallery', [GalleryController::class, 'index'])->name('gallery');
+//Route::get('/gallery', [GalleryController::class, 'index'])->name('gallery');
 
 

@@ -285,13 +285,13 @@
                 <!-- ECE -->
                 <div class="bg-white rounded-lg overflow-hidden shadow-sm group hover:shadow-md transition-all">
                     <div class="relative h-48">
-                        <img src="{{ asset('images/1.jpg') }}" alt="Early Childhood Education"
+                        <img src="{{ asset('images/programs/IMG_6831.jpg') }}" alt="Early Childhood Education"
                              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                              onerror="this.src='https://via.placeholder.com/400x300?text=Early+Childhood'">
                         <div class="absolute inset-0 bg-gradient-to-t from-primary/70 to-transparent opacity-90"></div>
                         <div class="absolute bottom-0 left-0 p-4 text-white">
                             <h3 class="text-xl font-bold">Early Childhood</h3>
-                            <p class="text-sm">Baby Class - KG3</p>
+                            <p class="text-sm">Baby Class</p>
                         </div>
                     </div>
                     <div class="p-6">
@@ -306,7 +306,7 @@
                 <!-- Primary -->
                 <div class="bg-white rounded-lg overflow-hidden shadow-sm group hover:shadow-md transition-all">
                     <div class="relative h-48">
-                        <img src="{{ asset('images/pastors.jpg') }}" alt="Primary Education"
+                        <img src="{{ asset('images/programs/P4480636.jpg') }}" alt="Primary Education"
                              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                              onerror="this.src='https://via.placeholder.com/400x300?text=Primary+Education'">
                         <div class="absolute inset-0 bg-gradient-to-t from-primary/70 to-transparent opacity-90"></div>
@@ -327,7 +327,7 @@
                 <!-- Secondary -->
                 <div class="bg-white rounded-lg overflow-hidden shadow-sm group hover:shadow-md transition-all">
                     <div class="relative h-48">
-                        <img src="{{ asset('images/pastors2.jpg') }}" alt="Secondary Education"
+                        <img src="{{ asset('images/programs/P4480710.jpg') }}" alt="Secondary Education"
                              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                              onerror="this.src='https://via.placeholder.com/400x300?text=Secondary+Education'">
                         <div class="absolute inset-0 bg-gradient-to-t from-primary/70 to-transparent opacity-90"></div>
@@ -368,7 +368,7 @@
                                 </p>
                                 <div class="flex items-center">
                                     <div class="w-12 h-12 rounded-full bg-gray-300 mr-4">
-                                        <img src="{{ asset('images/1.jpg') }}" alt="Parent"
+                                        <img src="{{ asset('images/2.jpg') }}" alt="Parent"
                                              class="w-full h-full object-cover rounded-full"
                                              onerror="this.src='https://via.placeholder.com/96?text=P'">
                                     </div>
@@ -455,7 +455,7 @@
                         <!-- News Item 1 -->
                         <div class="bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition-all flex gap-4">
                             <div class="flex-shrink-0 w-24 h-24 bg-gray-200 rounded-md overflow-hidden">
-                                <img src="{{ asset('images/pastors.jpg') }}" alt="News"
+                                <img src="{{ asset('images/news/team1.jpg') }}" alt="News"
                                      class="w-full h-full object-cover"
                                      onerror="this.src='https://via.placeholder.com/96?text=News'">
                             </div>
@@ -471,14 +471,14 @@
                         <!-- News Item 2 -->
                         <div class="bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition-all flex gap-4">
                             <div class="flex-shrink-0 w-24 h-24 bg-gray-200 rounded-md overflow-hidden">
-                                <img src="{{ asset('images/pastors2.jpg') }}" alt="News"
+                                <img src="{{ asset('images/news/IMG_6530.jpg') }}" alt="News"
                                      class="w-full h-full object-cover"
                                      onerror="this.src='https://via.placeholder.com/96?text=News'">
                             </div>
                             <div>
                                 <span class="text-xs text-gray-500">May 25, 2023</span>
                                 <h4 class="font-semibold mb-1 hover:text-primary transition-colors">
-                                    <a href="#">New Computer Lab Inaugurated</a>
+                                    <a href="#">School Computer Lab Inaugurated</a>
                                 </h4>
                                 <p class="text-gray-600 text-sm line-clamp-2">We're excited to announce the opening of our new state-of-the-art computer lab equipped with the latest technology...</p>
                             </div>
@@ -487,14 +487,14 @@
                         <!-- News Item 3 -->
                         <div class="bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition-all flex gap-4">
                             <div class="flex-shrink-0 w-24 h-24 bg-gray-200 rounded-md overflow-hidden">
-                                <img src="{{ asset('images/rev.png') }}" alt="News"
+                                <img src="{{ asset('images/news/gallery7.jpg') }}" alt="News"
                                      class="w-full h-full object-cover"
                                      onerror="this.src='https://via.placeholder.com/96?text=News'">
                             </div>
                             <div>
                                 <span class="text-xs text-gray-500">May 12, 2023</span>
                                 <h4 class="font-semibold mb-1 hover:text-primary transition-colors">
-                                    <a href="#">100% Pass Rate in Grade 12 ECZ Exams</a>
+                                    <a href="#">100% Pass Rate in Grade 9 ECZ Exams</a>
                                 </h4>
                                 <p class="text-gray-600 text-sm line-clamp-2">We're proud to announce that our 2023 graduating class achieved a 100% pass rate in the ECZ examinations with exceptional results...</p>
                             </div>
