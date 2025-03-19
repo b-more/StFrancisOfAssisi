@@ -6,6 +6,9 @@ use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\UssdSessionController;
 use App\Http\Controllers\GetInTouchController;
 use App\Http\Controllers\GalleryController;
+use App\Http\Controllers\AcademicsController;
+use App\Http\Controllers\AdmissionsController;
+use App\Http\Controllers\StudentLifeController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -65,6 +68,9 @@ Route::post('/contact', [ContactController::class, 'store'])->name('contact.subm
 
 // Gallery route
 Route::get('/gallery', [GalleryController::class, 'index'])->name('gallery');
+Route::get('/gallery/{slug}', [GalleryController::class, 'show'])->name('gallery.show');
+Route::get('/gallery/photo/{id}', [GalleryController::class, 'photo'])->name('gallery.photo');
+
 // Student/Parent Portal routes
 Route::get('/portal', [ParentPortalController::class, 'index'])->name('portal');
 Route::post('/portal/login', [ParentPortalController::class, 'login'])->name('portal.login');
