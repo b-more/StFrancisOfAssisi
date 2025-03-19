@@ -8,7 +8,7 @@
     <div class="relative container mx-auto px-4 text-center">
         <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">About Our School</h1>
         <p class="text-xl text-white/90 max-w-2xl mx-auto">
-            Excellence in education since 1995
+            Excellence in education since 2021
         </p>
     </div>
 </div>
@@ -22,14 +22,14 @@
                 <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
                     <h2 class="text-3xl font-bold text-primary mb-6">Our History</h2>
                     <p class="text-gray-600 mb-4">
-                        St. Francis of Assisi Private School was founded in 1995 with a vision to provide high-quality education that nurtures both academic excellence and character development. What began as a small primary school with just 50 students has grown into a comprehensive educational institution serving over 800 students from early childhood to secondary education.
+                        St. Francis of Assisi Private School was founded in 2021 with a vision to provide high-quality education that nurtures both academic excellence and character development. What began as a small primary school with just 50 students has grown into a comprehensive educational institution serving over 600 students from early childhood to secondary education.
                     </p>
                     <p class="text-gray-600">
-                        Over the past 28 years, we have established a strong reputation for academic excellence, innovative teaching methods, and a supportive learning environment that prepares students for success in higher education and beyond.
+                        Over the past years, we have established a strong reputation for academic excellence, innovative teaching methods, and a supportive learning environment that prepares students for success in higher education and beyond.
                     </p>
                 </div>
                 <div class="md:w-1/2">
-                    <img src="{{ asset('images/gallery/gallery9.jpg') }}" alt="School History" class="rounded-lg shadow-md w-full h-auto"
+                    <img src="{{ asset('images/assisi.jpg') }}" alt="School History" class="rounded-lg shadow-md w-full h-auto"
                          onerror="this.src='https://via.placeholder.com/600x400?text=School+History'">
                 </div>
             </div>
@@ -159,8 +159,9 @@
                 <!-- Team Member 2 -->
                 <div class="bg-white rounded-lg shadow-sm overflow-hidden">
                     <div class="relative h-60">
-                        <img src="{{ asset('images/team2.jpg') }}" alt="Team Member" class="w-full h-full object-cover"
-                             onerror="this.src='https://via.placeholder.com/300x240?text=Team+Member'">
+                        <img src="{{ asset('images/staff/staff14.jpg') }}" alt="Team Member"
+                                class="w-full h-full object-cover object-top"
+                                style="object-position: center 15%;">
                     </div>
                     <div class="p-6">
                         <h3 class="font-semibold text-lg mb-1">Mr. Chuto Morris</h3>
@@ -174,12 +175,13 @@
                 <!-- Team Member 3 -->
                 <div class="bg-white rounded-lg shadow-sm overflow-hidden">
                     <div class="relative h-60">
-                        <img src="{{ asset('images/team3.jpg') }}" alt="Team Member" class="w-full h-full object-cover"
-                             onerror="this.src='https://via.placeholder.com/300x240?text=Team+Member'">
+                        <img src="{{ asset('images/staff/chibwe.jpg') }}" alt="Team Member"
+                                class="w-full h-full object-cover object-top"
+                                style="object-position: center 15%;">
                     </div>
                     <div class="p-6">
                         <h3 class="font-semibold text-lg mb-1">Mr. Quintino Chibwe</h3>
-                        <p class="text-primary text-sm mb-3">Academic Coordinator</p>
+                        <p class="text-primary text-sm mb-3">Senior Teacher</p>
                         <p class="text-gray-600 text-sm">
                             Mr. Chibwe coordinates curriculum development and ensures that our academic programs meet the standards set by Examination Council of Zambia.
                         </p>
@@ -189,12 +191,13 @@
                 <!-- Team Member 4 -->
                 <div class="bg-white rounded-lg shadow-sm overflow-hidden">
                     <div class="relative h-60">
-                        <img src="{{ asset('images/team4.jpg') }}" alt="Team Member" class="w-full h-full object-cover"
-                             onerror="this.src='https://via.placeholder.com/300x240?text=Team+Member'">
+                        <img src="{{ asset('images/staff/staff16.jpg') }}" alt="Team Member"
+                                class="w-full h-full object-cover object-top"
+                                style="object-position: center 15%;">
                     </div>
                     <div class="p-6">
                         <h3 class="font-semibold text-lg mb-1">Mr. Mpongwe </h3>
-                        <p class="text-primary text-sm mb-3">Accountantr</p>
+                        <p class="text-primary text-sm mb-3">Accountant</p>
                         <p class="text-gray-600 text-sm">
                             Mr. Mpongwe oversees all aspects of student fees and ensures that our students are up to date with the payments of school fees.
                         </p>
@@ -202,6 +205,306 @@
                 </div>
             </div>
         </div>
+
+        <!-- Our Staff Section -->
+<div class="mb-20">
+    <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold text-primary mb-4">Our Staff</h2>
+        <p class="text-gray-600 max-w-2xl mx-auto">
+            Our dedicated teaching and support staff are committed to providing exceptional education and nurturing environment for all students.
+        </p>
+    </div>
+
+    <div class="grid md:grid-cols-4 gap-6">
+        <!-- Staff Member 1 -->
+        <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+            <div class="relative h-60">
+                <img src="{{ asset('images/staff/staff1.jpg') }}" alt="Staff Member"
+                     class="w-full h-full object-cover object-top"
+                     style="object-position: center 15%;">
+            </div>
+            <div class="p-6">
+                <h3 class="font-semibold text-lg mb-1">Ms. Sam Phiri</h3>
+                <p class="text-primary text-sm mb-3">Secondary Science Teacher</p>
+                <p class="text-gray-600 text-sm">
+                    Dedicated to fostering a love for language and literature among her students.
+                </p>
+            </div>
+        </div>
+
+        <!-- Staff Member 2 -->
+        <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+            <div class="relative h-60">
+                <img src="{{ asset('images/staff/staff2.jpg') }}" alt="Staff Member"
+                     class="w-full h-full object-cover object-top"
+                     style="object-position: center 15%;">
+            </div>
+            <div class="p-6">
+                <h3 class="font-semibold text-lg mb-1">Ms. Joyce Banda</h3>
+                <p class="text-primary text-sm mb-3">Mathematics Teacher</p>
+                <p class="text-gray-600 text-sm">
+                    Passionate about making mathematics accessible and engaging for all students.
+                </p>
+            </div>
+        </div>
+
+        <!-- Staff Member 3 -->
+        <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+            <div class="relative h-60">
+                <img src="{{ asset('images/staff/staff3.jpg') }}" alt="Staff Member"
+                     class="w-full h-full object-cover object-top"
+                     style="object-position: center 15%;">
+            </div>
+            <div class="p-6">
+                <h3 class="font-semibold text-lg mb-1">Mr. Chris Mwanza</h3>
+                <p class="text-primary text-sm mb-3">Science Teacher</p>
+                <p class="text-gray-600 text-sm">
+                    Inspires curiosity through hands-on experiments and interactive science lessons.
+                </p>
+            </div>
+        </div>
+
+        <!-- Staff Member 4 -->
+        <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+            <div class="relative h-60">
+                <img src="{{ asset('images/staff/staff4.jpg') }}" alt="Staff Member"
+                     class="w-full h-full object-cover object-top"
+                     style="object-position: center 15%;">
+            </div>
+            <div class="p-6">
+                <h3 class="font-semibold text-lg mb-1">Mrs. Diana Mulenga</h3>
+                <p class="text-primary text-sm mb-3">Grade 3 Teacher</p>
+                <p class="text-gray-600 text-sm">
+                    Promotes physical fitness and sportsmanship among students of all abilities.
+                </p>
+            </div>
+        </div>
+
+        <!-- Staff Member 5 -->
+        <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+            <div class="relative h-60">
+                <img src="{{ asset('images/staff/staff5.jpg') }}" alt="Staff Member"
+                     class="w-full h-full object-cover object-top"
+                     style="object-position: center 15%;">
+            </div>
+            <div class="p-6">
+                <h3 class="font-semibold text-lg mb-1">Ms. Mary Tembo</h3>
+                <p class="text-primary text-sm mb-3">Art Teacher</p>
+                <p class="text-gray-600 text-sm">
+                    Encourages creativity and self-expression through various artistic mediums.
+                </p>
+            </div>
+        </div>
+
+        <!-- Staff Member 6 -->
+        <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+            <div class="relative h-60">
+                <img src="{{ asset('images/staff/staff6.jpg') }}" alt="Staff Member"
+                     class="w-full h-full object-cover object-top"
+                     style="object-position: center 15%;">
+            </div>
+            <div class="p-6">
+                <h3 class="font-semibold text-lg mb-1">Ms. Josephine Lungu</h3>
+                <p class="text-primary text-sm mb-3">History Teacher</p>
+                <p class="text-gray-600 text-sm">
+                    Makes history come alive through engaging storytelling and interactive lessons.
+                </p>
+            </div>
+        </div>
+
+        <!-- Staff Member 7 -->
+        <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+            <div class="relative h-60">
+                <img src="{{ asset('images/staff/staff7.jpg') }}" alt="Staff Member"
+                     class="w-full h-full object-cover object-top"
+                     style="object-position: center 15%;">
+            </div>
+            <div class="p-6">
+                <h3 class="font-semibold text-lg mb-1">Mr. Enock Lunda</h3>
+                <p class="text-primary text-sm mb-3">Administrative Assistant</p>
+                <p class="text-gray-600 text-sm">
+                    Nurtures clients  and appreciation among students of all ages.
+                </p>
+            </div>
+        </div>
+
+        <!-- Staff Member 8 -->
+        <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+            <div class="relative h-60">
+                <img src="{{ asset('images/staff/staff8.jpg') }}" alt="Staff Member"
+                     class="w-full h-full object-cover object-top"
+                     style="object-position: center 15%;">
+            </div>
+            <div class="p-6">
+                <h3 class="font-semibold text-lg mb-1">Mrs. Mercy Mutale</h3>
+                <p class="text-primary text-sm mb-3">Computer Studies</p>
+                <p class="text-gray-600 text-sm">
+                    Equips students with essential digital skills for the modern world.
+                </p>
+            </div>
+        </div>
+
+        <!-- Staff Member 9 -->
+        <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+            <div class="relative h-60">
+                <img src="{{ asset('images/staff/staff9.jpg') }}" alt="Staff Member"
+                     class="w-full h-full object-cover object-top"
+                     style="object-position: center 15%;">
+            </div>
+            <div class="p-6">
+                <h3 class="font-semibold text-lg mb-1">Ms. Elizabeth Bwalya</h3>
+                <p class="text-primary text-sm mb-3">Geography Teacher</p>
+                <p class="text-gray-600 text-sm">
+                    Opens students' eyes to the wonders of our world and environmental conservation.
+                </p>
+            </div>
+        </div>
+
+        <!-- Staff Member 10 -->
+        <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+            <div class="relative h-60">
+                <img src="{{ asset('images/staff/staff22.jpg') }}" alt="Staff Member"
+                     class="w-full h-full object-cover object-top"
+                     style="object-position: center 15%;">
+            </div>
+            <div class="p-6">
+                <h3 class="font-semibold text-lg mb-1">Mr. Charles Mwamba</h3>
+                <p class="text-primary text-sm mb-3">Chemistry Teacher</p>
+                <p class="text-gray-600 text-sm">
+                    Makes chemistry concepts accessible through practical demonstrations and experiments.
+                </p>
+            </div>
+        </div>
+
+        <!-- Staff Member 11 -->
+        <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+            <div class="relative h-60">
+                <img src="{{ asset('images/staff/staff11.jpg') }}" alt="Staff Member"
+                     class="w-full h-full object-cover object-top"
+                     style="object-position: center 15%;">
+            </div>
+            <div class="p-6">
+                <h3 class="font-semibold text-lg mb-1">Mr. Lubinda Chishimba</h3>
+                <p class="text-primary text-sm mb-3">Computer Studies Teacher</p>
+                <p class="text-gray-600 text-sm">
+                    Inspires students to explore the wonders of computer sciences through practical approach.
+                </p>
+            </div>
+        </div>
+
+        <!-- Staff Member 12 -->
+        <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+            <div class="relative h-60">
+                <img src="{{ asset('images/staff/staff12.jpg') }}" alt="Staff Member"
+                     class="w-full h-full object-cover object-top"
+                     style="object-position: center 15%;">
+            </div>
+            <div class="p-6">
+                <h3 class="font-semibold text-lg mb-1">Ms. Deborah Mwale</h3>
+                <p class="text-primary text-sm mb-3">Physics Teacher</p>
+                <p class="text-gray-600 text-sm">
+                    Demonstrates complex physics principles through real-world applications.
+                </p>
+            </div>
+        </div>
+
+        <!-- Staff Member 13 -->
+        <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+            <div class="relative h-60">
+                <img src="{{ asset('images/staff/staff13.jpg') }}" alt="Staff Member"
+                     class="w-full h-full object-cover object-top"
+                     style="object-position: center 15%;">
+            </div>
+            <div class="p-6">
+                <h3 class="font-semibold text-lg mb-1">Mr. Gracewell Mbewe</h3>
+                <p class="text-primary text-sm mb-3">French Teacher</p>
+                <p class="text-gray-600 text-sm">
+                    Creates an immersive environment for students to develop language skills.
+                </p>
+            </div>
+        </div>
+
+        <!-- Staff Member 15 -->
+        <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+            <div class="relative h-60">
+                <img src="{{ asset('images/staff/staff15.jpg') }}" alt="Staff Member"
+                     class="w-full h-full object-cover object-top"
+                     style="object-position: center 15%;">
+            </div>
+            <div class="p-6">
+                <h3 class="font-semibold text-lg mb-1">Ms. Mukupa Mary</h3>
+                <p class="text-primary text-sm mb-3">Literature Teacher</p>
+                <p class="text-gray-600 text-sm">
+                    Fosters critical thinking and appreciation for diverse literary works.
+                </p>
+            </div>
+        </div>
+
+        <!-- Staff Member 17 -->
+        <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+            <div class="relative h-60">
+                <img src="{{ asset('images/staff/staff17.jpg') }}" alt="Staff Member"
+                     class="w-full h-full object-cover object-top"
+                     style="object-position: center 15%;">
+            </div>
+            <div class="p-6">
+                <h3 class="font-semibold text-lg mb-1">Mr. Lawrence Chipili</h3>
+                <p class="text-primary text-sm mb-3">Business Studies</p>
+                <p class="text-gray-600 text-sm">
+                    Prepares students with practical knowledge for the business world.
+                </p>
+            </div>
+        </div>
+
+        <!-- Staff Member 18 -->
+        <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+            <div class="relative h-60">
+                <img src="{{ asset('images/staff/staff21.jpg') }}" alt="Staff Member"
+                     class="w-full h-full object-cover object-top"
+                     style="object-position: center 15%;">
+            </div>
+            <div class="p-6">
+                <h3 class="font-semibold text-lg mb-1">Mr. Chanda Mwansa</h3>
+                <p class="text-primary text-sm mb-3">School Counselor</p>
+                <p class="text-gray-600 text-sm">
+                    Provides guidance and support for students' social and emotional well-being.
+                </p>
+            </div>
+        </div>
+
+        <!-- Staff Member 19 -->
+        <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+            <div class="relative h-60">
+                <img src="{{ asset('images/staff/staff19.jpg') }}" alt="Staff Member"
+                     class="w-full h-full object-cover object-top"
+                     style="object-position: center 15%;">
+            </div>
+            <div class="p-6">
+                <h3 class="font-semibold text-lg mb-1">Ms. Mary Chama</h3>
+                <p class="text-primary text-sm mb-3">Religious Education</p>
+                <p class="text-gray-600 text-sm">
+                    Fosters spiritual development and ethical understanding among students.
+                </p>
+            </div>
+        </div>
+
+        <!-- Staff Member 20 -->
+        <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+            <div class="relative h-60">
+                <img src="{{ asset('images/staff/staff20.jpg') }}" alt="Staff Member"
+                     class="w-full h-full object-cover object-top"
+                     style="object-position: center 15%;">
+            </div>
+            <div class="p-6">
+                <h3 class="font-semibold text-lg mb-1">Mr. Alaba Mwila</h3>
+                <p class="text-primary text-sm mb-3">Head Driver</p>
+                <p class="text-gray-600 text-sm">
+                    Creates a nurturing environment for our youngest learners to develop and grow.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
 
         <!-- Virtual Tour Section -->
         <div id="virtual-tour" class="max-w-5xl mx-auto">
@@ -243,21 +546,21 @@
 
         <div class="flex flex-wrap justify-center items-center gap-12">
             <div class="w-40 h-20 grayscale hover:grayscale-0 transition-all">
-                <img src="{{ asset('images/accreditation1.png') }}" alt="Accreditation" class="w-full h-full object-contain"
+                <img src="{{ asset('images/slides/eczlogo.png') }}" alt="Accreditation" class="w-full h-full object-contain"
                      onerror="this.src='https://via.placeholder.com/160x80?text=Accreditation'">
             </div>
             <div class="w-40 h-20 grayscale hover:grayscale-0 transition-all">
-                <img src="{{ asset('images/accreditation2.png') }}" alt="Accreditation" class="w-full h-full object-contain"
+                <img src="{{ asset('images/slides/moe.png') }}" alt="Accreditation" class="w-full h-full object-contain"
                      onerror="this.src='https://via.placeholder.com/160x80?text=Accreditation'">
             </div>
             <div class="w-40 h-20 grayscale hover:grayscale-0 transition-all">
-                <img src="{{ asset('images/accreditation3.png') }}" alt="Accreditation" class="w-full h-full object-contain"
+                <img src="{{ asset('images/slides/cmc.png') }}" alt="Accreditation" class="w-full h-full object-contain"
                      onerror="this.src='https://via.placeholder.com/160x80?text=Accreditation'">
             </div>
-            <div class="w-40 h-20 grayscale hover:grayscale-0 transition-all">
+            {{-- <div class="w-40 h-20 grayscale hover:grayscale-0 transition-all">
                 <img src="{{ asset('images/accreditation4.png') }}" alt="Accreditation" class="w-full h-full object-contain"
                      onerror="this.src='https://via.placeholder.com/160x80?text=Accreditation'">
-            </div>
+            </div> --}}
         </div>
     </div>
 </section>

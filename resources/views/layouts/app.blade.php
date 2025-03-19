@@ -51,7 +51,7 @@
                 </div>
                 <div class="flex items-center text-sm">
                     <i class='bx bxs-map text-secondary mr-1'></i>
-                    <span>1310/4 East Kamenza Chililabombwe, Chililabombwe, Zambia</span>
+                    <span>1310/4 East Kamenza, Chililabombwe, Zambia</span>
                 </div>
             </div>
             <div class="flex items-center space-x-3">

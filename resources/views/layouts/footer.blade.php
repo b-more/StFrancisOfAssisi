@@ -4,7 +4,7 @@
         <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
             <!-- Logo and About -->
             <div class="col-span-1 md:col-span-1">
-                <img src="{{ asset('images/school-logo.png') }}" alt="St. Francis School Logo" class="h-20 w-auto mb-4 brightness-0 invert"
+                <img src="{{ asset('images/logo.png') }}" alt="St. Francis School Logo" class="h-20 w-auto mb-4 "
                      onerror="this.src='https://via.placeholder.com/200x80?text=St.+Francis+School'">
                 <p class="text-sm text-white/80">Nurturing excellence, building character, shaping futures</p>
             </div>
@@ -31,7 +31,7 @@
                         <svg class="w-4 h-4 text-secondary mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
                         </svg>
-                        <span>Monday-Friday: 7:30 AM - 4:30 PM</span>
+                        <span>Mon-Fri: 7:30 AM - 4:30 PM</span>
                     </li>
                     <li class="flex items-center">
                         <svg class="w-4 h-4 text-secondary mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -57,7 +57,7 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
                         </svg>
-                        <span>1310/4 East Kamenza Chililabombwe, Chililabombwe, Zambia</span>
+                        <span>1310/4 East Kamenza, Chililabombwe, Zambia</span>
                     </li>
                     <li class="flex items-center">
                         <svg class="w-4 h-4 text-secondary mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
