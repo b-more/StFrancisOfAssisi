@@ -629,7 +629,7 @@
             </div>
 
             <div class="text-center mt-10">
-                <a href="{{ route('gallery') }}" class="inline-block bg-primary text-white px-6 py-3 rounded-lg hover:bg-primary/90 transition-all">
+                <a href="{{ route('gallery.index') }}" class="inline-block bg-primary text-white px-6 py-3 rounded-lg hover:bg-primary/90 transition-all">
                     View Full Gallery
                 </a>
             </div>
