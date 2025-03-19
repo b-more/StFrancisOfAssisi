@@ -43,15 +43,15 @@
             <div class="flex flex-wrap items-center space-x-4">
                 <div class="flex items-center text-sm">
                     <i class='bx bxs-phone text-secondary mr-1'></i>
-                    <span>+260 978124541</span>
+                    <span>+260 972266217</span>
                 </div>
                 <div class="flex items-center text-sm">
                     <i class='bx bxs-envelope text-secondary mr-1'></i>
-                    <span>info@stfrancisschool.edu.zm</span>
+                    <span>info@stfrancisschool.tech</span>
                 </div>
                 <div class="flex items-center text-sm">
                     <i class='bx bxs-map text-secondary mr-1'></i>
-                    <span>123 Education Avenue, Lusaka</span>
+                    <span>1310/4 East Kamenza Chililabombwe, Chililabombwe, Zambia</span>
                 </div>
             </div>
             <div class="flex items-center space-x-3">
@@ -83,7 +83,7 @@
     @include('layouts.footer')
 
     <!-- WhatsApp Button -->
-    <a href="https://wa.me/260978124541" class="fixed bottom-8 right-8 bg-green-500 text-white p-3 rounded-full shadow-lg hover:bg-green-600 transition-colors z-40">
+    <a href="https://wa.me/260972266217" class="fixed bottom-8 right-8 bg-green-500 text-white p-3 rounded-full shadow-lg hover:bg-green-600 transition-colors z-40">
         <i class='bx bxl-whatsapp text-2xl'></i>
     </a>
 
