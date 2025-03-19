@@ -804,7 +804,7 @@
     </section>
 
     <!-- WhatsApp Button -->
-    <a href="https://wa.me/260978124541" class="whatsapp-button bg-green-500 text-white p-3 rounded-full shadow-lg hover:bg-green-600 transition-colors">
+    <a href="https://wa.me/260972266217" class="whatsapp-button bg-green-500 text-white p-3 rounded-full shadow-lg hover:bg-green-600 transition-colors">
         <i class='bx bxl-whatsapp text-2xl'></i>
     </a>
 
