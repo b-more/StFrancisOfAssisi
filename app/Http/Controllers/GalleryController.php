@@ -1,43 +1,35 @@
 <?php
 
-
 namespace App\Http\Controllers;
 
-use App\Models\GalleryImage;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Storage;
+use App\Models\GalleryImage;
+use Illuminate\Support\Facades\DB;
 
 class GalleryController extends Controller
 {
     /**
-     * Display the gallery page with all images.
+     * Display all gallery images or filter by category
      */
     public function index()
     {
-        $images = GalleryImage::all();
-
-        // Add the full URL to each image
-        $images->each(function ($image) {
-            $image->image_url = Storage::url($image->path);
-            $image->alt_text = $image->title; // Use title as alt text if needed
-        });
-
+        $images = GalleryImage::latest()->get();
         return view('gallery.index', compact('images'));
     }
 
     /**
-     * Display images from a specific category.
+     * Display images for a specific category
      */
     public function category($category)
     {
-        $images = GalleryImage::where('category', $category)->get();
+        // Validate that the category is one of the allowed values
+        $validCategories = ['staff', 'ecl', 'infrastructure', 'students', 'primary', 'secondary'];
 
-        // Add the full URL to each image
-        $images->each(function ($image) {
-            $image->image_url = Storage::url($image->path);
-            $image->alt_text = $image->title;
-        });
+        if (!in_array($category, $validCategories)) {
+            return redirect()->route('gallery.index');
+        }
 
+        $images = GalleryImage::where('category', $category)->latest()->get();
         return view('gallery.index', compact('images', 'category'));
     }
 }
