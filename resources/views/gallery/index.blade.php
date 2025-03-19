@@ -35,10 +35,10 @@
     <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
         @forelse($images as $image)
             <div class="relative group cursor-pointer overflow-hidden rounded-lg shadow-lg h-64">
-                <img src="{{ Storage::url($image->path) }}"
+                <img src="{{ asset($image->path) }}"
                      alt="{{ $image->alt_text ?? $image->title }}"
                      class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
-                     onclick="openModal('{{ Storage::url($image->path) }}', '{{ $image->title }}', '{{ $image->description }}')">
+                     onclick="openModal('{{ asset($image->path) }}', '{{ $image->title }}', '{{ $image->description }}')">
                 <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-25 transition-opacity duration-300"></div>
                 <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
                     <h3 class="font-semibold text-lg">{{ $image->title }}</h3>

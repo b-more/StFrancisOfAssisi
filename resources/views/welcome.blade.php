@@ -33,6 +33,19 @@
             right: 20px;
             z-index: 99;
         }
+        .aspect-w-16 {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            height: 0;
+            overflow: hidden;
+        }
+        .aspect-w-16 iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
     </style>
     <script>
         tailwind.config = {
@@ -42,8 +55,6 @@
                         primary: '#002366',     // Royal blue as primary color
                         secondary: '#FFD700',   // Gold/yellow as secondary color
                         accent: '#B22234'       // Red
-
-
                     }
                 }
             }
@@ -111,9 +122,11 @@
                                    class="inline-block bg-secondary text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-secondary/90 transition-colors">
                                     Apply Now
                                 </a>
-                                <a href="{{ route('about') }}#virtual-tour"
+                                <a href="#"
+                                   onclick="openVideoModal('5kkp8v0J1ak'); return false;"
                                    class="inline-block bg-white text-primary px-8 py-3 rounded-full text-lg font-semibold hover:bg-gray-100 transition-colors">
-                                    Virtual Tour
+                                    <i class='bx bx-play-circle mr-2'></i>
+                                    Watch Virtual Tour
                                 </a>
                             </div>
                         </div>
@@ -817,6 +830,27 @@
         <i class='bx bx-up-arrow-alt text-2xl'></i>
     </button>
 
+    <!-- Video Modal -->
+    <div id="videoModal" class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 p-4 hidden">
+        <div class="relative max-w-4xl w-full">
+            <button onclick="closeVideoModal()" class="absolute -top-10 right-0 text-white hover:text-gray-300">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+            </button>
+            <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+                <iframe id="youtubeFrame"
+                        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+                        src=""
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                        class="rounded-lg">
+                </iframe>
+            </div>
+        </div>
+    </div>
+
     <!-- JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script>
@@ -913,6 +947,30 @@
                         notification.style.display = 'none';
                     }, 300);
                 }, 5000); // Will hide after 5 seconds
+            }
+        });
+
+        // YouTube Video Modal
+        function openVideoModal(videoId) {
+            const modal = document.getElementById('videoModal');
+            const iframe = document.getElementById('youtubeFrame');
+            iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
+            modal.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeVideoModal() {
+            const modal = document.getElementById('videoModal');
+            const iframe = document.getElementById('youtubeFrame');
+            iframe.src = '';
+            modal.classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+
+        // Close video modal with escape key
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                closeVideoModal();
             }
         });
     </script>
