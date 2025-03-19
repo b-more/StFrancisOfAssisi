@@ -506,7 +506,7 @@
                 <div>
                     <div class="flex items-center justify-between mb-6">
                         <h3 class="text-2xl font-bold text-gray-800">Upcoming Events</h3>
-                        <a href="{{ route('events') }}" class="text-primary hover:text-primary/80 font-medium flex items-center">
+                        <a href="{{ route('events.index') }}" class="text-primary hover:text-primary/80 font-medium flex items-center">
                             View Calendar
                             <i class='bx bx-right-arrow-alt ml-1'></i>
                         </a>

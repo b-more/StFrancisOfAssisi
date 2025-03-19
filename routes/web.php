@@ -9,6 +9,7 @@ use App\Http\Controllers\GalleryController;
 use App\Http\Controllers\AcademicsController;
 use App\Http\Controllers\AdmissionsController;
 use App\Http\Controllers\StudentLifeController;
+use App\Http\Controllers\EventsController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -57,7 +58,7 @@ Route::get('/student-life/events', [StudentLifeController::class, 'events'])->na
 // News & Events
 Route::get('/news', [NewsController::class, 'index'])->name('news');
 Route::get('/news/{slug}', [NewsController::class, 'show'])->name('news.show');
-Route::get('/events', [EventsController::class, 'index'])->name('events');
+//Route::get('/events', [EventsController::class, 'index'])->name('events');
 Route::get('/calendar', [CalendarController::class, 'index'])->name('calendar');
 
 // Contact routes
@@ -70,6 +71,12 @@ Route::post('/contact', [ContactController::class, 'store'])->name('contact.subm
 Route::get('/gallery', [GalleryController::class, 'index'])->name('gallery');
 Route::get('/gallery/{slug}', [GalleryController::class, 'show'])->name('gallery.show');
 Route::get('/gallery/photo/{id}', [GalleryController::class, 'photo'])->name('gallery.photo');
+
+// Events routes
+Route::get('/events', [EventsController::class, 'index'])->name('events.index');
+Route::get('/events/calendar', [EventsController::class, 'calendar'])->name('events.calendar');
+Route::get('/events/category/{category}', [EventsController::class, 'category'])->name('events.category');
+Route::get('/events/{slug}', [EventsController::class, 'show'])->name('events.show');
 
 // Student/Parent Portal routes
 Route::get('/portal', [ParentPortalController::class, 'index'])->name('portal');
