@@ -11,6 +11,7 @@ use App\Http\Controllers\AdmissionsController;
 use App\Http\Controllers\StudentLifeController;
 use App\Http\Controllers\EventsController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\CalendarController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -161,3 +162,6 @@ Route::post('/contact', [GetInTouchController::class, 'store'])->name('contact.s
 //Route::get('/gallery', [GalleryController::class, 'index'])->name('gallery');
 
 
+// Add these calendar routes to your web.php file
+Route::get('/calendar', [CalendarController::class, 'index'])->name('calendar');
+Route::get('/calendar/download', [CalendarController::class, 'download'])->name('calendar.download');
