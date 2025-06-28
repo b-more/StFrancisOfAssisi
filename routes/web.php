@@ -12,6 +12,7 @@ use App\Http\Controllers\StudentLifeController;
 use App\Http\Controllers\EventsController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CalendarController;
+use App\Http\Controllers\NoticesController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -165,3 +166,11 @@ Route::post('/contact', [GetInTouchController::class, 'store'])->name('contact.s
 // Add these calendar routes to your web.php file
 Route::get('/calendar', [CalendarController::class, 'index'])->name('calendar');
 Route::get('/calendar/download', [CalendarController::class, 'download'])->name('calendar.download');
+
+
+Route::prefix('notices')->name('notices.')->group(function () {
+    Route::get('/', [NoticesController::class, 'index'])->name('index');
+    Route::get('/term-two-bulletin', [NoticesController::class, 'termTwoBulletin'])->name('term-two-bulletin');
+    Route::get('/term-two-bulletin/download', [NoticesController::class, 'downloadTermTwoBulletin'])->name('download.term-two-bulletin');
+    Route::get('/{slug}', [NoticesController::class, 'show'])->name('show');
+});
