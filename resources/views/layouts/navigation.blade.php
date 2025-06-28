@@ -32,10 +32,32 @@
                     Student Life
                     <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
                 </a>
-                <a href="/gallery" class="text-gray-600 hover:text-primary transition-colors duration-300 font-medium relative group">
-                    Gallery
-                    <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
-                </a>
+
+                <!-- Dropdown for School Info -->
+                <div class="relative group">
+                    <button class="text-gray-600 hover:text-primary transition-colors duration-300 font-medium relative flex items-center">
+                        School Info
+                        <i class='bx bx-chevron-down ml-1 transition-transform group-hover:rotate-180'></i>
+                        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
+                    </button>
+                    <div class="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-lg border opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+                        <div class="py-2">
+                            <a href="/calendar" class="flex items-center px-4 py-2 text-gray-700 hover:bg-primary/10 hover:text-primary transition-colors">
+                                <i class='bx bx-calendar mr-3'></i>
+                                School Calendar
+                            </a>
+                            <a href="/notices" class="flex items-center px-4 py-2 text-gray-700 hover:bg-primary/10 hover:text-primary transition-colors">
+                                <i class='bx bx-bell mr-3'></i>
+                                Notices & Bulletins
+                            </a>
+                            <a href="/gallery" class="flex items-center px-4 py-2 text-gray-700 hover:bg-primary/10 hover:text-primary transition-colors">
+                                <i class='bx bx-image mr-3'></i>
+                                Gallery
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
                 <a href="/contact" class="text-gray-600 hover:text-primary transition-colors duration-300 font-medium relative group">
                     Contact
                     <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
@@ -90,11 +112,30 @@
                           transition-all duration-300 font-medium">
                     Student Life
                 </a>
-                <a href="/gallery"
-                   class="block px-4 py-3 rounded-lg text-gray-600 hover:bg-primary/10 hover:text-primary
-                          transition-all duration-300 font-medium">
-                    Gallery
-                </a>
+
+                <!-- School Info Section in Mobile -->
+                <div class="border-t border-gray-200 pt-2 mt-2">
+                    <p class="px-4 py-2 text-sm font-semibold text-gray-500 uppercase tracking-wide">School Information</p>
+                    <a href="/calendar"
+                       class="flex items-center px-4 py-3 rounded-lg text-gray-600 hover:bg-primary/10 hover:text-primary
+                              transition-all duration-300 font-medium">
+                        <i class='bx bx-calendar mr-3'></i>
+                        School Calendar
+                    </a>
+                    <a href="/notices"
+                       class="flex items-center px-4 py-3 rounded-lg text-gray-600 hover:bg-primary/10 hover:text-primary
+                              transition-all duration-300 font-medium">
+                        <i class='bx bx-bell mr-3'></i>
+                        Notices & Bulletins
+                    </a>
+                    <a href="/gallery"
+                       class="flex items-center px-4 py-3 rounded-lg text-gray-600 hover:bg-primary/10 hover:text-primary
+                              transition-all duration-300 font-medium">
+                        <i class='bx bx-image mr-3'></i>
+                        Gallery
+                    </a>
+                </div>
+
                 <a href="/contact"
                    class="block px-4 py-3 rounded-lg text-gray-600 hover:bg-primary/10 hover:text-primary
                           transition-all duration-300 font-medium">

@@ -172,18 +172,18 @@
                     </div>
                 </div>
 
-                <!-- Team Member 3 -->
+                <!-- Dean of Senior Teachers -->
                 <div class="bg-white rounded-lg shadow-sm overflow-hidden">
                     <div class="relative h-60">
-                        <img src="{{ asset('images/staff/chibwe.jpg') }}" alt="Team Member"
-                                class="w-full h-full object-cover object-top"
-                                style="object-position: center 15%;">
+                        <img src="{{ asset('images/staff/staff8.jpg') }}" alt="Staff Member"
+                            class="w-full h-full object-cover object-top"
+                            style="object-position: center 15%;">
                     </div>
                     <div class="p-6">
-                        <h3 class="font-semibold text-lg mb-1">Mr. Quintino Chibwe</h3>
-                        <p class="text-primary text-sm mb-3">Senior Teacher</p>
+                        <h3 class="font-semibold text-lg mb-1">Ms. Kapelang'a Luwi Mercy</h3>
+                        <p class="text-primary text-sm mb-3">Dean of Senior Teachers</p>
                         <p class="text-gray-600 text-sm">
-                            Mr. Chibwe coordinates curriculum development and ensures that our academic programs meet the standards set by Examination Council of Zambia.
+                            Equips students with essential digital skills for the modern world.
                         </p>
                     </div>
                 </div>
@@ -196,7 +196,7 @@
                                 style="object-position: center 15%;">
                     </div>
                     <div class="p-6">
-                        <h3 class="font-semibold text-lg mb-1">Mr. Mpongwe </h3>
+                        <h3 class="font-semibold text-lg mb-1">Mr. Mpongwe Stephen</h3>
                         <p class="text-primary text-sm mb-3">Accountant</p>
                         <p class="text-gray-600 text-sm">
                             Mr. Mpongwe oversees all aspects of student fees and ensures that our students are up to date with the payments of school fees.
@@ -216,50 +216,66 @@
     </div>
 
     <div class="grid md:grid-cols-4 gap-6">
-        <!-- Staff Member 1 -->
+        <!-- Administrative Assistant -->
         <div class="bg-white rounded-lg shadow-sm overflow-hidden">
             <div class="relative h-60">
-                <img src="{{ asset('images/staff/staff1.jpg') }}" alt="Staff Member"
+                <img src="{{ asset('images/staff/staff7.jpg') }}" alt="Staff Member"
                      class="w-full h-full object-cover object-top"
                      style="object-position: center 15%;">
             </div>
             <div class="p-6">
-                <h3 class="font-semibold text-lg mb-1">Ms. Sam Phiri</h3>
-                <p class="text-primary text-sm mb-3">Secondary Science Teacher</p>
+                <h3 class="font-semibold text-lg mb-1">Mr. Enock Lunda</h3>
+                <p class="text-primary text-sm mb-3">Administrative Assistant</p>
                 <p class="text-gray-600 text-sm">
-                    Dedicated to fostering a love for language and literature among her students.
+                    Nurtures clients and appreciation among students of all ages.
                 </p>
             </div>
         </div>
 
-        <!-- Staff Member 2 -->
+        <!-- Baby Class Teacher -->
         <div class="bg-white rounded-lg shadow-sm overflow-hidden">
             <div class="relative h-60">
-                <img src="{{ asset('images/staff/staff2.jpg') }}" alt="Staff Member"
+                <img src="{{ asset('images/staff/staff9.jpg') }}" alt="Staff Member"
                      class="w-full h-full object-cover object-top"
                      style="object-position: center 15%;">
             </div>
             <div class="p-6">
-                <h3 class="font-semibold text-lg mb-1">Ms. Joyce Banda</h3>
-                <p class="text-primary text-sm mb-3">Mathematics Teacher</p>
+                <h3 class="font-semibold text-lg mb-1">Ms. Mpoya Monica</h3>
+                <p class="text-primary text-sm mb-3">Baby Class Teacher</p>
                 <p class="text-gray-600 text-sm">
-                    Passionate about making mathematics accessible and engaging for all students.
+                    Opens our baby's eyes to the wonders of our world and environmental conservation.
                 </p>
             </div>
         </div>
 
-        <!-- Staff Member 3 -->
+        <!-- Middle Class Teacher -->
         <div class="bg-white rounded-lg shadow-sm overflow-hidden">
             <div class="relative h-60">
-                <img src="{{ asset('images/staff/staff3.jpg') }}" alt="Staff Member"
+                <img src="{{ asset('images/staff/staff5.jpg') }}" alt="Staff Member"
                      class="w-full h-full object-cover object-top"
                      style="object-position: center 15%;">
             </div>
             <div class="p-6">
-                <h3 class="font-semibold text-lg mb-1">Mr. Chris Mwanza</h3>
-                <p class="text-primary text-sm mb-3">Science Teacher</p>
+                <h3 class="font-semibold text-lg mb-1">Ms. Gift Zunda</h3>
+                <p class="text-primary text-sm mb-3">Middle Class Teacher</p>
                 <p class="text-gray-600 text-sm">
-                    Inspires curiosity through hands-on experiments and interactive science lessons.
+                    Encourages creativity and self-expression through various artistic mediums.
+                </p>
+            </div>
+        </div>
+
+        <!-- Reception Class Teacher -->
+        <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+            <div class="relative h-60">
+                <img src="{{ asset('images/staff/staff6.jpg') }}" alt="Staff Member"
+                     class="w-full h-full object-cover object-top"
+                     style="object-position: center 15%;">
+            </div>
+            <div class="p-6">
+                <h3 class="font-semibold text-lg mb-1">Ms. Chomba Memory</h3>
+                <p class="text-primary text-sm mb-3">Reception Class Teacher</p>
+                <p class="text-gray-600 text-sm">
+                    Makes learning fun through interactive play and creative activities.
                 </p>
             </div>
         </div>
@@ -272,58 +288,154 @@
                      style="object-position: center 15%;">
             </div>
             <div class="p-6">
-                <h3 class="font-semibold text-lg mb-1">Mrs. Diana Mulenga</h3>
-                <p class="text-primary text-sm mb-3">Grade 3 Teacher</p>
+                <h3 class="font-semibold text-lg mb-1">Ms. Doris Musa</h3>
+                <p class="text-primary text-sm mb-3">Grade 1 Class Teacher</p>
                 <p class="text-gray-600 text-sm">
                     Promotes physical fitness and sportsmanship among students of all abilities.
                 </p>
             </div>
         </div>
 
-        <!-- Staff Member 5 -->
+        <!-- Grade 2 class Teacher -->
         <div class="bg-white rounded-lg shadow-sm overflow-hidden">
             <div class="relative h-60">
-                <img src="{{ asset('images/staff/staff5.jpg') }}" alt="Staff Member"
+                <img src="{{ asset('images/staff/staff23.jpg') }}" alt="Staff Member"
                      class="w-full h-full object-cover object-top"
                      style="object-position: center 15%;">
             </div>
             <div class="p-6">
-                <h3 class="font-semibold text-lg mb-1">Ms. Mary Tembo</h3>
-                <p class="text-primary text-sm mb-3">Art Teacher</p>
+                <h3 class="font-semibold text-lg mb-1">Ms. Mutale Musakanya</h3>
+                <p class="text-primary text-sm mb-3">Grade 2 Class Teacher</p>
                 <p class="text-gray-600 text-sm">
-                    Encourages creativity and self-expression through various artistic mediums.
+                    Dedicated to fostering a love for language and literature among her Grade 2 pupils.
                 </p>
             </div>
         </div>
 
-        <!-- Staff Member 6 -->
+        <!-- Grade 3 Class Teacher -->
         <div class="bg-white rounded-lg shadow-sm overflow-hidden">
             <div class="relative h-60">
-                <img src="{{ asset('images/staff/staff6.jpg') }}" alt="Staff Member"
+                <img src="{{ asset('images/staff/staff19.jpg') }}" alt="Staff Member"
                      class="w-full h-full object-cover object-top"
                      style="object-position: center 15%;">
             </div>
             <div class="p-6">
-                <h3 class="font-semibold text-lg mb-1">Ms. Josephine Lungu</h3>
-                <p class="text-primary text-sm mb-3">History Teacher</p>
+                <h3 class="font-semibold text-lg mb-1">Ms. Kansa Eunice</h3>
+                <p class="text-primary text-sm mb-3">Grade 3 Class Teacher</p>
                 <p class="text-gray-600 text-sm">
-                    Makes history come alive through engaging storytelling and interactive lessons.
+                    Fosters spiritual development and ethical understanding among Grade 3 students.
                 </p>
             </div>
         </div>
 
-        <!-- Staff Member 7 -->
+        <!-- Grade 4 Class Teacher -->
         <div class="bg-white rounded-lg shadow-sm overflow-hidden">
             <div class="relative h-60">
-                <img src="{{ asset('images/staff/staff7.jpg') }}" alt="Staff Member"
+                <img src="{{ asset('images/staff/staff24.jpg') }}" alt="Staff Member"
                      class="w-full h-full object-cover object-top"
                      style="object-position: center 15%;">
             </div>
             <div class="p-6">
-                <h3 class="font-semibold text-lg mb-1">Mr. Enock Lunda</h3>
-                <p class="text-primary text-sm mb-3">Administrative Assistant</p>
+                <h3 class="font-semibold text-lg mb-1">Mr. Sinyangwe Eull</h3>
+                <p class="text-primary text-sm mb-3">Grade 4 Class Teacher</p>
                 <p class="text-gray-600 text-sm">
-                    Nurtures clients  and appreciation among students of all ages.
+                    Fosters spiritual development and ethical understanding among Grade 4 students.
+                </p>
+            </div>
+        </div>
+
+        <!-- Grade 5 class Teacher -->
+        <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+            <div class="relative h-60">
+                <img src="{{ asset('images/staff/staff15.jpg') }}" alt="Staff Member"
+                     class="w-full h-full object-cover object-top"
+                     style="object-position: center 15%;">
+            </div>
+            <div class="p-6">
+                <h3 class="font-semibold text-lg mb-1">Ms. Mukupa Agness</h3>
+                <p class="text-primary text-sm mb-3">Grade 5 Class Teacher</p>
+                <p class="text-gray-600 text-sm">
+                    Fosters critical thinking and appreciation for diverse literary works.
+                </p>
+            </div>
+        </div>
+
+        <!-- Grade 6 Class Teacher -->
+        <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+            <div class="relative h-60">
+                <img src="{{ asset('images/staff/male.jpg') }}" alt="Staff Member"
+                     class="w-full h-full object-cover object-top"
+                     style="object-position: center 15%;">
+            </div>
+            <div class="p-6">
+                <h3 class="font-semibold text-lg mb-1">Mr. Kopakopa Leonard</h3>
+                <p class="text-primary text-sm mb-3">Grade 6 Class Teacher</p>
+                <p class="text-gray-600 text-sm">
+                    Dedicated to fostering a love for critical thinking and preparing Grade 7s for the final examinations.
+                </p>
+            </div>
+        </div>
+
+        <!-- Grade 7 Class Teacher -->
+        <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+            <div class="relative h-60">
+                <img src="{{ asset('images/staff/staff1.jpg') }}" alt="Staff Member"
+                     class="w-full h-full object-cover object-top"
+                     style="object-position: center 15%;">
+            </div>
+            <div class="p-6">
+                <h3 class="font-semibold text-lg mb-1">Mr. Kopakopa Leonard</h3>
+                <p class="text-primary text-sm mb-3">Grade 7 Class Teacher</p>
+                <p class="text-gray-600 text-sm">
+                    Dedicated to fostering a love for critical thinking and preparing Grade 7s for the final examinations.
+                </p>
+            </div>
+        </div>
+
+        <!-- Staff Member 1 -->
+        <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+            <div class="relative h-60">
+                <img src="{{ asset('images/staff/staff2.jpg') }}" alt="Staff Member"
+                     class="w-full h-full object-cover object-top"
+                     style="object-position: center 15%;">
+            </div>
+            <div class="p-6">
+                <h3 class="font-semibold text-lg mb-1">Ms. Evidence Mulenga</h3>
+                <p class="text-primary text-sm mb-3">Business Studies Teacher</p>
+                <p class="text-gray-600 text-sm">
+                    Passionate about making business concepts accessible and engaging for all students.
+                </p>
+            </div>
+        </div>
+
+        <!-- Staff Member 1 -->
+        <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+            <div class="relative h-60">
+                <img src="{{ asset('images/staff/male.jpg') }}" alt="Staff Member"
+                     class="w-full h-full object-cover object-top"
+                     style="object-position: center 15%;">
+            </div>
+            <div class="p-6">
+                <h3 class="font-semibold text-lg mb-1">Mr. Singogo Bruce</h3>
+                <p class="text-primary text-sm mb-3">Business Studies Teacher</p>
+                <p class="text-gray-600 text-sm">
+                    Passionate about making business concepts accessible and engaging for all students.
+                </p>
+            </div>
+        </div>
+
+        <!-- Staff Member 3 -->
+        <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+            <div class="relative h-60">
+                <img src="{{ asset('images/gallery1.jpg') }}" alt="Staff Member"
+                     class="w-full h-full object-cover object-top"
+                     style="object-position: center 15%;">
+            </div>
+            <div class="p-6">
+                <h3 class="font-semibold text-lg mb-1">Mr. Vincent Mulenga</h3>
+                <p class="text-primary text-sm mb-3">Science Teacher</p>
+                <p class="text-gray-600 text-sm">
+                    Inspires curiosity through hands-on experiments and interactive science lessons.
                 </p>
             </div>
         </div>
@@ -331,47 +443,15 @@
         <!-- Staff Member 8 -->
         <div class="bg-white rounded-lg shadow-sm overflow-hidden">
             <div class="relative h-60">
-                <img src="{{ asset('images/staff/staff8.jpg') }}" alt="Staff Member"
+                <img src="{{ asset('images/staff/female.jpg') }}" alt="Staff Member"
                      class="w-full h-full object-cover object-top"
                      style="object-position: center 15%;">
             </div>
             <div class="p-6">
-                <h3 class="font-semibold text-lg mb-1">Mrs. Mercy Mutale</h3>
-                <p class="text-primary text-sm mb-3">Computer Studies</p>
+                <h3 class="font-semibold text-lg mb-1">Ms. Mulenga Bwalya</h3>
+                <p class="text-primary text-sm mb-3">English & R.E Teacher</p>
                 <p class="text-gray-600 text-sm">
                     Equips students with essential digital skills for the modern world.
-                </p>
-            </div>
-        </div>
-
-        <!-- Staff Member 9 -->
-        <div class="bg-white rounded-lg shadow-sm overflow-hidden">
-            <div class="relative h-60">
-                <img src="{{ asset('images/staff/staff9.jpg') }}" alt="Staff Member"
-                     class="w-full h-full object-cover object-top"
-                     style="object-position: center 15%;">
-            </div>
-            <div class="p-6">
-                <h3 class="font-semibold text-lg mb-1">Ms. Elizabeth Bwalya</h3>
-                <p class="text-primary text-sm mb-3">Geography Teacher</p>
-                <p class="text-gray-600 text-sm">
-                    Opens students' eyes to the wonders of our world and environmental conservation.
-                </p>
-            </div>
-        </div>
-
-        <!-- Staff Member 10 -->
-        <div class="bg-white rounded-lg shadow-sm overflow-hidden">
-            <div class="relative h-60">
-                <img src="{{ asset('images/staff/staff22.jpg') }}" alt="Staff Member"
-                     class="w-full h-full object-cover object-top"
-                     style="object-position: center 15%;">
-            </div>
-            <div class="p-6">
-                <h3 class="font-semibold text-lg mb-1">Mr. Charles Mwamba</h3>
-                <p class="text-primary text-sm mb-3">Chemistry Teacher</p>
-                <p class="text-gray-600 text-sm">
-                    Makes chemistry concepts accessible through practical demonstrations and experiments.
                 </p>
             </div>
         </div>
@@ -384,58 +464,10 @@
                      style="object-position: center 15%;">
             </div>
             <div class="p-6">
-                <h3 class="font-semibold text-lg mb-1">Mr. Lubinda Chishimba</h3>
+                <h3 class="font-semibold text-lg mb-1">Mr. Lubinda Godwin</h3>
                 <p class="text-primary text-sm mb-3">Computer Studies Teacher</p>
                 <p class="text-gray-600 text-sm">
                     Inspires students to explore the wonders of computer sciences through practical approach.
-                </p>
-            </div>
-        </div>
-
-        <!-- Staff Member 12 -->
-        <div class="bg-white rounded-lg shadow-sm overflow-hidden">
-            <div class="relative h-60">
-                <img src="{{ asset('images/staff/staff12.jpg') }}" alt="Staff Member"
-                     class="w-full h-full object-cover object-top"
-                     style="object-position: center 15%;">
-            </div>
-            <div class="p-6">
-                <h3 class="font-semibold text-lg mb-1">Ms. Deborah Mwale</h3>
-                <p class="text-primary text-sm mb-3">Physics Teacher</p>
-                <p class="text-gray-600 text-sm">
-                    Demonstrates complex physics principles through real-world applications.
-                </p>
-            </div>
-        </div>
-
-        <!-- Staff Member 13 -->
-        <div class="bg-white rounded-lg shadow-sm overflow-hidden">
-            <div class="relative h-60">
-                <img src="{{ asset('images/staff/staff13.jpg') }}" alt="Staff Member"
-                     class="w-full h-full object-cover object-top"
-                     style="object-position: center 15%;">
-            </div>
-            <div class="p-6">
-                <h3 class="font-semibold text-lg mb-1">Mr. Gracewell Mbewe</h3>
-                <p class="text-primary text-sm mb-3">French Teacher</p>
-                <p class="text-gray-600 text-sm">
-                    Creates an immersive environment for students to develop language skills.
-                </p>
-            </div>
-        </div>
-
-        <!-- Staff Member 15 -->
-        <div class="bg-white rounded-lg shadow-sm overflow-hidden">
-            <div class="relative h-60">
-                <img src="{{ asset('images/staff/staff15.jpg') }}" alt="Staff Member"
-                     class="w-full h-full object-cover object-top"
-                     style="object-position: center 15%;">
-            </div>
-            <div class="p-6">
-                <h3 class="font-semibold text-lg mb-1">Ms. Mukupa Mary</h3>
-                <p class="text-primary text-sm mb-3">Literature Teacher</p>
-                <p class="text-gray-600 text-sm">
-                    Fosters critical thinking and appreciation for diverse literary works.
                 </p>
             </div>
         </div>
@@ -448,10 +480,26 @@
                      style="object-position: center 15%;">
             </div>
             <div class="p-6">
-                <h3 class="font-semibold text-lg mb-1">Mr. Lawrence Chipili</h3>
-                <p class="text-primary text-sm mb-3">Business Studies</p>
+                <h3 class="font-semibold text-lg mb-1">Mr. Nkandu Richard</h3>
+                <p class="text-primary text-sm mb-3">Biology Teacher</p>
                 <p class="text-gray-600 text-sm">
-                    Prepares students with practical knowledge for the business world.
+                    Prepares students with practical knowledge for the biological sciences.
+                </p>
+            </div>
+        </div>
+
+        <!-- Staff Member 13 -->
+        <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+            <div class="relative h-60">
+                <img src="{{ asset('images/staff/female.jpg') }}" alt="Staff Member"
+                     class="w-full h-full object-cover object-top"
+                     style="object-position: center 15%;">
+            </div>
+            <div class="p-6">
+                <h3 class="font-semibold text-lg mb-1">Ms. Besa Cynthia</h3>
+                <p class="text-primary text-sm mb-3">Geography & R.E Teacher</p>
+                <p class="text-gray-600 text-sm">
+                    Ensures students understand the importance of geography and religious education.
                 </p>
             </div>
         </div>
@@ -459,36 +507,38 @@
         <!-- Staff Member 18 -->
         <div class="bg-white rounded-lg shadow-sm overflow-hidden">
             <div class="relative h-60">
-                <img src="{{ asset('images/staff/staff21.jpg') }}" alt="Staff Member"
+                <img src="{{ asset('images/staff/male.jpg') }}" alt="Staff Member"
                      class="w-full h-full object-cover object-top"
                      style="object-position: center 15%;">
             </div>
             <div class="p-6">
-                <h3 class="font-semibold text-lg mb-1">Mr. Chanda Mwansa</h3>
-                <p class="text-primary text-sm mb-3">School Counselor</p>
+                <h3 class="font-semibold text-lg mb-1">Mr. Simukonda Morgan</h3>
+                <p class="text-primary text-sm mb-3">Biology and P.E Teacher</p>
                 <p class="text-gray-600 text-sm">
-                    Provides guidance and support for students' social and emotional well-being.
+                    Ensures students understand the importance of biology and physical education.
                 </p>
             </div>
         </div>
 
-        <!-- Staff Member 19 -->
-        <div class="bg-white rounded-lg shadow-sm overflow-hidden">
-            <div class="relative h-60">
-                <img src="{{ asset('images/staff/staff19.jpg') }}" alt="Staff Member"
-                     class="w-full h-full object-cover object-top"
-                     style="object-position: center 15%;">
-            </div>
-            <div class="p-6">
-                <h3 class="font-semibold text-lg mb-1">Ms. Mary Chama</h3>
-                <p class="text-primary text-sm mb-3">Religious Education</p>
-                <p class="text-gray-600 text-sm">
-                    Fosters spiritual development and ethical understanding among students.
-                </p>
-            </div>
-        </div>
+        <!-- Team Member 3 -->
+                <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+                    <div class="relative h-60">
+                        <img src="{{ asset('images/staff/chibwe.jpg') }}" alt="Team Member"
+                                class="w-full h-full object-cover object-top"
+                                style="object-position: center 15%;">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-semibold text-lg mb-1">Mr. Quintino Chibwe</h3>
+                        <p class="text-primary text-sm mb-3">ECZ Data Entry Officer</p>
+                        <p class="text-gray-600 text-sm">
+                            coordinates curriculum development and ensures correct data entry for correspondencies with ECZ.
+                        </p>
+                    </div>
+                </div>
 
-        <!-- Staff Member 20 -->
+
+
+        <!-- Head Driver -->
         <div class="bg-white rounded-lg shadow-sm overflow-hidden">
             <div class="relative h-60">
                 <img src="{{ asset('images/staff/staff20.jpg') }}" alt="Staff Member"
@@ -496,10 +546,58 @@
                      style="object-position: center 15%;">
             </div>
             <div class="p-6">
-                <h3 class="font-semibold text-lg mb-1">Mr. Alaba Mwila</h3>
+                <h3 class="font-semibold text-lg mb-1">Mr. Halaba Anthony</h3>
                 <p class="text-primary text-sm mb-3">Head Driver</p>
                 <p class="text-gray-600 text-sm">
                     Creates a nurturing environment for our youngest learners to develop and grow.
+                </p>
+            </div>
+        </div>
+
+        <!-- Bus Driver -->
+        <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+            <div class="relative h-60">
+                <img src="{{ asset('images/staff/staff21.jpg') }}" alt="Staff Member"
+                     class="w-full h-full object-cover object-top"
+                     style="object-position: center 15%;">
+            </div>
+            <div class="p-6">
+                <h3 class="font-semibold text-lg mb-1">Mr. Ng'andwe Stanely</h3>
+                <p class="text-primary text-sm mb-3">Bus Driver</p>
+                <p class="text-gray-600 text-sm">
+                    Ensures the safe and timely transportation of students to and from school.
+                </p>
+            </div>
+        </div>
+
+        <!-- Bus Driver -->
+        <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+            <div class="relative h-60">
+                <img src="{{ asset('images/staff/staff13.jpg') }}" alt="Staff Member"
+                     class="w-full h-full object-cover object-top"
+                     style="object-position: center 15%;">
+            </div>
+            <div class="p-6">
+                <h3 class="font-semibold text-lg mb-1">Mr. Chola Kelvin</h3>
+                <p class="text-primary text-sm mb-3">Bus Driver</p>
+                <p class="text-gray-600 text-sm">
+                    Ensures the safe and timely transportation of students to and from school.
+                </p>
+            </div>
+        </div>
+
+        <!-- Bus Driver -->
+        <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+            <div class="relative h-60">
+                <img src="{{ asset('images/staff/staff22.jpg') }}" alt="Staff Member"
+                     class="w-full h-full object-cover object-top"
+                     style="object-position: center 15%;">
+            </div>
+            <div class="p-6">
+                <h3 class="font-semibold text-lg mb-1">Mr. Charles Kalonde</h3>
+                <p class="text-primary text-sm mb-3">Bus Driver</p>
+                <p class="text-gray-600 text-sm">
+                    Ensures the safe and timely transportation of students to and from school.
                 </p>
             </div>
         </div>
