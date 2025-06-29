@@ -3,8 +3,7 @@
 @section('content')
 <!-- Page Header -->
 <div class="relative bg-gradient-to-r from-primary/80 to-primary/60 py-32">
-    <img src="{{ asset('images/student-life-banner.jpg') }}" alt="Student Life" class="absolute inset-0 w-full h-full object-cover mix-blend-overlay"
-         onerror="this.src='https://via.placeholder.com/1920x600?text=Student+Life'">
+    <img src="{{ asset('images/lib.jpg') }}" alt="Student Life" class="absolute inset-0 w-full h-full object-cover mix-blend-overlay">
     <div class="relative container mx-auto px-4 text-center">
         <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">Student Life</h1>
         <p class="text-xl text-white/90 max-w-2xl mx-auto">
@@ -27,21 +26,32 @@
             </p>
         </div>
 
-        <!-- Featured Video -->
-        <div class="max-w-5xl mx-auto mb-20">
-            <div class="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden shadow-lg relative">
-                <!-- Placeholder for video - replace with actual video embed -->
-                <img src="{{ asset('images/student-life-video.jpg') }}" alt="Student Life at St. Francis" class="w-full h-full object-cover"
-                     onerror="this.src='https://via.placeholder.com/1280x720?text=Student+Life+Video'">
-                <div class="absolute inset-0 flex items-center justify-center">
-                    <button class="w-20 h-20 bg-primary/80 rounded-full flex items-center justify-center hover:bg-primary transition-colors">
-                        <svg class="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M8 5v14l11-7z"></path>
-                        </svg>
-                    </button>
+                <!-- Virtual Tour Section -->
+        <div id="virtual-tour" class="max-w-5xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-primary mb-4">Take a Virtual Tour</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto mb-8">
+                    Explore our campus activities from the comfort of your home.
+                </p>
+
+                <div class="relative rounded-lg overflow-hidden aspect-video shadow-lg">
+                    <!-- Embedded YouTube Video -->
+                    <iframe
+                        class="w-full h-full"
+                        src="https://www.youtube.com/embed/5kkp8v0J1ak?rel=0&modestbranding=1&showinfo=0"
+                        title="St. Francis of Assisi Private School Virtual Tour"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+
+                <div class="mt-8">
+                    <a href="{{ route('contact') }}?tour=1" class="inline-block px-8 py-3 bg-secondary text-white rounded-lg hover:bg-secondary/90 transition-colors font-medium">
+                        Watch Our Pupils Sing with instrumemts
+                    </a>
                 </div>
             </div>
-            <p class="text-center text-gray-600 mt-4 italic">Experience a day in the life of our students at St. Francis of Assisi Private School</p>
         </div>
 
         <!-- Student Life Areas -->
@@ -52,8 +62,7 @@
                 <!-- Sports -->
                 <div class="bg-white rounded-lg shadow-sm overflow-hidden group hover:shadow-md transition-shadow">
                     <div class="h-56 overflow-hidden relative">
-                        <img src="{{ asset('images/sports.jpg') }}" alt="Sports Programs" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                             onerror="this.src='https://via.placeholder.com/400x300?text=Sports'">
+                        <img src="{{ asset('images/sports.jpg') }}" alt="Sports Programs" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                         <div class="absolute bottom-0 left-0 p-6">
                             <h4 class="text-xl font-bold text-white">Sports Programs</h4>
@@ -75,8 +84,7 @@
                 <!-- Clubs & Activities -->
                 <div class="bg-white rounded-lg shadow-sm overflow-hidden group hover:shadow-md transition-shadow">
                     <div class="h-56 overflow-hidden relative">
-                        <img src="{{ asset('images/clubs.jpg') }}" alt="Clubs & Activities" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                             onerror="this.src='https://via.placeholder.com/400x300?text=Clubs'">
+                        <img src="{{ asset('images/IMG_6538.jpg') }}" alt="Clubs & Activities" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                         <div class="absolute bottom-0 left-0 p-6">
                             <h4 class="text-xl font-bold text-white">Clubs & Activities</h4>
@@ -98,8 +106,7 @@
                 <!-- Arts & Culture -->
                 <div class="bg-white rounded-lg shadow-sm overflow-hidden group hover:shadow-md transition-shadow">
                     <div class="h-56 overflow-hidden relative">
-                        <img src="{{ asset('images/arts.jpg') }}" alt="Arts & Culture" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                             onerror="this.src='https://via.placeholder.com/400x300?text=Arts'">
+                        <img src="{{ asset('images/arts.jpeg') }}" alt="Arts & Culture" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                         <div class="absolute bottom-0 left-0 p-6">
                             <h4 class="text-xl font-bold text-white">Arts & Culture</h4>
@@ -121,8 +128,7 @@
                 <!-- Leadership & Service -->
                 <div class="bg-white rounded-lg shadow-sm overflow-hidden group hover:shadow-md transition-shadow">
                     <div class="h-56 overflow-hidden relative">
-                        <img src="{{ asset('images/leadership.jpg') }}" alt="Leadership & Service" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                             onerror="this.src='https://via.placeholder.com/400x300?text=Leadership'">
+                        <img src="{{ asset('images/1.jpg') }}" alt="Leadership & Service" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                         <div class="absolute bottom-0 left-0 p-6">
                             <h4 class="text-xl font-bold text-white">Leadership & Service</h4>
@@ -144,8 +150,7 @@
                 <!-- Field Trips & Excursions -->
                 <div class="bg-white rounded-lg shadow-sm overflow-hidden group hover:shadow-md transition-shadow">
                     <div class="h-56 overflow-hidden relative">
-                        <img src="{{ asset('images/field-trips.jpg') }}" alt="Field Trips & Excursions" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                             onerror="this.src='https://via.placeholder.com/400x300?text=Field+Trips'">
+                        <img src="{{ asset('images/field-trips.jpg') }}" alt="Field Trips & Excursions" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                         <div class="absolute bottom-0 left-0 p-6">
                             <h4 class="text-xl font-bold text-white">Field Trips & Excursions</h4>
@@ -167,8 +172,7 @@
                 <!-- School Events -->
                 <div class="bg-white rounded-lg shadow-sm overflow-hidden group hover:shadow-md transition-shadow">
                     <div class="h-56 overflow-hidden relative">
-                        <img src="{{ asset('images/events.jpg') }}" alt="School Events" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                             onerror="this.src='https://via.placeholder.com/400x300?text=School+Events'">
+                        <img src="{{ asset('images/infrustructure/infrastructure3.jpg') }}" alt="School Events" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                         <div class="absolute bottom-0 left-0 p-6">
                             <h4 class="text-xl font-bold text-white">School Events</h4>
@@ -178,7 +182,7 @@
                         <p class="text-gray-600 mb-4">
                             Special events, ceremonies, and celebrations throughout the school year create a vibrant community and memorable experiences.
                         </p>
-                        <a href="{{ route('events') }}" class="inline-flex items-center text-primary font-medium hover:text-primary/80 transition-colors">
+                        <a href="{{ route('events.index') }}" class="inline-flex items-center text-primary font-medium hover:text-primary/80 transition-colors">
                             Learn more
                             <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
@@ -285,32 +289,28 @@
 
             <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
                 <div class="relative group overflow-hidden rounded-lg aspect-square">
-                    <img src="{{ asset('images/gallery1.jpg') }}" alt="Student Life" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                         onerror="this.src='https://via.placeholder.com/300?text=Gallery+1'">
+                    <img src="{{ asset('images/gallery1.jpg') }}" alt="Student Life" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
                     <div class="absolute inset-0 bg-primary/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                         <i class='bx bx-search text-white text-3xl'></i>
                     </div>
                 </div>
 
                 <div class="relative group overflow-hidden rounded-lg aspect-square">
-                    <img src="{{ asset('images/gallery2.jpg') }}" alt="Student Life" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                         onerror="this.src='https://via.placeholder.com/300?text=Gallery+2'">
+                    <img src="{{ asset('images/ecl/ecl15.jpg') }}" alt="Student Life" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
                     <div class="absolute inset-0 bg-primary/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                         <i class='bx bx-search text-white text-3xl'></i>
                     </div>
                 </div>
 
                 <div class="relative group overflow-hidden rounded-lg aspect-square">
-                    <img src="{{ asset('images/gallery3.jpg') }}" alt="Student Life" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                         onerror="this.src='https://via.placeholder.com/300?text=Gallery+3'">
+                    <img src="{{ asset('images/secondary/secondary11.jpg') }}" alt="Student Life" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
                     <div class="absolute inset-0 bg-primary/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                         <i class='bx bx-search text-white text-3xl'></i>
                     </div>
                 </div>
 
                 <div class="relative group overflow-hidden rounded-lg aspect-square">
-                    <img src="{{ asset('images/gallery4.jpg') }}" alt="Student Life" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                         onerror="this.src='https://via.placeholder.com/300?text=Gallery+4'">
+                    <img src="{{ asset('images/primary/primary19.jpg') }}" alt="Student Life" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
                     <div class="absolute inset-0 bg-primary/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                         <i class='bx bx-search text-white text-3xl'></i>
                     </div>
@@ -318,7 +318,7 @@
             </div>
 
             <div class="text-center mt-8">
-                <a href="{{ route('gallery') }}" class="inline-block px-6 py-3 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors">
+                <a href="{{ route('gallery.index') }}" class="inline-block px-6 py-3 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors">
                     View Full Gallery
                 </a>
             </div>
@@ -337,8 +337,7 @@
                         </p>
                         <div class="flex items-center">
                             <div class="w-12 h-12 rounded-full bg-gray-300 mr-4">
-                                <img src="{{ asset('images/student1.jpg') }}" alt="Student" class="w-full h-full object-cover rounded-full"
-                                     onerror="this.src='https://via.placeholder.com/48?text=S'">
+                                <img src="{{ asset('images/staff/male.jpg') }}" alt="Student" class="w-full h-full object-cover rounded-full">
                             </div>
                             <div>
                                 <h4 class="font-semibold">David Mumba</h4>
@@ -352,12 +351,11 @@
                     <div class="text-6xl text-primary/10 absolute top-4 left-4">"</div>
                     <div class="relative z-10">
                         <p class="text-gray-600 italic mb-6">
-                            I love how we have so many opportunities to pursue our interests outside the classroom. The annual cultural day, sports competitions, and community service projects have been highlights of my time at St. Francis. The teachers encourage us to try new things and develop our talents.
+                            I love how we have so many opportunities to pursue our interests outside the classroom. The annual cultural day, sports competitions, and community service projects have been highlights of my time at St. Francis.
                         </p>
                         <div class="flex items-center">
                             <div class="w-12 h-12 rounded-full bg-gray-300 mr-4">
-                                <img src="{{ asset('images/student2.jpg') }}" alt="Student" class="w-full h-full object-cover rounded-full"
-                                     onerror="this.src='https://via.placeholder.com/48?text=S'">
+                                <img src="{{ asset('images/staff/female.jpg') }}" alt="Student" class="w-full h-full object-cover rounded-full">
                             </div>
                             <div>
                                 <h4 class="font-semibold">Rachel Banda</h4>

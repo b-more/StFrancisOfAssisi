@@ -3,8 +3,8 @@
 @section('content')
 <!-- Page Header -->
 <div class="relative bg-gradient-to-r from-primary/80 to-primary/60 py-32">
-    <img src="{{ asset('images/admissions-banner.jpg') }}" alt="Admissions" class="absolute inset-0 w-full h-full object-cover mix-blend-overlay"
-         onerror="this.src='https://via.placeholder.com/1920x600?text=Admissions'">
+    <img src="{{ asset('') }}" alt="Admissions" class="absolute inset-0 w-full h-full object-cover mix-blend-overlay"
+         {{-- onerror="this.src='https://via.placeholder.com/1920x600?text=Admissions'" --}}>
     <div class="relative container mx-auto px-4 text-center">
         <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">Admissions</h1>
         <p class="text-xl text-white/90 max-w-2xl mx-auto">
@@ -338,12 +338,12 @@
                         </p>
                         <div class="flex items-center">
                             <div class="w-12 h-12 rounded-full bg-gray-300 mr-4">
-                                <img src="{{ asset('images/parent3.jpg') }}" alt="Parent"
+                                <img src="{{ asset('images/staff/male.jpg') }}" alt="Parent"
                                      class="w-full h-full object-cover rounded-full"
-                                     onerror="this.src='https://via.placeholder.com/48?text=P'">
+                                     {{-- onerror="this.src='https://via.placeholder.com/48?text=P'" --}}>
                             </div>
                             <div>
-                                <h4 class="font-semibold">Mrs. Kapembwa</h4>
+                                <h4 class="font-semibold">Mr. Kapembwa</h4>
                                 <p class="text-sm text-gray-500">Parent of Grade 4 student</p>
                             </div>
                         </div>
@@ -359,12 +359,12 @@
                         </p>
                         <div class="flex items-center">
                             <div class="w-12 h-12 rounded-full bg-gray-300 mr-4">
-                                <img src="{{ asset('images/parent4.jpg') }}" alt="Parent"
+                                <img src="{{ asset('images/staff/female.jpg') }}" alt="Parent"
                                      class="w-full h-full object-cover rounded-full"
-                                     onerror="this.src='https://via.placeholder.com/48?text=P'">
+                                     {{-- onerror="this.src='https://via.placeholder.com/48?text=P'" --}}>
                             </div>
                             <div>
-                                <h4 class="font-semibold">Mr. & Mrs. Phiri</h4>
+                                <h4 class="font-semibold">Mrs. Phiri</h4>
                                 <p class="text-sm text-gray-500">Parents of Grade 10 student</p>
                             </div>
                         </div>

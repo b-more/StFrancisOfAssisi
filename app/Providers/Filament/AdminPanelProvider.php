@@ -28,8 +28,16 @@ class AdminPanelProvider extends PanelProvider
             ->path('admin')
             ->login()
             ->colors([
-                'primary' => Color::hex('#011EB7'), 
+                'primary' => Color::hex('#011EB7'),
             ])
+            // Method 1: Add favicon using Filament's favicon() method
+            ->favicon(asset('images/favicon.ico'))
+
+            // Optional: Add other branding elements
+            ->brandName('St. Francis Of Assisi Private School')
+            ->brandLogo(asset('images/logo.png'))
+            ->brandLogoHeight('2rem')
+
             ->discoverResources(in: app_path('Filament/Resources'), for: 'App\\Filament\\Resources')
             ->discoverPages(in: app_path('Filament/Pages'), for: 'App\\Filament\\Pages')
             ->pages([
@@ -40,7 +48,6 @@ class AdminPanelProvider extends PanelProvider
                 Widgets\AccountWidget::class,
                 Widgets\FilamentInfoWidget::class,
             ])
-            //->viteTheme('resources/css/filament/admin/theme.css')
             ->middleware([
                 EncryptCookies::class,
                 AddQueuedCookiesToResponse::class,
@@ -52,7 +59,6 @@ class AdminPanelProvider extends PanelProvider
                 DisableBladeIconComponents::class,
                 DispatchServingFilamentEvent::class,
             ])
-           // ->viteTheme('resources/css/filament/admin/theme.css')
             ->authMiddleware([
                 Authenticate::class,
             ]);

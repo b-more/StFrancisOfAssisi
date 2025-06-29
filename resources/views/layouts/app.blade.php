@@ -55,10 +55,10 @@
                 </div>
             </div>
             <div class="flex items-center space-x-3">
-                <a href="#" class="text-white hover:text-secondary transition-colors">
+                <a href="https://web.facebook.com/profile.php?id=1000862240419199" class="text-white hover:text-secondary transition-colors">
                     <i class='bx bxl-facebook text-lg'></i>
                 </a>
-                <a href="#" class="text-white hover:text-secondary transition-colors">
+                <a href="https://www.instagram.com/stfrancisofassisi/" class="text-white hover:text-secondary transition-colors">
                     <i class='bx bxl-instagram text-lg'></i>
                 </a>
                 <a href="#" class="text-white hover:text-secondary transition-colors">

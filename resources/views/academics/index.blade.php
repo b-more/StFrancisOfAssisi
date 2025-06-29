@@ -3,8 +3,8 @@
 @section('content')
 <!-- Page Header -->
 <div class="relative bg-gradient-to-r from-primary/80 to-primary/60 py-32">
-    <img src="{{ asset('images/academics-banner.jpg') }}" alt="Academics" class="absolute inset-0 w-full h-full object-cover mix-blend-overlay"
-         onerror="this.src='https://via.placeholder.com/1920x600?text=Academics'">
+    <img src="{{ asset('images/academic-banner.jpg') }}" alt="Academics" class="absolute inset-0 w-full h-full object-cover mix-blend-overlay"
+         {{-- onerror="this.src='https://via.placeholder.com/1920x600?text=Academics'" --}}>
     <div class="relative container mx-auto px-4 text-center">
         <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">Academic Excellence</h1>
         <p class="text-xl text-white/90 max-w-2xl mx-auto">
@@ -35,9 +35,9 @@
                 <!-- Early Childhood -->
                 <div class="bg-white rounded-lg shadow-md overflow-hidden group">
                     <div class="relative h-56">
-                        <img src="{{ asset('images/early-childhood.jpg') }}" alt="Early Childhood Education"
+                        <img src="{{ asset('images/programs/IMG_6831.jpg') }}" alt="Early Childhood Education"
                              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                             onerror="this.src='https://via.placeholder.com/600x400?text=Early+Childhood'">
+                             {{-- onerror="this.src='https://via.placeholder.com/600x400?text=Early+Childhood'" --}}>
                         <div class="absolute inset-0 bg-gradient-to-t from-primary/70 to-transparent opacity-90"></div>
                         <div class="absolute bottom-0 left-0 p-4 text-white">
                             <h3 class="text-xl font-bold">Early Childhood</h3>
@@ -74,9 +74,9 @@
                 <!-- Primary School -->
                 <div class="bg-white rounded-lg shadow-md overflow-hidden group">
                     <div class="relative h-56">
-                        <img src="{{ asset('images/primary.jpg') }}" alt="Primary Education"
+                        <img src="{{ asset('images/programs/P4480636.jpg') }}" alt="Primary Education"
                              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                             onerror="this.src='https://via.placeholder.com/600x400?text=Primary+School'">
+                             {{-- onerror="this.src='https://via.placeholder.com/600x400?text=Primary+School'" --}}>
                         <div class="absolute inset-0 bg-gradient-to-t from-primary/70 to-transparent opacity-90"></div>
                         <div class="absolute bottom-0 left-0 p-4 text-white">
                             <h3 class="text-xl font-bold">Primary School</h3>
@@ -113,9 +113,9 @@
                 <!-- Secondary School -->
                 <div class="bg-white rounded-lg shadow-md overflow-hidden group">
                     <div class="relative h-56">
-                        <img src="{{ asset('images/secondary.jpg') }}" alt="Secondary Education"
+                        <img src="{{ asset('images/programs/P4480710.jpg') }}" alt="Secondary Education"
                              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                             onerror="this.src='https://via.placeholder.com/600x400?text=Secondary+School'">
+                             {{-- onerror="this.src='https://via.placeholder.com/600x400?text=Secondary+School'" --}}>
                         <div class="absolute inset-0 bg-gradient-to-t from-primary/70 to-transparent opacity-90"></div>
                         <div class="absolute bottom-0 left-0 p-4 text-white">
                             <h3 class="text-xl font-bold">Secondary School</h3>
@@ -184,7 +184,7 @@
                 </div>
                 <div class="md:w-1/2">
                     <img src="{{ asset('images/curriculum.jpg') }}" alt="Curriculum Approach" class="rounded-lg shadow-md w-full h-auto"
-                         onerror="this.src='https://via.placeholder.com/600x400?text=Curriculum'">
+                         {{-- onerror="this.src='https://via.placeholder.com/600x400?text=Curriculum'" --}}>
                 </div>
             </div>
         </div>
@@ -332,9 +332,9 @@
                         </p>
                         <div class="flex items-center">
                             <div class="w-12 h-12 rounded-full bg-gray-300 mr-4">
-                                <img src="{{ asset('images/parent1.jpg') }}" alt="Parent"
+                                <img src="{{ asset('images/staff/female.jpg') }}" alt="Parent"
                                      class="w-full h-full object-cover rounded-full"
-                                     onerror="this.src='https://via.placeholder.com/48?text=P'">
+                                     {{-- onerror="this.src='https://via.placeholder.com/48?text=P'" --}}>
                             </div>
                             <div>
                                 <h4 class="font-semibold">Mrs. Chanda</h4>
@@ -353,9 +353,9 @@
                         </p>
                         <div class="flex items-center">
                             <div class="w-12 h-12 rounded-full bg-gray-300 mr-4">
-                                <img src="{{ asset('images/parent2.jpg') }}" alt="Parent"
+                                <img src="{{ asset('images/staff/male.jpg') }}" alt="Parent"
                                      class="w-full h-full object-cover rounded-full"
-                                     onerror="this.src='https://via.placeholder.com/48?text=P'">
+                                     {{-- onerror="this.src='https://via.placeholder.com/48?text=P'" --}}>
                             </div>
                             <div>
                                 <h4 class="font-semibold">Mr. Mwanza</h4>

@@ -46,6 +46,21 @@
             width: 100%;
             height: 100%;
         }
+        /* Custom Swiper Styles */
+        .swiper-pagination-bullet {
+            background: rgba(255, 255, 255, 0.5);
+        }
+        .swiper-pagination-bullet-active {
+            background: #FFD700;
+        }
+        .swiper-button-next,
+        .swiper-button-prev {
+            color: white;
+        }
+        .swiper-button-next:after,
+        .swiper-button-prev:after {
+            font-size: 30px;
+        }
     </style>
     <script>
         tailwind.config = {
@@ -80,10 +95,10 @@
                 </div>
             </div>
             <div class="flex items-center space-x-3">
-                <a href="#" class="text-white hover:text-secondary transition-colors">
+                <a href="https://web.facebook.com/profile.php?id=1000862240419199" class="text-white hover:text-secondary transition-colors">
                     <i class='bx bxl-facebook text-lg'></i>
                 </a>
-                <a href="#" class="text-white hover:text-secondary transition-colors">
+                <a href="https://www.instagram.com/stfrancisofassisi/" class="text-white hover:text-secondary transition-colors">
                     <i class='bx bxl-instagram text-lg'></i>
                 </a>
                 <a href="#" class="text-white hover:text-secondary transition-colors">
@@ -108,7 +123,7 @@
                     <div class="absolute inset-0 hero-gradient"></div>
                     <img src="{{ asset('images/gallery1.jpg') }}" alt="School Building"
                         class="w-full h-full object-cover"
-                        onerror="this.src='https://via.placeholder.com/1920x1080?text=School+Building'">
+                        {{-- onerror="this.src='https://via.placeholder.com/1920x1080?text=School+Building'" --}}>
                     <div class="absolute inset-0 flex items-center justify-center text-center px-4">
                         <div class="max-w-3xl">
                             <h1 class="text-4xl md:text-6xl font-bold text-white mb-6">
@@ -123,7 +138,7 @@
                                     Apply Now
                                 </a>
                                 <a href="#"
-                                   onclick="openVideoModal('5kkp8v0J1ak'); return false;"
+                                   onclick="openWelcomeVideoModal('5kkp8v0J1ak'); return false;"
                                    class="inline-block bg-white text-primary px-8 py-3 rounded-full text-lg font-semibold hover:bg-gray-100 transition-colors">
                                     <i class='bx bx-play-circle mr-2'></i>
                                     Watch Virtual Tour
@@ -136,9 +151,9 @@
                 <!-- Slide 2 -->
                 <div class="swiper-slide relative">
                     <div class="absolute inset-0 hero-gradient"></div>
-                    <img src="{{ asset('images/slide2.jpg') }}" alt="Students Learning"
+                    <img src="{{ asset('images/primary4.jpg') }}" alt="Students Learning"
                         class="w-full h-full object-cover"
-                        onerror="this.src='https://via.placeholder.com/1920x1080?text=Students+Learning'">
+                        {{-- onerror="this.src='https://via.placeholder.com/1920x1080?text=Students+Learning'" --}}>
                     <div class="absolute inset-0 flex items-center justify-center text-center px-4">
                         <div class="max-w-3xl">
                             <h1 class="text-4xl md:text-6xl font-bold text-white mb-6">
@@ -158,9 +173,9 @@
                 <!-- Slide 3 -->
                 <div class="swiper-slide relative">
                     <div class="absolute inset-0 hero-gradient"></div>
-                    <img src="{{ asset('images/slide3.jpg') }}" alt="School Activities"
+                    <img src="{{ asset('images/gallery7.jpg') }}" alt="School Activities"
                         class="w-full h-full object-cover"
-                        onerror="this.src='https://via.placeholder.com/1920x1080?text=School+Activities'">
+                        {{-- onerror="this.src='https://via.placeholder.com/1920x1080?text=School+Activities'" --}}>
                     <div class="absolute inset-0 flex items-center justify-center text-center px-4">
                         <div class="max-w-3xl">
                             <h1 class="text-4xl md:text-6xl font-bold text-white mb-6">
@@ -300,7 +315,7 @@
                     <div class="relative h-48">
                         <img src="{{ asset('images/programs/IMG_6831.jpg') }}" alt="Early Childhood Education"
                              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                             onerror="this.src='https://via.placeholder.com/400x300?text=Early+Childhood'">
+                             {{-- onerror="this.src='https://via.placeholder.com/400x300?text=Early+Childhood'" --}}>
                         <div class="absolute inset-0 bg-gradient-to-t from-primary/70 to-transparent opacity-90"></div>
                         <div class="absolute bottom-0 left-0 p-4 text-white">
                             <h3 class="text-xl font-bold">Early Childhood</h3>
@@ -321,7 +336,7 @@
                     <div class="relative h-48">
                         <img src="{{ asset('images/programs/P4480636.jpg') }}" alt="Primary Education"
                              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                             onerror="this.src='https://via.placeholder.com/400x300?text=Primary+Education'">
+                             {{-- onerror="this.src='https://via.placeholder.com/400x300?text=Primary+Education'" --}}>
                         <div class="absolute inset-0 bg-gradient-to-t from-primary/70 to-transparent opacity-90"></div>
                         <div class="absolute bottom-0 left-0 p-4 text-white">
                             <h3 class="text-xl font-bold">Primary School</h3>
@@ -342,7 +357,7 @@
                     <div class="relative h-48">
                         <img src="{{ asset('images/programs/P4480710.jpg') }}" alt="Secondary Education"
                              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                             onerror="this.src='https://via.placeholder.com/400x300?text=Secondary+Education'">
+                             {{-- onerror="this.src='https://via.placeholder.com/1920x1080?text=Secondary+Education'" --}}>
                         <div class="absolute inset-0 bg-gradient-to-t from-primary/70 to-transparent opacity-90"></div>
                         <div class="absolute bottom-0 left-0 p-4 text-white">
                             <h3 class="text-xl font-bold">Secondary School</h3>
@@ -383,10 +398,10 @@
                                     <div class="w-12 h-12 rounded-full bg-gray-300 mr-4">
                                         <img src="{{ asset('images/2.jpg') }}" alt="Parent"
                                              class="w-full h-full object-cover rounded-full"
-                                             onerror="this.src='https://via.placeholder.com/96?text=P'">
+                                             {{-- onerror="this.src='https://via.placeholder.com/96?text=P'" --}}>
                                     </div>
                                     <div>
-                                        <h4 class="font-semibold">Maria Mulenga</h4>
+                                        <h4 class="font-semibold">Joshua Tembo</h4>
                                         <p class="text-sm text-gray-500">Parent of Grade 5 & 9 students</p>
                                     </div>
                                 </div>
@@ -404,9 +419,9 @@
                                 </p>
                                 <div class="flex items-center">
                                     <div class="w-12 h-12 rounded-full bg-gray-300 mr-4">
-                                        <img src="{{ asset('images/parent2.jpg') }}" alt="Parent"
+                                        <img src="{{ asset('images/staff/male.jpg') }}" alt="Parent"
                                              class="w-full h-full object-cover rounded-full"
-                                             onerror="this.src='https://via.placeholder.com/96?text=P'">
+                                             {{-- onerror="this.src='https://via.placeholder.com/96?text=P'" --}}>
                                     </div>
                                     <div>
                                         <h4 class="font-semibold">David Banda</h4>
@@ -423,13 +438,13 @@
                             <div class="text-6xl text-primary/10 absolute top-4 left-4">"</div>
                             <div class="relative z-10">
                                 <p class="text-gray-600 italic mb-6">
-                                    As a recent graduate, I can confidently say that St. Francis prepared me extremely well for university. The teachers went above and beyond to ensure we understood the material.
+                                    I can confidently say that St. Francis prepared me extremely well for university. The teachers went above and beyond to ensure we understood the material.
                                 </p>
                                 <div class="flex items-center">
                                     <div class="w-12 h-12 rounded-full bg-gray-300 mr-4">
-                                        <img src="{{ asset('images/student1.jpg') }}" alt="Student"
+                                        <img src="{{ asset('images/staff/female.jpg') }}" alt="Student"
                                              class="w-full h-full object-cover rounded-full"
-                                             onerror="this.src='https://via.placeholder.com/96?text=S'">
+                                             {{-- onerror="this.src='https://via.placeholder.com/96?text=S'" --}}>
                                     </div>
                                     <div>
                                         <h4 class="font-semibold">Chipo Mutale</h4>
@@ -470,7 +485,7 @@
                             <div class="flex-shrink-0 w-24 h-24 bg-gray-200 rounded-md overflow-hidden">
                                 <img src="{{ asset('images/news/team1.jpg') }}" alt="News"
                                      class="w-full h-full object-cover"
-                                     onerror="this.src='https://via.placeholder.com/96?text=News'">
+                                     {{-- onerror="this.src='https://via.placeholder.com/96?text=News'" --}}>
                             </div>
                             <div>
                                 <span class="text-xs text-gray-500">June 10, 2023</span>
@@ -486,7 +501,7 @@
                             <div class="flex-shrink-0 w-24 h-24 bg-gray-200 rounded-md overflow-hidden">
                                 <img src="{{ asset('images/news/IMG_6530.jpg') }}" alt="News"
                                      class="w-full h-full object-cover"
-                                     onerror="this.src='https://via.placeholder.com/96?text=News'">
+                                     {{-- onerror="this.src='https://via.placeholder.com/96?text=News'" --}}>
                             </div>
                             <div>
                                 <span class="text-xs text-gray-500">May 25, 2023</span>
@@ -502,7 +517,7 @@
                             <div class="flex-shrink-0 w-24 h-24 bg-gray-200 rounded-md overflow-hidden">
                                 <img src="{{ asset('images/news/gallery7.jpg') }}" alt="News"
                                      class="w-full h-full object-cover"
-                                     onerror="this.src='https://via.placeholder.com/96?text=News'">
+                                     {{-- onerror="this.src='https://via.placeholder.com/96?text=News'" --}}>
                             </div>
                             <div>
                                 <span class="text-xs text-gray-500">May 12, 2023</span>
@@ -529,12 +544,12 @@
                         <!-- Event 1 -->
                         <div class="bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition-all flex">
                             <div class="flex-shrink-0 w-16 h-16 bg-primary/10 rounded-lg flex flex-col items-center justify-center mr-4">
-                                <span class="text-primary font-bold text-xl">15</span>
-                                <span class="text-primary text-xs">JUN</span>
+                                <span class="text-primary font-bold text-xl">21</span>
+                                <span class="text-primary text-xs">Jul</span>
                             </div>
                             <div>
                                 <h4 class="font-semibold mb-1 hover:text-primary transition-colors">
-                                    <a href="#">Annual Sports Day</a>
+                                    <a href="#">End of Term Test starts - Primary</a>
                                 </h4>
                                 <div class="flex items-center text-gray-500 text-sm mb-1">
                                     <i class='bx bx-time-five mr-1'></i>
@@ -542,7 +557,7 @@
                                 </div>
                                 <div class="flex items-center text-gray-500 text-sm">
                                     <i class='bx bx-map mr-1'></i>
-                                    <span>School Sports Ground</span>
+                                    <span>School Classrooms</span>
                                 </div>
                             </div>
                         </div>
@@ -550,16 +565,37 @@
                         <!-- Event 2 -->
                         <div class="bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition-all flex">
                             <div class="flex-shrink-0 w-16 h-16 bg-primary/10 rounded-lg flex flex-col items-center justify-center mr-4">
-                                <span class="text-primary font-bold text-xl">22</span>
-                                <span class="text-primary text-xs">JUN</span>
+                                <span class="text-primary font-bold text-xl">24</span>
+                                <span class="text-primary text-xs">JUL</span>
                             </div>
                             <div>
                                 <h4 class="font-semibold mb-1 hover:text-primary transition-colors">
-                                    <a href="#">Parent-Teacher Conference</a>
+                                    <a href="#">End of Term Test starts - Secondary</a>
                                 </h4>
                                 <div class="flex items-center text-gray-500 text-sm mb-1">
                                     <i class='bx bx-time-five mr-1'></i>
-                                    <span>2:00 PM - 5:00 PM</span>
+                                    <span>8:00 AM - 5:00 PM</span>
+                                </div>
+                                <div class="flex items-center text-gray-500 text-sm">
+                                    <i class='bx bx-map mr-1'></i>
+                                    <span>School Classrooms</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Event 3 -->
+                        <div class="bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition-all flex">
+                            <div class="flex-shrink-0 w-16 h-16 bg-primary/10 rounded-lg flex flex-col items-center justify-center mr-4">
+                                <span class="text-primary font-bold text-xl">6</span>
+                                <span class="text-primary text-xs">AUG</span>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold mb-1 hover:text-primary transition-colors">
+                                    <a href="#">School Closes</a>
+                                </h4>
+                                <div class="flex items-center text-gray-500 text-sm mb-1">
+                                    <i class='bx bx-time-five mr-1'></i>
+                                    <span>8:00 AM - 3:00 PM</span>
                                 </div>
                                 <div class="flex items-center text-gray-500 text-sm">
                                     <i class='bx bx-map mr-1'></i>
@@ -568,23 +604,23 @@
                             </div>
                         </div>
 
-                        <!-- Event 3 -->
+                        <!-- Event 4 -->
                         <div class="bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition-all flex">
                             <div class="flex-shrink-0 w-16 h-16 bg-primary/10 rounded-lg flex flex-col items-center justify-center mr-4">
-                                <span class="text-primary font-bold text-xl">30</span>
-                                <span class="text-primary text-xs">JUN</span>
+                                <span class="text-primary font-bold text-xl">8</span>
+                                <span class="text-primary text-xs">AUG</span>
                             </div>
                             <div>
                                 <h4 class="font-semibold mb-1 hover:text-primary transition-colors">
-                                    <a href="#">Science & Technology Fair</a>
+                                    <a href="#">Open Day</a>
                                 </h4>
                                 <div class="flex items-center text-gray-500 text-sm mb-1">
                                     <i class='bx bx-time-five mr-1'></i>
-                                    <span>9:00 AM - 3:00 PM</span>
+                                    <span>8:00 AM - 3:00 PM</span>
                                 </div>
                                 <div class="flex items-center text-gray-500 text-sm">
                                     <i class='bx bx-map mr-1'></i>
-                                    <span>School Labs & Auditorium</span>
+                                    <span>School Main Hall</span>
                                 </div>
                             </div>
                         </div>
@@ -607,7 +643,7 @@
                 <div class="relative overflow-hidden rounded-lg aspect-square group cursor-pointer">
                     <img src="{{ asset('images/gallery/gallery1.jpg') }}" alt="School Activities"
                          class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                         onerror="this.src='https://via.placeholder.com/400?text=Gallery'">
+                         {{-- onerror="this.src='https://via.placeholder.com/400?text=Gallery'" --}}>
                     <div class="absolute inset-0 bg-primary/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                         <i class='bx bx-search text-white text-3xl'></i>
                     </div>
@@ -616,7 +652,7 @@
                 <div class="relative overflow-hidden rounded-lg aspect-square group cursor-pointer">
                     <img src="{{ asset('images/gallery/gallery2.jpg') }}" alt="Classroom Learning"
                          class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                         onerror="this.src='https://via.placeholder.com/400?text=Gallery'">
+                         {{-- onerror="this.src='https://via.placeholder.com/400?text=Gallery'" --}}>
                     <div class="absolute inset-0 bg-primary/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                         <i class='bx bx-search text-white text-3xl'></i>
                     </div>
@@ -625,7 +661,7 @@
                 <div class="relative overflow-hidden rounded-lg aspect-square group cursor-pointer">
                     <img src="{{ asset('images/gallery/gallery3.jpg') }}" alt="Sports Activities"
                          class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                         onerror="this.src='https://via.placeholder.com/400?text=Gallery'">
+                         {{-- onerror="this.src='https://via.placeholder.com/400?text=Gallery'" --}}>
                     <div class="absolute inset-0 bg-primary/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                         <i class='bx bx-search text-white text-3xl'></i>
                     </div>
@@ -634,7 +670,7 @@
                 <div class="relative overflow-hidden rounded-lg aspect-square group cursor-pointer">
                     <img src="{{ asset('images/gallery/gallery4.jpg') }}" alt="Music and Arts"
                          class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                         onerror="this.src='https://via.placeholder.com/400?text=Gallery'">
+                         {{-- onerror="this.src='https://via.placeholder.com/400?text=Gallery'" --}}>
                     <div class="absolute inset-0 bg-primary/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                         <i class='bx bx-search text-white text-3xl'></i>
                     </div>
@@ -825,21 +861,21 @@
     @include('layouts.footer')
 
     <!-- Scroll to Top Button -->
-    <button id="scrollToTop"
+    <button id="welcomeScrollToTop"
             class="fixed bottom-20 right-6 bg-primary text-white p-3 rounded-full shadow-lg hover:bg-primary/90 transition-all hidden">
         <i class='bx bx-up-arrow-alt text-2xl'></i>
     </button>
 
     <!-- Video Modal -->
-    <div id="videoModal" class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 p-4 hidden">
+    <div id="welcomeVideoModal" class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 p-4 hidden">
         <div class="relative max-w-4xl w-full">
-            <button onclick="closeVideoModal()" class="absolute -top-10 right-0 text-white hover:text-gray-300">
+            <button onclick="closeWelcomeVideoModal()" class="absolute -top-10 right-0 text-white hover:text-gray-300">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
                 </svg>
             </button>
             <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-                <iframe id="youtubeFrame"
+                <iframe id="welcomeYoutubeFrame"
                         style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
                         src=""
                         frameborder="0"
@@ -854,90 +890,91 @@
     <!-- JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script>
-        // Initialize hero slider
-        const heroSwiper = new Swiper('.hero-swiper', {
-            loop: true,
-            autoplay: {
-                delay: 5000,
-                disableOnInteraction: false,
-            },
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-        });
+        // Wait for DOM to be ready
+        document.addEventListener('DOMContentLoaded', function() {
 
-        // Initialize testimonial slider
-        const testimonialSwiper = new Swiper('.testimonial-swiper', {
-            slidesPerView: 1,
-            spaceBetween: 30,
-            loop: true,
-            autoplay: {
-                delay: 4000,
-                disableOnInteraction: false,
-            },
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-            breakpoints: {
-                640: {
-                    slidesPerView: 1,
+            // Initialize hero slider
+            const heroSwiper = new Swiper('.hero-swiper', {
+                loop: true,
+                autoplay: {
+                    delay: 5000,
+                    disableOnInteraction: false,
                 },
-                768: {
-                    slidesPerView: 2,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
                 },
-                1024: {
-                    slidesPerView: 3,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
                 },
-            },
-        });
-
-        // Mobile Menu Toggle
-        const menuButton = document.getElementById('menuButton');
-        const mobileMenu = document.getElementById('mobileMenu');
-
-        if (menuButton && mobileMenu) {
-            menuButton.addEventListener('click', () => {
-                mobileMenu.classList.toggle('hidden');
-            });
-        }
-
-        // Scroll to Top Button
-        const scrollToTop = document.getElementById('scrollToTop');
-
-        window.addEventListener('scroll', () => {
-            if (window.pageYOffset > 300) {
-                scrollToTop.classList.remove('hidden');
-            } else {
-                scrollToTop.classList.add('hidden');
-            }
-        });
-
-        scrollToTop.addEventListener('click', () => {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        });
-
-        // Smooth Scrolling for Anchor Links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({ behavior: 'smooth' });
-                    if (mobileMenu) {
-                        mobileMenu.classList.add('hidden');
-                    }
+                effect: 'fade',
+                fadeEffect: {
+                    crossFade: true
                 }
             });
-        });
 
-        // Auto-hide success notification
-        document.addEventListener('DOMContentLoaded', function() {
+            // Initialize testimonial slider
+            const testimonialSwiper = new Swiper('.testimonial-swiper', {
+                slidesPerView: 1,
+                spaceBetween: 30,
+                loop: true,
+                autoplay: {
+                    delay: 4000,
+                    disableOnInteraction: false,
+                },
+                pagination: {
+                    el: '.testimonial-swiper .swiper-pagination',
+                    clickable: true,
+                },
+                breakpoints: {
+                    640: {
+                        slidesPerView: 1,
+                    },
+                    768: {
+                        slidesPerView: 2,
+                    },
+                    1024: {
+                        slidesPerView: 3,
+                    },
+                },
+            });
+
+            // Scroll to Top Button
+            const scrollToTop = document.getElementById('welcomeScrollToTop');
+
+            if (scrollToTop) {
+                window.addEventListener('scroll', () => {
+                    if (window.pageYOffset > 300) {
+                        scrollToTop.classList.remove('hidden');
+                    } else {
+                        scrollToTop.classList.add('hidden');
+                    }
+                });
+
+                scrollToTop.addEventListener('click', () => {
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                });
+            }
+
+            // Smooth Scrolling for Anchor Links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({ behavior: 'smooth' });
+
+                        // Close mobile menu if it exists and is open
+                        const mobileMenuElement = document.getElementById('mobileMenu');
+                        if (mobileMenuElement && !mobileMenuElement.classList.contains('hidden')) {
+                            mobileMenuElement.classList.add('hidden');
+                        }
+                    }
+                });
+            });
+
+            // Auto-hide success notification
             const notification = document.getElementById('successNotification');
             if (notification) {
                 setTimeout(function() {
@@ -948,31 +985,45 @@
                     }, 300);
                 }, 5000); // Will hide after 5 seconds
             }
+
         });
 
-        // YouTube Video Modal
-        function openVideoModal(videoId) {
-            const modal = document.getElementById('videoModal');
-            const iframe = document.getElementById('youtubeFrame');
-            iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
-            modal.classList.remove('hidden');
-            document.body.style.overflow = 'hidden';
+        // YouTube Video Modal Functions (Global scope for onclick handlers)
+        function openWelcomeVideoModal(videoId) {
+            const modal = document.getElementById('welcomeVideoModal');
+            const iframe = document.getElementById('welcomeYoutubeFrame');
+            if (modal && iframe) {
+                iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
+                modal.classList.remove('hidden');
+                document.body.style.overflow = 'hidden';
+            }
         }
 
-        function closeVideoModal() {
-            const modal = document.getElementById('videoModal');
-            const iframe = document.getElementById('youtubeFrame');
-            iframe.src = '';
-            modal.classList.add('hidden');
-            document.body.style.overflow = 'auto';
+        function closeWelcomeVideoModal() {
+            const modal = document.getElementById('welcomeVideoModal');
+            const iframe = document.getElementById('welcomeYoutubeFrame');
+            if (modal && iframe) {
+                iframe.src = '';
+                modal.classList.add('hidden');
+                document.body.style.overflow = 'auto';
+            }
         }
 
         // Close video modal with escape key
         document.addEventListener('keydown', function(event) {
             if (event.key === 'Escape') {
-                closeVideoModal();
+                closeWelcomeVideoModal();
             }
         });
+
+        // Close modal when clicking outside
+        document.addEventListener('click', function(event) {
+            const modal = document.getElementById('welcomeVideoModal');
+            if (modal && event.target === modal) {
+                closeWelcomeVideoModal();
+            }
+        });
+
     </script>
 </body>
 </html>

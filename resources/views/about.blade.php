@@ -4,7 +4,7 @@
 <!-- Page Header -->
 <div class="relative bg-gradient-to-r from-primary/80 to-primary/60 py-32">
     <img src="{{ asset('images/about-banner.jpg') }}" alt="About Us" class="absolute inset-0 w-full h-full object-cover mix-blend-overlay"
-         onerror="this.src='https://via.placeholder.com/1920x600?text=About+Us'">
+         {{-- onerror="this.src='https://via.placeholder.com/1920x600?text=About+Us'" --}}>
     <div class="relative container mx-auto px-4 text-center">
         <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">About Our School</h1>
         <p class="text-xl text-white/90 max-w-2xl mx-auto">
@@ -30,7 +30,7 @@
                 </div>
                 <div class="md:w-1/2">
                     <img src="{{ asset('images/assisi.jpg') }}" alt="School History" class="rounded-lg shadow-md w-full h-auto"
-                         onerror="this.src='https://via.placeholder.com/600x400?text=School+History'">
+                         {{-- onerror="this.src='https://via.placeholder.com/600x400?text=School+History'" --}}>
                 </div>
             </div>
 
@@ -99,7 +99,7 @@
                 <div class="md:w-1/3 mb-8 md:mb-0">
                     <div class="relative">
                         <img src="{{ asset('images/director.jpg') }}" alt="School Principal" class="rounded-lg shadow-md w-full h-auto"
-                             onerror="this.src='https://via.placeholder.com/300x400?text=Principal'">
+                             {{-- onerror="this.src='https://via.placeholder.com/300x400?text=Principal'" --}}>
                         <div class="absolute bottom-0 left-0 right-0 bg-primary/90 p-4 text-white text-center">
                             <h4 class="font-bold">Mr Francis Mulenga</h4>
                             <p class="text-sm">School Director</p>
@@ -145,7 +145,7 @@
                 <div class="bg-white rounded-lg shadow-sm overflow-hidden">
                     <div class="relative h-60">
                         <img src="{{ asset('images/team1.jpg') }}" alt="Team Member" class="w-full h-full object-cover"
-                             onerror="this.src='https://via.placeholder.com/300x240?text=Team+Member'">
+                             {{-- onerror="this.src='https://via.placeholder.com/300x240?text=Team+Member'" --}}>
                     </div>
                     <div class="p-6">
                         <h3 class="font-semibold text-lg mb-1">Mr. Sylvester Lupando</h3>
@@ -536,7 +536,69 @@
                     </div>
                 </div>
 
+        <!-- Staff Member 18 -->
+        <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+            <div class="relative h-60">
+                <img src="{{ asset('images/staff/female.jpg') }}" alt="Staff Member"
+                     class="w-full h-full object-cover object-top"
+                     style="object-position: center 15%;">
+            </div>
+            <div class="p-6">
+                <h3 class="font-semibold text-lg mb-1">Ms. Mwaba Tisateni</h3>
+                <p class="text-primary text-sm mb-3">Social Studies Teacher</p>
+                <p class="text-gray-600 text-sm">
+                    Ensures students understand the importance of social studies in today's world.
+                </p>
+            </div>
+        </div>
 
+        <!-- Staff Member 18 -->
+        <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+            <div class="relative h-60">
+                <img src="{{ asset('images/secondary/secondary12.jpg') }}" alt="Staff Member"
+                     class="w-full h-full object-cover object-top"
+                     style="object-position: center 15%;">
+            </div>
+            <div class="p-6">
+                <h3 class="font-semibold text-lg mb-1">Mr. Sylvester Bwalya</h3>
+                <p class="text-primary text-sm mb-3">Art & Design and Physical Education</p>
+                <p class="text-gray-600 text-sm">
+                    Ensures students understand the importance of art, design, and physical education.
+                </p>
+            </div>
+        </div>
+
+        <!-- Staff Member 18 -->
+        <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+            <div class="relative h-60">
+                <img src="{{ asset('images/secondary/secondary51.jpg') }}" alt="Staff Member"
+                     class="w-full h-full object-cover object-top"
+                     style="object-position: center 15%;">
+            </div>
+            <div class="p-6">
+                <h3 class="font-semibold text-lg mb-1">Mr. Kabamba Handson</h3>
+                <p class="text-primary text-sm mb-3">Mathematics Teacher</p>
+                <p class="text-gray-600 text-sm">
+                    Ensures students understand the importance of mathematics.
+                </p>
+            </div>
+        </div>
+
+        <!-- Staff Member 18 -->
+        <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+            <div class="relative h-60">
+                <img src="{{ asset('images/secondary/secondary8.jpg') }}" alt="Staff Member"
+                     class="w-full h-full object-cover object-top"
+                     style="object-position: center 15%;">
+            </div>
+            <div class="p-6">
+                <h3 class="font-semibold text-lg mb-1">Mr. Mwaba Bravine</h3>
+                <p class="text-primary text-sm mb-3"> Mathematics and Sciences</p>
+                <p class="text-gray-600 text-sm">
+                    Ensures students understand the importance of mathematics and sciences.
+                </p>
+            </div>
+        </div>
 
         <!-- Head Driver -->
         <div class="bg-white rounded-lg shadow-sm overflow-hidden">
@@ -605,30 +667,32 @@
 </div>
 
         <!-- Virtual Tour Section -->
-        <div id="virtual-tour" class="max-w-5xl mx-auto">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl font-bold text-primary mb-4">Take a Virtual Tour</h2>
-                <p class="text-gray-600 max-w-2xl mx-auto mb-8">
-                    Explore our campus facilities from the comfort of your home. Get a glimpse of our classrooms, laboratories, sports facilities, and more.
-                </p>
+<div id="virtual-tour" class="max-w-5xl mx-auto">
+    <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold text-primary mb-4">Take a Virtual Tour</h2>
+        <p class="text-gray-600 max-w-2xl mx-auto mb-8">
+            Explore our campus activities from the comfort of your home.
+        </p>
 
-                <div class="relative rounded-lg overflow-hidden aspect-video shadow-lg">
-                    <img src="{{ asset('images/campus-panorama.jpg') }}" alt="School Campus Panorama" class="w-full h-full object-cover"
-                         onerror="this.src='https://via.placeholder.com/1200x675?text=Campus+Tour'">
-                    <div class="absolute inset-0 flex items-center justify-center">
-                        <a href="#" class="w-20 h-20 rounded-full bg-primary/80 flex items-center justify-center hover:bg-primary transition-colors">
-                            <i class='bx bx-play text-4xl text-white'></i>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="mt-8">
-                    <a href="{{ route('contact') }}?tour=1" class="inline-block px-8 py-3 bg-secondary text-white rounded-lg hover:bg-secondary/90 transition-colors font-medium">
-                        Schedule a Physical Campus Tour
-                    </a>
-                </div>
-            </div>
+        <div class="relative rounded-lg overflow-hidden aspect-video shadow-lg">
+            <!-- Embedded YouTube Video -->
+            <iframe
+                class="w-full h-full"
+                src="https://www.youtube.com/embed/5kkp8v0J1ak?rel=0&modestbranding=1&showinfo=0"
+                title="St. Francis of Assisi Private School Virtual Tour"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+            </iframe>
         </div>
+
+        <div class="mt-8">
+            <a href="{{ route('contact') }}?tour=1" class="inline-block px-8 py-3 bg-secondary text-white rounded-lg hover:bg-secondary/90 transition-colors font-medium">
+                Watch Our Pupils Sing with instrumemts
+            </a>
+        </div>
+    </div>
+</div>
     </div>
 </section>
 
@@ -645,15 +709,15 @@
         <div class="flex flex-wrap justify-center items-center gap-12">
             <div class="w-40 h-20 grayscale hover:grayscale-0 transition-all">
                 <img src="{{ asset('images/slides/eczlogo.png') }}" alt="Accreditation" class="w-full h-full object-contain"
-                     onerror="this.src='https://via.placeholder.com/160x80?text=Accreditation'">
+                     {{-- onerror="this.src='https://via.placeholder.com/160x80?text=Accreditation'" --}}>
             </div>
             <div class="w-40 h-20 grayscale hover:grayscale-0 transition-all">
                 <img src="{{ asset('images/slides/moe.png') }}" alt="Accreditation" class="w-full h-full object-contain"
-                     onerror="this.src='https://via.placeholder.com/160x80?text=Accreditation'">
+                     {{-- onerror="this.src='https://via.placeholder.com/160x80?text=Accreditation'" --}}>
             </div>
             <div class="w-40 h-20 grayscale hover:grayscale-0 transition-all">
                 <img src="{{ asset('images/slides/cmc.png') }}" alt="Accreditation" class="w-full h-full object-contain"
-                     onerror="this.src='https://via.placeholder.com/160x80?text=Accreditation'">
+                     {{-- onerror="this.src='https://via.placeholder.com/160x80?text=Accreditation'" --}}>
             </div>
             {{-- <div class="w-40 h-20 grayscale hover:grayscale-0 transition-all">
                 <img src="{{ asset('images/accreditation4.png') }}" alt="Accreditation" class="w-full h-full object-contain"
