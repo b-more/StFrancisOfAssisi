@@ -238,7 +238,7 @@
                     </button>
                     <div class="px-6 pb-4 hidden">
                         <p class="text-gray-600">
-                            Our class sizes are deliberately kept small to ensure personalized attention for each student. The average class size is 20-25 students in primary school and 25-30 students in secondary school.
+                            Our class sizes are deliberately kept small to ensure personalized attention for each student. The average Pre-school class size is 30-35 students, in primary school it's 40-45 students, and in secondary school it's 30-35 students.
                         </p>
                     </div>
                 </div>
@@ -252,7 +252,7 @@
                     </button>
                     <div class="px-6 pb-4 hidden">
                         <p class="text-gray-600">
-                            Yes, we offer a limited number of merit-based scholarships and need-based financial aid to qualifying students. The application process for financial assistance is separate from the admission process and begins after a student has been accepted. Contact our admissions office for more information.
+                            No, we do not currently offer any scholarships or financial aid to any students. However, we do have a flexible payment plan to help families manage tuition fees. Please contact our admissions office for more details on payment options.
                         </p>
                     </div>
                 </div>
@@ -271,9 +271,7 @@
                         <ul class="list-disc pl-5 space-y-1 text-gray-600">
                             <li>Completed application form</li>
                             <li>Birth certificate</li>
-                            <li>Academic records from the previous two years</li>
                             <li>Recommendation letter from current school (for Grades 2-12)</li>
-                            <li>Passport-sized photographs</li>
                             <li>Immunization records</li>
                             <li>Copy of parent/guardian ID</li>
                         </ul>

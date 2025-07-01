@@ -42,7 +42,7 @@
                     <div class="bg-white p-4 rounded-lg border border-gray-200 relative">
                         <div class="absolute -top-3 -left-3 w-8 h-8 bg-primary rounded-full flex items-center justify-center text-white font-bold">2</div>
                         <h4 class="font-semibold text-primary mb-2 mt-1">Pay Application Fee</h4>
-                        <p class="text-gray-600 text-sm">Pay the non-refundable application fee of K250</p>
+                        <p class="text-gray-600 text-sm">Pay the non-refundable application fee of K50</p>
                     </div>
 
                     <div class="bg-white p-4 rounded-lg border border-gray-200 relative">
@@ -354,7 +354,7 @@
                                 </div>
                                 <div class="ml-3">
                                     <p class="text-sm text-blue-700">
-                                        <span class="font-medium">Application Fee:</span> A non-refundable application fee of K250 is required to process your application. Payment details will be provided after form submission.
+                                        <span class="font-medium">Application Fee:</span> A non-refundable application fee of K50 is required to process your application. Payment details will be provided after form submission.
                                     </p>
                                 </div>
                             </div>

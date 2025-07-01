@@ -245,8 +245,8 @@
                         <div class="w-16 h-16 rounded-full bg-red-100 flex items-center justify-center mx-auto mb-3">
                             <span class="text-red-600 text-2xl font-bold">E</span>
                         </div>
-                        <h4 class="font-bold text-lg text-red-600 mb-2">Eagle House</h4>
-                        <p class="text-gray-600 text-sm">Symbolizing vision, leadership, and courage</p>
+                        <h4 class="font-bold text-lg text-red-600 mb-2">Lechwe House</h4>
+                        <p class="text-gray-600 text-sm">Symbolizing grace, adaptability, and resilience</p>
                     </div>
 
                     <!-- Lion House -->
@@ -254,8 +254,8 @@
                         <div class="w-16 h-16 rounded-full bg-yellow-100 flex items-center justify-center mx-auto mb-3">
                             <span class="text-yellow-600 text-2xl font-bold">L</span>
                         </div>
-                        <h4 class="font-bold text-lg text-yellow-600 mb-2">Lion House</h4>
-                        <p class="text-gray-600 text-sm">Symbolizing strength, bravery, and determination</p>
+                        <h4 class="font-bold text-lg text-yellow-600 mb-2">Impala House</h4>
+                        <p class="text-gray-600 text-sm">Symbolizing agility, awareness, and cooperation</p>
                     </div>
 
                     <!-- Dolphin House -->
@@ -263,8 +263,8 @@
                         <div class="w-16 h-16 rounded-full bg-blue-100 flex items-center justify-center mx-auto mb-3">
                             <span class="text-blue-600 text-2xl font-bold">D</span>
                         </div>
-                        <h4 class="font-bold text-lg text-blue-600 mb-2">Dolphin House</h4>
-                        <p class="text-gray-600 text-sm">Symbolizing intelligence, teamwork, and harmony</p>
+                        <h4 class="font-bold text-lg text-blue-600 mb-2">Cheetah House</h4>
+                        <p class="text-gray-600 text-sm">Symbolizing determination, focus, and precision</p>
                     </div>
 
                     <!-- Rhino House -->
@@ -272,8 +272,8 @@
                         <div class="w-16 h-16 rounded-full bg-green-100 flex items-center justify-center mx-auto mb-3">
                             <span class="text-green-600 text-2xl font-bold">R</span>
                         </div>
-                        <h4 class="font-bold text-lg text-green-600 mb-2">Rhino House</h4>
-                        <p class="text-gray-600 text-sm">Symbolizing resilience, steadfastness, and protection</p>
+                        <h4 class="font-bold text-lg text-green-600 mb-2">Leopard House</h4>
+                        <p class="text-gray-600 text-sm">Symbolizing strength, strategy, and versatility</p>
                     </div>
                 </div>
 
