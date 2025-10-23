@@ -164,7 +164,7 @@
                                 style="object-position: center 15%;">
                     </div>
                     <div class="p-6">
-                        <h3 class="font-semibold text-lg mb-1">Mr. Chuto Morris</h3>
+                        <h3 class="font-semibold text-lg mb-1">Mr. Chiuto Morris</h3>
                         <p class="text-primary text-sm mb-3">Deputy Headmaster School</p>
                         <p class="text-gray-600 text-sm">
                             Mr. Chuto brings his passion for early education and extensive expertise to lead our school division.
@@ -368,7 +368,7 @@
                      style="object-position: center 15%;">
             </div>
             <div class="p-6">
-                <h3 class="font-semibold text-lg mb-1">Mr. Kopakopa Leonard</h3>
+                <h3 class="font-semibold text-lg mb-1">Mr. Mubisa Micheal</h3>
                 <p class="text-primary text-sm mb-3">Grade 6 Class Teacher</p>
                 <p class="text-gray-600 text-sm">
                     Dedicated to fostering a love for critical thinking and preparing Grade 7s for the final examinations.
@@ -379,7 +379,7 @@
         <!-- Grade 7 Class Teacher -->
         <div class="bg-white rounded-lg shadow-sm overflow-hidden">
             <div class="relative h-60">
-                <img src="{{ asset('images/staff/staff1.jpg') }}" alt="Staff Member"
+                <img src="{{ asset('images/staff/male.jpg') }}" alt="Staff Member"
                      class="w-full h-full object-cover object-top"
                      style="object-position: center 15%;">
             </div>
@@ -416,7 +416,7 @@
                      style="object-position: center 15%;">
             </div>
             <div class="p-6">
-                <h3 class="font-semibold text-lg mb-1">Mr. Singogo Bruce</h3>
+                <h3 class="font-semibold text-lg mb-1">Secondary Teacher</h3>
                 <p class="text-primary text-sm mb-3">Business Studies Teacher</p>
                 <p class="text-gray-600 text-sm">
                     Passionate about making business concepts accessible and engaging for all students.
@@ -497,9 +497,9 @@
             </div>
             <div class="p-6">
                 <h3 class="font-semibold text-lg mb-1">Ms. Besa Cynthia</h3>
-                <p class="text-primary text-sm mb-3">Geography & R.E Teacher</p>
+                <p class="text-primary text-sm mb-3">Social Studies and Civic Education</p>
                 <p class="text-gray-600 text-sm">
-                    Ensures students understand the importance of geography and religious education.
+                    Ensures students understand the importance of Social Studies and Civic Education.
                 </p>
             </div>
         </div>
@@ -513,9 +513,9 @@
             </div>
             <div class="p-6">
                 <h3 class="font-semibold text-lg mb-1">Mr. Simukonda Morgan</h3>
-                <p class="text-primary text-sm mb-3">Biology and P.E Teacher</p>
+                <p class="text-primary text-sm mb-3">Biology and Chemistry</p>
                 <p class="text-gray-600 text-sm">
-                    Ensures students understand the importance of biology and physical education.
+                    Ensures students understand the importance of Biology and Chemistry.
                 </p>
             </div>
         </div>
@@ -528,10 +528,10 @@
                                 style="object-position: center 15%;">
                     </div>
                     <div class="p-6">
-                        <h3 class="font-semibold text-lg mb-1">Mr. Quintino Chibwe</h3>
-                        <p class="text-primary text-sm mb-3">ECZ Data Entry Officer</p>
+                        <h3 class="font-semibold text-lg mb-1">Mr. Quintinoh Chibwe</h3>
+                        <p class="text-primary text-sm mb-3">English and Music</p>
                         <p class="text-gray-600 text-sm">
-                            coordinates curriculum development and ensures correct data entry for correspondencies with ECZ.
+                            Ensures students understand the importance of English and Music.
                         </p>
                     </div>
                 </div>
@@ -544,15 +544,47 @@
                      style="object-position: center 15%;">
             </div>
             <div class="p-6">
-                <h3 class="font-semibold text-lg mb-1">Ms. Mwaba Tisateni</h3>
-                <p class="text-primary text-sm mb-3">Social Studies Teacher</p>
+                <h3 class="font-semibold text-lg mb-1">Ms. Mwaba Tisatenji</h3>
+                <p class="text-primary text-sm mb-3">Civic Education and Geography</p>
                 <p class="text-gray-600 text-sm">
-                    Ensures students understand the importance of social studies in today's world.
+                    Ensures students understand the importance of Civic Education and Geography in today's world.
+                </p>
+            </div>
+        </div>
+        
+        <!-- Staff Member 18 -->
+        <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+            <div class="relative h-60">
+                <img src="{{ asset('images/staff/male.jpg') }}" alt="Staff Member"
+                     class="w-full h-full object-cover object-top"
+                     style="object-position: center 15%;">
+            </div>
+            <div class="p-6">
+                <h3 class="font-semibold text-lg mb-1">Mr. Simpemba Freddie</h3>
+                <p class="text-primary text-sm mb-3">Design and Technology</p>
+                <p class="text-gray-600 text-sm">
+                    Ensures students understand the importance of Design and Technology in today's world.
+                </p>
+            </div>
+        </div>
+        
+        <!-- Staff Member 19 -->
+        <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+            <div class="relative h-60">
+                <img src="{{ asset('images/staff/female.jpg') }}" alt="Staff Member"
+                     class="w-full h-full object-cover object-top"
+                     style="object-position: center 15%;">
+            </div>
+            <div class="p-6">
+                <h3 class="font-semibold text-lg mb-1">Ms. Nancy Ponga</h3>
+                <p class="text-primary text-sm mb-3">Food and Nutrition and Home Management</p>
+                <p class="text-gray-600 text-sm">
+                    Ensures students understand the importance of Food and Nutrition and Home Management in today's world.
                 </p>
             </div>
         </div>
 
-        <!-- Staff Member 18 -->
+        <!-- Staff Member 20 -->
         <div class="bg-white rounded-lg shadow-sm overflow-hidden">
             <div class="relative h-60">
                 <img src="{{ asset('images/secondary/secondary12.jpg') }}" alt="Staff Member"
@@ -564,6 +596,22 @@
                 <p class="text-primary text-sm mb-3">Art & Design and Physical Education</p>
                 <p class="text-gray-600 text-sm">
                     Ensures students understand the importance of art, design, and physical education.
+                </p>
+            </div>
+        </div>
+        
+         <!-- Staff Member 20 -->
+        <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+            <div class="relative h-60">
+                <img src="{{ asset('images/staff/female.jpg') }}" alt="Staff Member"
+                     class="w-full h-full object-cover object-top"
+                     style="object-position: center 15%;">
+            </div>
+            <div class="p-6">
+                <h3 class="font-semibold text-lg mb-1">Ms. Gift Kaposhi</h3>
+                <p class="text-primary text-sm mb-3">Food & Nutrition and Home Management</p>
+                <p class="text-gray-600 text-sm">
+                    Ensures students understand the importance of Food and Nutrition and Home Management in today's world.
                 </p>
             </div>
         </div>
@@ -583,6 +631,38 @@
                 </p>
             </div>
         </div>
+        
+         <!-- Staff Member 20 -->
+        <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+            <div class="relative h-60">
+                <img src="{{ asset('images/staff/female.jpg') }}" alt="Staff Member"
+                     class="w-full h-full object-cover object-top"
+                     style="object-position: center 15%;">
+            </div>
+            <div class="p-6">
+                <h3 class="font-semibold text-lg mb-1">Ms. Chimba Memory</h3>
+                <p class="text-primary text-sm mb-3">English and Religious Education</p>
+                <p class="text-gray-600 text-sm">
+                    Ensures students understand the importance of Food and English and Religious Education in today's world.
+                </p>
+            </div>
+        </div>
+        
+         <!-- Staff Member 20 -->
+        <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+            <div class="relative h-60">
+                <img src="{{ asset('images/staff/male.jpg') }}" alt="Staff Member"
+                     class="w-full h-full object-cover object-top"
+                     style="object-position: center 15%;">
+            </div>
+            <div class="p-6">
+                <h3 class="font-semibold text-lg mb-1">Mr. Silwamba Bruno</h3>
+                <p class="text-primary text-sm mb-3">English and Religious Education</p>
+                <p class="text-gray-600 text-sm">
+                    Ensures students understand the importance of English and Religious Education in today's world.
+                </p>
+            </div>
+        </div>
 
         <!-- Staff Member 18 -->
         <div class="bg-white rounded-lg shadow-sm overflow-hidden">
@@ -599,6 +679,8 @@
                 </p>
             </div>
         </div>
+        
+        
 
         <!-- Head Driver -->
         <div class="bg-white rounded-lg shadow-sm overflow-hidden">
@@ -657,6 +739,21 @@
             </div>
             <div class="p-6">
                 <h3 class="font-semibold text-lg mb-1">Mr. Charles Kalonde</h3>
+                <p class="text-primary text-sm mb-3">Bus Driver</p>
+                <p class="text-gray-600 text-sm">
+                    Ensures the safe and timely transportation of students to and from school.
+                </p>
+            </div>
+        </div>
+        <!-- Bus Driver -->
+        <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+            <div class="relative h-60">
+                <img src="{{ asset('images/staff/male.jpg') }}" alt="Staff Member"
+                     class="w-full h-full object-cover object-top"
+                     style="object-position: center 15%;">
+            </div>
+            <div class="p-6">
+                <h3 class="font-semibold text-lg mb-1">Mr. Mwiinga Patrick</h3>
                 <p class="text-primary text-sm mb-3">Bus Driver</p>
                 <p class="text-gray-600 text-sm">
                     Ensures the safe and timely transportation of students to and from school.
