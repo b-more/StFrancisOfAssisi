@@ -1,10 +1,12 @@
 @extends('layouts.app')
 
+@section('title', 'Sports')
+
 @section('content')
 <!-- Page Header -->
 <div class="relative bg-gradient-to-r from-primary/80 to-primary/60 py-32">
     <img src="{{ asset('images/sports-banner.jpg') }}" alt="Sports Programs" class="absolute inset-0 w-full h-full object-cover mix-blend-overlay"
-         onerror="this.src='https://via.placeholder.com/1920x600?text=Sports+Programs'">
+         onerror="this.style.display='none'">
     <div class="relative container mx-auto px-4 text-center">
         <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">Sports Programs</h1>
         <p class="text-xl text-white/90 max-w-2xl mx-auto">
@@ -32,7 +34,7 @@
             <div class="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden shadow-lg relative">
                 <!-- Placeholder for video - replace with actual video embed -->
                 <img src="{{ asset('images/sports-video.jpg') }}" alt="Sports at St. Francis" class="w-full h-full object-cover"
-                     onerror="this.src='https://via.placeholder.com/1280x720?text=Sports+Video'">
+                     onerror="this.style.display='none'">
                 <div class="absolute inset-0 flex items-center justify-center">
                     <button class="w-20 h-20 bg-primary/80 rounded-full flex items-center justify-center hover:bg-primary transition-colors">
                         <svg class="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 24 24">
@@ -95,7 +97,7 @@
                 <div class="bg-white rounded-lg shadow-sm overflow-hidden border border-gray-100">
                     <div class="h-48 bg-gray-200 relative">
                         <img src="{{ asset('images/sports/football.jpg') }}" alt="Football" class="w-full h-full object-cover"
-                             onerror="this.src='https://via.placeholder.com/400x200?text=Football'">
+                             onerror="this.style.display='none'">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                         <h4 class="absolute bottom-3 left-4 text-xl font-bold text-white">Football</h4>
                     </div>
@@ -114,7 +116,7 @@
                 <div class="bg-white rounded-lg shadow-sm overflow-hidden border border-gray-100">
                     <div class="h-48 bg-gray-200 relative">
                         <img src="{{ asset('images/sports/basketball.jpg') }}" alt="Basketball" class="w-full h-full object-cover"
-                             onerror="this.src='https://via.placeholder.com/400x200?text=Basketball'">
+                             onerror="this.style.display='none'">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                         <h4 class="absolute bottom-3 left-4 text-xl font-bold text-white">Basketball</h4>
                     </div>
@@ -133,7 +135,7 @@
                 <div class="bg-white rounded-lg shadow-sm overflow-hidden border border-gray-100">
                     <div class="h-48 bg-gray-200 relative">
                         <img src="{{ asset('images/sports/athletics.jpg') }}" alt="Athletics" class="w-full h-full object-cover"
-                             onerror="this.src='https://via.placeholder.com/400x200?text=Athletics'">
+                             onerror="this.style.display='none'">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                         <h4 class="absolute bottom-3 left-4 text-xl font-bold text-white">Athletics</h4>
                     </div>
@@ -152,7 +154,7 @@
                 <div class="bg-white rounded-lg shadow-sm overflow-hidden border border-gray-100">
                     <div class="h-48 bg-gray-200 relative">
                         <img src="{{ asset('images/sports/volleyball.jpg') }}" alt="Volleyball" class="w-full h-full object-cover"
-                             onerror="this.src='https://via.placeholder.com/400x200?text=Volleyball'">
+                             onerror="this.style.display='none'">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                         <h4 class="absolute bottom-3 left-4 text-xl font-bold text-white">Volleyball</h4>
                     </div>
@@ -171,7 +173,7 @@
                 <div class="bg-white rounded-lg shadow-sm overflow-hidden border border-gray-100">
                     <div class="h-48 bg-gray-200 relative">
                         <img src="{{ asset('images/sports/swimming.jpg') }}" alt="Swimming" class="w-full h-full object-cover"
-                             onerror="this.src='https://via.placeholder.com/400x200?text=Swimming'">
+                             onerror="this.style.display='none'">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                         <h4 class="absolute bottom-3 left-4 text-xl font-bold text-white">Swimming</h4>
                     </div>
@@ -190,7 +192,7 @@
                 <div class="bg-white rounded-lg shadow-sm overflow-hidden border border-gray-100">
                     <div class="h-48 bg-gray-200 relative">
                         <img src="{{ asset('images/sports/tennis.jpg') }}" alt="Tennis" class="w-full h-full object-cover"
-                             onerror="this.src='https://via.placeholder.com/400x200?text=Tennis'">
+                             onerror="this.style.display='none'">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                         <h4 class="absolute bottom-3 left-4 text-xl font-bold text-white">Tennis</h4>
                     </div>
@@ -319,7 +321,7 @@
                 <div class="bg-white rounded-lg shadow-sm overflow-hidden">
                     <div class="h-48">
                         <img src="{{ asset('images/facilities/field.jpg') }}" alt="Sports Field" class="w-full h-full object-cover"
-                             onerror="this.src='https://via.placeholder.com/400x200?text=Sports+Field'">
+                             onerror="this.style.display='none'">
                     </div>
                     <div class="p-6">
                         <h4 class="text-xl font-semibold text-primary mb-2">Sports Field</h4>
@@ -333,7 +335,7 @@
                 <div class="bg-white rounded-lg shadow-sm overflow-hidden">
                     <div class="h-48">
                         <img src="{{ asset('images/facilities/gymnasium.jpg') }}" alt="Gymnasium" class="w-full h-full object-cover"
-                             onerror="this.src='https://via.placeholder.com/400x200?text=Gymnasium'">
+                             onerror="this.style.display='none'">
                     </div>
                     <div class="p-6">
                         <h4 class="text-xl font-semibold text-primary mb-2">Indoor Gymnasium</h4>
@@ -347,7 +349,7 @@
                 <div class="bg-white rounded-lg shadow-sm overflow-hidden">
                     <div class="h-48">
                         <img src="{{ asset('images/facilities/pool.jpg') }}" alt="Swimming Pool" class="w-full h-full object-cover"
-                             onerror="this.src='https://via.placeholder.com/400x200?text=Swimming+Pool'">
+                             onerror="this.style.display='none'">
                     </div>
                     <div class="p-6">
                         <h4 class="text-xl font-semibold text-primary mb-2">Swimming Pool</h4>
@@ -361,7 +363,7 @@
                 <div class="bg-white rounded-lg shadow-sm overflow-hidden">
                     <div class="h-48">
                         <img src="{{ asset('images/facilities/tennis.jpg') }}" alt="Tennis Courts" class="w-full h-full object-cover"
-                             onerror="this.src='https://via.placeholder.com/400x200?text=Tennis+Courts'">
+                             onerror="this.style.display='none'">
 
                             </div>
                             <div class="p-6">
@@ -376,7 +378,7 @@
                         <div class="bg-white rounded-lg shadow-sm overflow-hidden">
                             <div class="h-48">
                                 <img src="{{ asset('images/facilities/fitness.jpg') }}" alt="Fitness Center" class="w-full h-full object-cover"
-                                     onerror="this.src='https://via.placeholder.com/400x200?text=Fitness+Center'">
+                                     onerror="this.style.display='none'">
                             </div>
                             <div class="p-6">
                                 <h4 class="text-xl font-semibold text-primary mb-2">Fitness Center</h4>
@@ -390,7 +392,7 @@
                         <div class="bg-white rounded-lg shadow-sm overflow-hidden">
                             <div class="h-48">
                                 <img src="{{ asset('images/facilities/multipurpose.jpg') }}" alt="Multi-Purpose Hall" class="w-full h-full object-cover"
-                                     onerror="this.src='https://via.placeholder.com/400x200?text=Multi-Purpose+Hall'">
+                                     onerror="this.style.display='none'">
                             </div>
                             <div class="p-6">
                                 <h4 class="text-xl font-semibold text-primary mb-2">Multi-Purpose Hall</h4>
@@ -463,7 +465,7 @@
                         <div class="bg-white rounded-lg shadow-sm overflow-hidden">
                             <div class="h-48">
                                 <img src="{{ asset('images/coaches/coach1.jpg') }}" alt="Coach James Mwanza" class="w-full h-full object-cover"
-                                     onerror="this.src='https://via.placeholder.com/400x200?text=Coach'">
+                                     onerror="this.style.display='none'">
                             </div>
                             <div class="p-6">
                                 <h4 class="text-lg font-semibold text-primary mb-1">Mr. James Mwanza</h4>
@@ -478,7 +480,7 @@
                         <div class="bg-white rounded-lg shadow-sm overflow-hidden">
                             <div class="h-48">
                                 <img src="{{ asset('images/coaches/coach2.jpg') }}" alt="Coach Sarah Banda" class="w-full h-full object-cover"
-                                     onerror="this.src='https://via.placeholder.com/400x200?text=Coach'">
+                                     onerror="this.style.display='none'">
                             </div>
                             <div class="p-6">
                                 <h4 class="text-lg font-semibold text-primary mb-1">Ms. Sarah Banda</h4>
@@ -493,7 +495,7 @@
                         <div class="bg-white rounded-lg shadow-sm overflow-hidden">
                             <div class="h-48">
                                 <img src="{{ asset('images/coaches/coach3.jpg') }}" alt="Coach David Tembo" class="w-full h-full object-cover"
-                                     onerror="this.src='https://via.placeholder.com/400x200?text=Coach'">
+                                     onerror="this.style.display='none'">
                             </div>
                             <div class="p-6">
                                 <h4 class="text-lg font-semibold text-primary mb-1">Mr. David Tembo</h4>
@@ -522,7 +524,7 @@
                     <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
                         <div class="relative group overflow-hidden rounded-lg aspect-square">
                             <img src="{{ asset('images/sports-gallery/gallery1.jpg') }}" alt="Sports Gallery" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                                 onerror="this.src='https://via.placeholder.com/300?text=Sports+1'">
+                                 onerror="this.style.display='none'">
                             <div class="absolute inset-0 bg-primary/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                                 <i class='bx bx-search text-white text-3xl'></i>
                             </div>
@@ -530,7 +532,7 @@
 
                         <div class="relative group overflow-hidden rounded-lg aspect-square">
                             <img src="{{ asset('images/sports-gallery/gallery2.jpg') }}" alt="Sports Gallery" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                                 onerror="this.src='https://via.placeholder.com/300?text=Sports+2'">
+                                 onerror="this.style.display='none'">
                             <div class="absolute inset-0 bg-primary/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                                 <i class='bx bx-search text-white text-3xl'></i>
                             </div>
@@ -538,7 +540,7 @@
 
                         <div class="relative group overflow-hidden rounded-lg aspect-square">
                             <img src="{{ asset('images/sports-gallery/gallery3.jpg') }}" alt="Sports Gallery" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                                 onerror="this.src='https://via.placeholder.com/300?text=Sports+3'">
+                                 onerror="this.style.display='none'">
                             <div class="absolute inset-0 bg-primary/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                                 <i class='bx bx-search text-white text-3xl'></i>
                             </div>
@@ -546,7 +548,7 @@
 
                         <div class="relative group overflow-hidden rounded-lg aspect-square">
                             <img src="{{ asset('images/sports-gallery/gallery4.jpg') }}" alt="Sports Gallery" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                                 onerror="this.src='https://via.placeholder.com/300?text=Sports+4'">
+                                 onerror="this.style.display='none'">
                             <div class="absolute inset-0 bg-primary/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                                 <i class='bx bx-search text-white text-3xl'></i>
                             </div>

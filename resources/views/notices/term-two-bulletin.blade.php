@@ -1,10 +1,12 @@
 @extends('layouts.app')
 
+@section('title', 'Term Two Bulletin')
+
 @section('content')
 <!-- Page Header -->
 <div class="relative bg-gradient-to-r from-primary/80 to-primary/60 py-32">
     <img src="{{ asset('images/notice-banner.jpg') }}" alt="School Notice" class="absolute inset-0 w-full h-full object-cover mix-blend-overlay"
-         onerror="this.src='https://via.placeholder.com/1920x600?text=School+Notice'">
+         onerror="this.style.display='none'">
     <div class="relative container mx-auto px-4 text-center">
         <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">School Notice</h1>
         <p class="text-xl text-white/90 max-w-2xl mx-auto">
@@ -24,7 +26,7 @@
                 <div class="flex items-center mb-6 md:mb-0">
                     <div class="w-20 h-20 bg-white rounded-full flex items-center justify-center mr-6 shadow-lg">
                         <img src="{{ asset('images/logo.png') }}" alt="School Logo" class="w-16 h-16 object-contain"
-                             onerror="this.src='https://via.placeholder.com/64x64?text=LOGO'">
+                             onerror="this.style.display='none'">
                     </div>
                     <div class="text-center md:text-left">
                         <h1 class="text-2xl md:text-3xl font-bold tracking-wide">{{ $bulletin['header']['school_name'] }}</h1>

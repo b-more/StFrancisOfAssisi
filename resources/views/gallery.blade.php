@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
+@section('title', 'Gallery')
+
 @section('content')
     <div class="container mx-auto px-4 py-8">
         <!-- Gallery Grid -->

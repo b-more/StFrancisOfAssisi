@@ -1,10 +1,12 @@
 @extends('layouts.app')
 
+@section('title', 'School Calendar, Term 2 2025')
+
 @section('content')
 <!-- Page Header -->
 <div class="relative bg-gradient-to-r from-primary/80 to-primary/60 py-32">
     <img src="{{ asset('images/calendar-banner.jpg') }}" alt="School Calendar" class="absolute inset-0 w-full h-full object-cover mix-blend-overlay"
-         onerror="this.src='https://via.placeholder.com/1920x600?text=School+Calendar'">
+         onerror="this.style.display='none'">
     <div class="relative container mx-auto px-4 text-center">
         <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">School Activity Calendar</h1>
         <p class="text-xl text-white/90 max-w-2xl mx-auto">
@@ -21,7 +23,7 @@
             <!-- Left: School Logo -->
             <div class="flex items-center mb-4 md:mb-0">
                 <img src="{{ asset('images/logo.png') }}" alt="St. Francis School Logo" class="h-20 w-auto mr-4"
-                     onerror="this.src='https://via.placeholder.com/80x80?text=LOGO'">
+                     onerror="this.style.display='none'">
                 <div class="text-left">
                     <h1 class="text-xl md:text-2xl font-bold text-primary uppercase tracking-wide">{{ $calendarData['title'] }}</h1>
                     <p class="text-sm text-gray-600 mt-1">
@@ -222,7 +224,7 @@
                 </div>
                 <div class="flex items-center p-2 bg-gray-50 rounded">
                     <i class='bx bx-envelope text-secondary mr-3'></i>
-                    <span class="font-medium">info@stfrancisschool.tech</span>
+                    <span class="font-medium">info@stfrancisofassisizm.com</span>
                 </div>
                 <div class="flex items-start p-2 bg-gray-50 rounded">
                     <i class='bx bx-map text-secondary mr-3 mt-1'></i>

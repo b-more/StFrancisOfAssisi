@@ -4,9 +4,10 @@
         <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
             <!-- Logo and About -->
             <div class="col-span-1 md:col-span-1">
-                <img src="{{ asset('images/logo.png') }}" alt="St. Francis School Logo" class="h-20 w-auto mb-4 "
-                     onerror="this.src='https://via.placeholder.com/200x80?text=St.+Francis+School'">
-                <p class="text-sm text-white/80">Nurturing excellence, building character, shaping futures</p>
+                <img src="{{ asset('images/logo.png') }}" alt="St. Francis of Assisi" class="h-20 w-auto mb-4"
+                     onerror="this.style.display='none'">
+                <p class="text-secondary font-semibold tracking-wide mb-2">For God and Country</p>
+                <p class="text-sm text-white/80">A Christian-foundation private school in Chililabombwe, shaping learners from Early Childhood through Grade 12.</p>
             </div>
 
             <!-- Quick Links -->
@@ -18,6 +19,7 @@
                     <li><a href="/academics" class="text-white/80 hover:text-secondary transition-colors">Academics</a></li>
                     <li><a href="/admissions" class="text-white/80 hover:text-secondary transition-colors">Admissions</a></li>
                     <li><a href="/student-life" class="text-white/80 hover:text-secondary transition-colors">Student Life</a></li>
+                    <li><a href="/parents" class="text-white/80 hover:text-secondary transition-colors">Parents</a></li>
                     <li><a href="/gallery" class="text-white/80 hover:text-secondary transition-colors">Gallery</a></li>
                     <li><a href="/contact" class="text-white/80 hover:text-secondary transition-colors">Contact</a></li>
                 </ul>
@@ -69,7 +71,7 @@
                         <svg class="w-4 h-4 text-secondary mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
                         </svg>
-                        <span>info@stfrancisschool.tech</span>
+                        <span>info@stfrancisofassisizm.com</span>
                     </li>
                 </ul>
             </div>
@@ -78,7 +80,7 @@
         <div class="border-t border-white/10 pt-8 mt-8">
             <div class="flex justify-center space-x-6">
                 <!-- Facebook -->
-                <a href="https://web.facebook.com/profile.php?id=1000862240419199" target="_blank" rel="noopener noreferrer"
+                <a href="https://www.facebook.com/profile.php?id=100086224041919" target="_blank" rel="noopener noreferrer"
                 class="text-white/80 hover:text-secondary">
                     <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M18.77,7.46H14.5v-1.9c0-.9.6-1.1,1-1.1h3V.5h-4.33C10.24.5,9.5,3.44,9.5,5.32v2.15h-3v4h3v12h5v-12h3.85l.42-4Z"/>
@@ -119,8 +121,13 @@
             </div>
         </div>
         <!-- Bottom Footer -->
-        <div class="mt-12 pt-8 border-t border-white/10 text-center text-white/60">
+        <div class="mt-12 pt-8 border-t border-white/10 flex flex-col sm:flex-row justify-between items-center gap-3 text-sm text-white/60">
             <p>&copy; {{ date('Y') }} St. Francis of Assisi Private School. All rights reserved.</p>
+            <div class="flex gap-5">
+                <a href="/privacy" class="hover:text-secondary">Privacy Policy</a>
+                <a href="/careers" class="hover:text-secondary">Careers</a>
+                <a href="/admin/login" class="hover:text-secondary">Staff Sign In</a>
+            </div>
         </div>
     </div>
 </footer>

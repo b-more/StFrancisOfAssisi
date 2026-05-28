@@ -5,8 +5,12 @@
             <!-- Logo Section -->
             <div class="flex items-center">
                 <a href="/" class="flex items-center transition-opacity duration-300 hover:opacity-90">
-                    <img src="{{ asset('images/logo.png') }}" alt="St. Francis School Logo" class="h-14 w-auto py-2"
-                         onerror="this.src='https://via.placeholder.com/140x56?text=St.+Francis+School'">
+                    <img src="{{ asset('images/logo.png') }}" alt="St. Francis of Assisi" class="h-14 w-auto py-2"
+                         onerror="this.style.display='none'">
+                    <span class="ml-3 hidden sm:flex flex-col leading-tight">
+                        <span class="text-primary font-semibold">St. Francis of Assisi</span>
+                        <span class="text-[10px] uppercase tracking-widest text-gray-500">For God and Country</span>
+                    </span>
                 </a>
             </div>
 

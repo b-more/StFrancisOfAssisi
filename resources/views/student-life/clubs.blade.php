@@ -1,10 +1,12 @@
 @extends('layouts.app')
 
+@section('title', 'Clubs and Activities')
+
 @section('content')
 <!-- Page Header -->
 <div class="relative bg-gradient-to-r from-primary/80 to-primary/60 py-32">
     <img src="{{ asset('images/clubs-banner.jpg') }}" alt="Clubs & Activities" class="absolute inset-0 w-full h-full object-cover mix-blend-overlay"
-         onerror="this.src='https://via.placeholder.com/1920x600?text=Clubs+and+Activities'">
+         onerror="this.style.display='none'">
     <div class="relative container mx-auto px-4 text-center">
         <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">Clubs & Activities</h1>
         <p class="text-xl text-white/90 max-w-2xl mx-auto">
@@ -81,7 +83,7 @@
                 <div class="bg-white rounded-lg shadow-sm overflow-hidden border border-gray-100">
                     <div class="h-48 bg-gray-200 relative">
                         <img src="{{ asset('images/clubs/debate-club.jpg') }}" alt="Debate Club" class="w-full h-full object-cover"
-                             onerror="this.src='https://via.placeholder.com/400x200?text=Debate+Club'">
+                             onerror="this.style.display='none'">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                         <h4 class="absolute bottom-3 left-4 text-xl font-bold text-white">Debate Club</h4>
                     </div>
@@ -99,7 +101,7 @@
                 <div class="bg-white rounded-lg shadow-sm overflow-hidden border border-gray-100">
                     <div class="h-48 bg-gray-200 relative">
                         <img src="{{ asset('images/clubs/science-club.jpg') }}" alt="Science Club" class="w-full h-full object-cover"
-                             onerror="this.src='https://via.placeholder.com/400x200?text=Science+Club'">
+                             onerror="this.style.display='none'">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                         <h4 class="absolute bottom-3 left-4 text-xl font-bold text-white">Science Club</h4>
                     </div>
@@ -117,7 +119,7 @@
                 <div class="bg-white rounded-lg shadow-sm overflow-hidden border border-gray-100">
                     <div class="h-48 bg-gray-200 relative">
                         <img src="{{ asset('images/clubs/robotics-club.jpg') }}" alt="Robotics Club" class="w-full h-full object-cover"
-                             onerror="this.src='https://via.placeholder.com/400x200?text=Robotics+Club'">
+                             onerror="this.style.display='none'">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                         <h4 class="absolute bottom-3 left-4 text-xl font-bold text-white">Robotics Club</h4>
                     </div>
@@ -145,7 +147,7 @@
                 <div class="bg-white rounded-lg shadow-sm overflow-hidden border border-gray-100">
                     <div class="h-48 bg-gray-200 relative">
                         <img src="{{ asset('images/clubs/drama-club.jpg') }}" alt="Drama Club" class="w-full h-full object-cover"
-                             onerror="this.src='https://via.placeholder.com/400x200?text=Drama+Club'">
+                             onerror="this.style.display='none'">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                         <h4 class="absolute bottom-3 left-4 text-xl font-bold text-white">Drama Club</h4>
                     </div>
@@ -163,7 +165,7 @@
                 <div class="bg-white rounded-lg shadow-sm overflow-hidden border border-gray-100">
                     <div class="h-48 bg-gray-200 relative">
                         <img src="{{ asset('images/clubs/art-club.jpg') }}" alt="Art Club" class="w-full h-full object-cover"
-                             onerror="this.src='https://via.placeholder.com/400x200?text=Art+Club'">
+                             onerror="this.style.display='none'">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                         <h4 class="absolute bottom-3 left-4 text-xl font-bold text-white">Art Club</h4>
                     </div>
@@ -181,7 +183,7 @@
                 <div class="bg-white rounded-lg shadow-sm overflow-hidden border border-gray-100">
                     <div class="h-48 bg-gray-200 relative">
                         <img src="{{ asset('images/clubs/music-club.jpg') }}" alt="Music Club" class="w-full h-full object-cover"
-                             onerror="this.src='https://via.placeholder.com/400x200?text=Music+Club'">
+                             onerror="this.style.display='none'">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                         <h4 class="absolute bottom-3 left-4 text-xl font-bold text-white">Music Club</h4>
                     </div>
@@ -209,7 +211,7 @@
                 <div class="bg-white rounded-lg shadow-sm overflow-hidden border border-gray-100">
                     <div class="h-48 bg-gray-200 relative">
                         <img src="{{ asset('images/clubs/basketball-team.jpg') }}" alt="Basketball Team" class="w-full h-full object-cover"
-                             onerror="this.src='https://via.placeholder.com/400x200?text=Basketball+Team'">
+                             onerror="this.style.display='none'">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                         <h4 class="absolute bottom-3 left-4 text-xl font-bold text-white">Basketball Team</h4>
                     </div>
@@ -227,7 +229,7 @@
                 <div class="bg-white rounded-lg shadow-sm overflow-hidden border border-gray-100">
                     <div class="h-48 bg-gray-200 relative">
                         <img src="{{ asset('images/clubs/soccer-team.jpg') }}" alt="Soccer Team" class="w-full h-full object-cover"
-                             onerror="this.src='https://via.placeholder.com/400x200?text=Soccer+Team'">
+                             onerror="this.style.display='none'">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                         <h4 class="absolute bottom-3 left-4 text-xl font-bold text-white">Soccer Team</h4>
                     </div>
@@ -245,7 +247,7 @@
                 <div class="bg-white rounded-lg shadow-sm overflow-hidden border border-gray-100">
                     <div class="h-48 bg-gray-200 relative">
                         <img src="{{ asset('images/clubs/swimming-team.jpg') }}" alt="Swimming Team" class="w-full h-full object-cover"
-                             onerror="this.src='https://via.placeholder.com/400x200?text=Swimming+Team'">
+                             onerror="this.style.display='none'">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                         <h4 class="absolute bottom-3 left-4 text-xl font-bold text-white">Swimming Team</h4>
                     </div>
@@ -273,7 +275,7 @@
                 <div class="bg-white rounded-lg shadow-sm overflow-hidden border border-gray-100">
                     <div class="h-48 bg-gray-200 relative">
                         <img src="{{ asset('images/clubs/student-council.jpg') }}" alt="Student Council" class="w-full h-full object-cover"
-                             onerror="this.src='https://via.placeholder.com/400x200?text=Student+Council'">
+                             onerror="this.style.display='none'">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                         <h4 class="absolute bottom-3 left-4 text-xl font-bold text-white">Student Council</h4>
                     </div>
@@ -291,7 +293,7 @@
                 <div class="bg-white rounded-lg shadow-sm overflow-hidden border border-gray-100">
                     <div class="h-48 bg-gray-200 relative">
                         <img src="{{ asset('images/clubs/environmental-club.jpg') }}" alt="Environmental Club" class="w-full h-full object-cover"
-                             onerror="this.src='https://via.placeholder.com/400x200?text=Environmental+Club'">
+                             onerror="this.style.display='none'">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                         <h4 class="absolute bottom-3 left-4 text-xl font-bold text-white">Environmental Club</h4>
                     </div>
@@ -309,7 +311,7 @@
                 <div class="bg-white rounded-lg shadow-sm overflow-hidden border border-gray-100">
                     <div class="h-48 bg-gray-200 relative">
                         <img src="{{ asset('images/clubs/volunteer-club.jpg') }}" alt="Volunteer Club" class="w-full h-full object-cover"
-                             onerror="this.src='https://via.placeholder.com/400x200?text=Volunteer+Club'">
+                             onerror="this.style.display='none'">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                         <h4 class="absolute bottom-3 left-4 text-xl font-bold text-white">Volunteer Club</h4>
                     </div>

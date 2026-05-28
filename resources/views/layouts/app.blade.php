@@ -4,23 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>{{ config('app.name', 'St. Francis of Assisi Private School') }}</title>
+    <title>@yield('title', 'St. Francis of Assisi') · St. Francis of Assisi Private School</title>
+    <meta name="description" content="@yield('description', 'St. Francis of Assisi Private School, Christ-centred education in Chililabombwe, Zambia.')">
 
-    <!-- Styles -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        primary: '#002366',     // Royal blue for school
-                        secondary: '#FFD700',   // Gold/yellow for school
-                        accent: '#B22234'       // Rich red for accents
-                    },
-                },
-            },
-        }
-    </script>
+    <!-- Styles, locally-compiled Tailwind (custom palette baked in) -->
+    <link rel="stylesheet" href="{{ asset('css/tailwind.css') }}?v={{ filemtime(public_path('css/tailwind.css')) }}">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <style>
@@ -43,11 +31,11 @@
             <div class="flex flex-wrap items-center space-x-4">
                 <div class="flex items-center text-sm">
                     <i class='bx bxs-phone text-secondary mr-1'></i>
-                    <span>+260 972266217</span>
+                    <a href="tel:+260972266217">+260 972 266 217</a>
                 </div>
                 <div class="flex items-center text-sm">
                     <i class='bx bxs-envelope text-secondary mr-1'></i>
-                    <span>info@stfrancisschool.tech</span>
+                    <a href="mailto:info@stfrancisofassisizm.com">info@stfrancisofassisizm.com</a>
                 </div>
                 <div class="flex items-center text-sm">
                     <i class='bx bxs-map text-secondary mr-1'></i>
@@ -55,7 +43,7 @@
                 </div>
             </div>
             <div class="flex items-center space-x-3">
-                <a href="https://web.facebook.com/profile.php?id=1000862240419199" class="text-white hover:text-secondary transition-colors">
+                <a href="https://www.facebook.com/profile.php?id=100086224041919" class="text-white hover:text-secondary transition-colors">
                     <i class='bx bxl-facebook text-lg'></i>
                 </a>
                 <a href="https://www.instagram.com/stfrancisofassisi/" class="text-white hover:text-secondary transition-colors">

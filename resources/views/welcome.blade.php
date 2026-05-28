@@ -95,7 +95,7 @@
                 </div>
             </div>
             <div class="flex items-center space-x-3">
-                <a href="https://web.facebook.com/profile.php?id=1000862240419199" class="text-white hover:text-secondary transition-colors">
+                <a href="https://www.facebook.com/profile.php?id=100086224041919" class="text-white hover:text-secondary transition-colors">
                     <i class='bx bxl-facebook text-lg'></i>
                 </a>
                 <a href="https://www.instagram.com/stfrancisofassisi/" class="text-white hover:text-secondary transition-colors">
@@ -123,7 +123,7 @@
                     <div class="absolute inset-0 hero-gradient"></div>
                     <img src="{{ asset('images/gallery1.jpg') }}" alt="School Building"
                         class="w-full h-full object-cover"
-                        {{-- onerror="this.src='https://via.placeholder.com/1920x1080?text=School+Building'" --}}>
+                        {{-- onerror="this.style.display='none'" --}}>
                     <div class="absolute inset-0 flex items-center justify-center text-center px-4">
                         <div class="max-w-3xl">
                             <h1 class="text-4xl md:text-6xl font-bold text-white mb-6">
@@ -153,7 +153,7 @@
                     <div class="absolute inset-0 hero-gradient"></div>
                     <img src="{{ asset('images/primary4.jpg') }}" alt="Students Learning"
                         class="w-full h-full object-cover"
-                        {{-- onerror="this.src='https://via.placeholder.com/1920x1080?text=Students+Learning'" --}}>
+                        {{-- onerror="this.style.display='none'" --}}>
                     <div class="absolute inset-0 flex items-center justify-center text-center px-4">
                         <div class="max-w-3xl">
                             <h1 class="text-4xl md:text-6xl font-bold text-white mb-6">
@@ -175,7 +175,7 @@
                     <div class="absolute inset-0 hero-gradient"></div>
                     <img src="{{ asset('images/gallery7.jpg') }}" alt="School Activities"
                         class="w-full h-full object-cover"
-                        {{-- onerror="this.src='https://via.placeholder.com/1920x1080?text=School+Activities'" --}}>
+                        {{-- onerror="this.style.display='none'" --}}>
                     <div class="absolute inset-0 flex items-center justify-center text-center px-4">
                         <div class="max-w-3xl">
                             <h1 class="text-4xl md:text-6xl font-bold text-white mb-6">
@@ -315,7 +315,7 @@
                     <div class="relative h-48">
                         <img src="{{ asset('images/programs/IMG_6831.jpg') }}" alt="Early Childhood Education"
                              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                             {{-- onerror="this.src='https://via.placeholder.com/400x300?text=Early+Childhood'" --}}>
+                             {{-- onerror="this.style.display='none'" --}}>
                         <div class="absolute inset-0 bg-gradient-to-t from-primary/70 to-transparent opacity-90"></div>
                         <div class="absolute bottom-0 left-0 p-4 text-white">
                             <h3 class="text-xl font-bold">Early Childhood</h3>
@@ -336,7 +336,7 @@
                     <div class="relative h-48">
                         <img src="{{ asset('images/programs/P4480636.jpg') }}" alt="Primary Education"
                              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                             {{-- onerror="this.src='https://via.placeholder.com/400x300?text=Primary+Education'" --}}>
+                             {{-- onerror="this.style.display='none'" --}}>
                         <div class="absolute inset-0 bg-gradient-to-t from-primary/70 to-transparent opacity-90"></div>
                         <div class="absolute bottom-0 left-0 p-4 text-white">
                             <h3 class="text-xl font-bold">Primary School</h3>
@@ -357,7 +357,7 @@
                     <div class="relative h-48">
                         <img src="{{ asset('images/programs/P4480710.jpg') }}" alt="Secondary Education"
                              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                             {{-- onerror="this.src='https://via.placeholder.com/1920x1080?text=Secondary+Education'" --}}>
+                             {{-- onerror="this.style.display='none'" --}}>
                         <div class="absolute inset-0 bg-gradient-to-t from-primary/70 to-transparent opacity-90"></div>
                         <div class="absolute bottom-0 left-0 p-4 text-white">
                             <h3 class="text-xl font-bold">Secondary School</h3>
@@ -398,7 +398,7 @@
                                     <div class="w-12 h-12 rounded-full bg-gray-300 mr-4">
                                         <img src="{{ asset('images/2.jpg') }}" alt="Parent"
                                              class="w-full h-full object-cover rounded-full"
-                                             {{-- onerror="this.src='https://via.placeholder.com/96?text=P'" --}}>
+                                             {{-- onerror="this.style.display='none'" --}}>
                                     </div>
                                     <div>
                                         <h4 class="font-semibold">Joshua Tembo</h4>
@@ -421,7 +421,7 @@
                                     <div class="w-12 h-12 rounded-full bg-gray-300 mr-4">
                                         <img src="{{ asset('images/staff/male.jpg') }}" alt="Parent"
                                              class="w-full h-full object-cover rounded-full"
-                                             {{-- onerror="this.src='https://via.placeholder.com/96?text=P'" --}}>
+                                             {{-- onerror="this.style.display='none'" --}}>
                                     </div>
                                     <div>
                                         <h4 class="font-semibold">David Banda</h4>
@@ -444,7 +444,7 @@
                                     <div class="w-12 h-12 rounded-full bg-gray-300 mr-4">
                                         <img src="{{ asset('images/staff/female.jpg') }}" alt="Student"
                                              class="w-full h-full object-cover rounded-full"
-                                             {{-- onerror="this.src='https://via.placeholder.com/96?text=S'" --}}>
+                                             {{-- onerror="this.style.display='none'" --}}>
                                     </div>
                                     <div>
                                         <h4 class="font-semibold">Chipo Mutale</h4>
@@ -485,7 +485,7 @@
                             <div class="flex-shrink-0 w-24 h-24 bg-gray-200 rounded-md overflow-hidden">
                                 <img src="{{ asset('images/news/team1.jpg') }}" alt="News"
                                      class="w-full h-full object-cover"
-                                     {{-- onerror="this.src='https://via.placeholder.com/96?text=News'" --}}>
+                                     {{-- onerror="this.style.display='none'" --}}>
                             </div>
                             <div>
                                 <span class="text-xs text-gray-500">June 10, 2023</span>
@@ -501,7 +501,7 @@
                             <div class="flex-shrink-0 w-24 h-24 bg-gray-200 rounded-md overflow-hidden">
                                 <img src="{{ asset('images/news/IMG_6530.jpg') }}" alt="News"
                                      class="w-full h-full object-cover"
-                                     {{-- onerror="this.src='https://via.placeholder.com/96?text=News'" --}}>
+                                     {{-- onerror="this.style.display='none'" --}}>
                             </div>
                             <div>
                                 <span class="text-xs text-gray-500">May 25, 2023</span>
@@ -517,7 +517,7 @@
                             <div class="flex-shrink-0 w-24 h-24 bg-gray-200 rounded-md overflow-hidden">
                                 <img src="{{ asset('images/news/gallery7.jpg') }}" alt="News"
                                      class="w-full h-full object-cover"
-                                     {{-- onerror="this.src='https://via.placeholder.com/96?text=News'" --}}>
+                                     {{-- onerror="this.style.display='none'" --}}>
                             </div>
                             <div>
                                 <span class="text-xs text-gray-500">May 12, 2023</span>
@@ -643,7 +643,7 @@
                 <div class="relative overflow-hidden rounded-lg aspect-square group cursor-pointer">
                     <img src="{{ asset('images/gallery/gallery1.jpg') }}" alt="School Activities"
                          class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                         {{-- onerror="this.src='https://via.placeholder.com/400?text=Gallery'" --}}>
+                         {{-- onerror="this.style.display='none'" --}}>
                     <div class="absolute inset-0 bg-primary/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                         <i class='bx bx-search text-white text-3xl'></i>
                     </div>
@@ -652,7 +652,7 @@
                 <div class="relative overflow-hidden rounded-lg aspect-square group cursor-pointer">
                     <img src="{{ asset('images/gallery/gallery2.jpg') }}" alt="Classroom Learning"
                          class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                         {{-- onerror="this.src='https://via.placeholder.com/400?text=Gallery'" --}}>
+                         {{-- onerror="this.style.display='none'" --}}>
                     <div class="absolute inset-0 bg-primary/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                         <i class='bx bx-search text-white text-3xl'></i>
                     </div>
@@ -661,7 +661,7 @@
                 <div class="relative overflow-hidden rounded-lg aspect-square group cursor-pointer">
                     <img src="{{ asset('images/gallery/gallery3.jpg') }}" alt="Sports Activities"
                          class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                         {{-- onerror="this.src='https://via.placeholder.com/400?text=Gallery'" --}}>
+                         {{-- onerror="this.style.display='none'" --}}>
                     <div class="absolute inset-0 bg-primary/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                         <i class='bx bx-search text-white text-3xl'></i>
                     </div>
@@ -670,7 +670,7 @@
                 <div class="relative overflow-hidden rounded-lg aspect-square group cursor-pointer">
                     <img src="{{ asset('images/gallery/gallery4.jpg') }}" alt="Music and Arts"
                          class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                         {{-- onerror="this.src='https://via.placeholder.com/400?text=Gallery'" --}}>
+                         {{-- onerror="this.style.display='none'" --}}>
                     <div class="absolute inset-0 bg-primary/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                         <i class='bx bx-search text-white text-3xl'></i>
                     </div>

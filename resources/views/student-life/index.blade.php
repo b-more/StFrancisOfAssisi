@@ -1,387 +1,143 @@
 @extends('layouts.app')
 
+@section('title', 'Student Life')
+@section('description', 'Beyond the classroom: 13 active clubs, structured sport under our MoU with Chiko Private School, structured pastoral care, and a daily rhythm built around character.')
+
 @section('content')
-<!-- Page Header -->
-<div class="relative bg-gradient-to-r from-primary/80 to-primary/60 py-32">
-    <img src="{{ asset('images/lib.jpg') }}" alt="Student Life" class="absolute inset-0 w-full h-full object-cover mix-blend-overlay">
-    <div class="relative container mx-auto px-4 text-center">
-        <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">Student Life</h1>
-        <p class="text-xl text-white/90 max-w-2xl mx-auto">
-            Nurturing well-rounded individuals through diverse experiences beyond the classroom
+<!-- Hero -->
+<section class="bg-primary text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-24">
+        <p class="text-secondary tracking-widest uppercase text-sm font-semibold mb-3">Student Life</p>
+        <h1 class="font-display text-5xl md:text-6xl font-semibold leading-tight max-w-3xl">More than a classroom.</h1>
+        <p class="mt-5 text-white/90 text-lg max-w-3xl">Thirteen active clubs. Year-round sport. Pastoral care. Daily formation in character, not just academics.</p>
+    </div>
+</section>
+
+<!-- Intro -->
+<section class="py-16 md:py-20 bg-white">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+        <p class="text-lg text-gray-700 leading-relaxed">
+            We believe that academic excellence is necessary, but not sufficient, for the formation of a young person. Our Student Life programme, built around our 2026-2028 commitment to talent and character development, establishes <strong>thirteen active clubs and structured sport</strong> as a permanent part of every learner's experience.
+        </p>
+        <p class="text-lg text-gray-700 leading-relaxed mt-4">
+            We want every child to leave our school knowing not only what they learned, but <strong class="text-accent">what they are good at</strong>, and how to use it.
         </p>
     </div>
-</div>
+</section>
 
-<!-- Main Content -->
-<section class="py-20 bg-white">
-    <div class="container mx-auto px-4">
-        <!-- Introduction -->
-        <div class="max-w-4xl mx-auto mb-16">
-            <h2 class="text-3xl font-bold text-primary mb-6">Life at St. Francis</h2>
-            <p class="text-gray-600 mb-4">
-                At St. Francis of Assisi Private School, we believe that education extends far beyond the classroom. Our vibrant student life program provides a wealth of opportunities for students to explore their interests, develop their talents, build character, and form lifelong friendships.
+<!-- 13 Clubs -->
+<section class="py-16 md:py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <p class="text-accent uppercase tracking-widest text-sm font-semibold mb-3">Our 13 Clubs</p>
+        <h2 class="font-display text-3xl md:text-4xl font-semibold text-primary leading-tight mb-12">Four families. Thirteen pursuits.</h2>
+
+        @php
+            $groups = [
+                ['🔬 Academic & Cognitive', 'bg-blue-50', [
+                    ['JETS, Junior Engineers, Technicians & Scientists', 'For learners with a curiosity for how things work. Science fair preparation, applied problem-solving, and exposure to STEM career pathways.'],
+                    ['Debate and Public Speaking', 'For learners who think on their feet. Argumentation, structured speech, and the confidence to speak in formal settings.'],
+                    ['Spelling Bee', 'For Primary learners who love words. Vocabulary mastery, English fluency, and competitive drive.'],
+                ]],
+                ['🎭 Creative & Performing Arts', 'bg-yellow-50', [
+                    ['Music, Choir and Instruments', 'Vocal and instrumental development, performance for school and community events.'],
+                    ['Art and Design', 'Visual arts, craft, and the satisfaction of making something beautiful with one\'s own hands.'],
+                    ['Drama and Theatre', 'Stage performance, scriptwriting, and civic theatre.'],
+                    ['Dance and Cultural', 'Traditional and modern dance forms, with cultural performance at school and community events.'],
+                ]],
+                ['💼 Practical & Vocational', 'bg-green-50', [
+                    ['Entrepreneurship, "Monetise Your Skill"', 'Our flagship character-and-economic club. Learners learn to price their skills, market them, sell them, and account for the income.'],
+                    ['ICT and Coding', 'Computer literacy beyond the syllabus, basic coding, and freelance digital skills.'],
+                    ['Cookery and Baking', 'Practical food production, baking for events and orders, a pathway into small-business confidence.'],
+                    ['Fashion and Tailoring', 'Sewing, design, and alterations.'],
+                ]],
+                ['⚽ Sports', 'bg-red-50', [
+                    ['Football', 'Boys\' and girls\' teams, with structured fixtures throughout the year and inter-school competition under our MoU with Chiko Private School.'],
+                    ['Chess', 'Concentration, strategy, and a competition pathway from school level upward.'],
+                ]],
+            ];
+        @endphp
+
+        @foreach($groups as $g)
+            <div class="mb-10">
+                <h3 class="font-display text-2xl text-primary font-semibold mb-5">{{ $g[0] }}</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+                    @foreach($g[2] as $club)
+                        <div class="{{ $g[1] }} p-6 border-l-4 border-primary">
+                            <h4 class="font-display text-lg text-primary font-semibold mb-2">{{ $club[0] }}</h4>
+                            <p class="text-sm text-gray-700 leading-relaxed">{{ $club[1] }}</p>
+                        </div>
+                    @endforeach
+                </div>
+            </div>
+        @endforeach
+    </div>
+</section>
+
+<!-- Sports -->
+<section class="py-16 bg-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="bg-primary text-white p-8 md:p-12">
+            <p class="text-secondary uppercase tracking-widest text-xs font-semibold mb-3">Sports All Year Round</p>
+            <h2 class="font-display text-3xl md:text-4xl font-semibold leading-tight mb-5">A proper sports field, finally.</h2>
+            <p class="text-white/90 text-lg leading-relaxed">
+                Through a Memorandum of Understanding with <strong>Chiko Private School</strong>, our learners now have access to a proper sports field for football, athletics, and field events. We are equipping the field with our own goal posts and equipment under the terms of the MoU.
             </p>
-            <p class="text-gray-600">
-                Through a diverse range of extracurricular activities, sports, clubs, cultural events, and community service initiatives, we aim to nurture well-rounded individuals who are not only academically accomplished but also socially responsible, creative, and resilient.
-            </p>
+            <p class="text-white/90 mt-3">Chess and other board games are available daily during break periods.</p>
         </div>
+    </div>
+</section>
 
-                <!-- Virtual Tour Section -->
-        <div id="virtual-tour" class="max-w-5xl mx-auto">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl font-bold text-primary mb-4">Take a Virtual Tour</h2>
-                <p class="text-gray-600 max-w-2xl mx-auto mb-8">
-                    Explore our campus activities from the comfort of your home.
-                </p>
+<!-- Day in the Life -->
+<section class="py-16 md:py-20 bg-gray-50">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <p class="text-accent uppercase tracking-widest text-sm font-semibold mb-3">A Day in the Life</p>
+        <h2 class="font-display text-3xl md:text-4xl font-semibold text-primary leading-tight mb-10">From morning assembly to the gate.</h2>
 
-                <div class="relative rounded-lg overflow-hidden aspect-video shadow-lg">
-                    <!-- Embedded YouTube Video -->
-                    <iframe
-                        class="w-full h-full"
-                        src="https://www.youtube.com/embed/5kkp8v0J1ak?rel=0&modestbranding=1&showinfo=0"
-                        title="St. Francis of Assisi Private School Virtual Tour"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen>
-                    </iframe>
+        @php
+            $day = [
+                ['Morning', 'Mornings begin with assembly.', 'A short devotion, school notices, recognition of any pupil who has done something noteworthy, and the day is launched.'],
+                ['Lessons', 'Lessons run on a structured timetable.', 'Forty-minute periods, double periods for laboratory and practical subjects.'],
+                ['Break', 'Break and lunch are supervised.', 'Aunties and support staff are present in the playground and dining areas.'],
+                ['Afternoon', 'Afternoons include club and sport time.', 'Every learner is expected to be engaged in at least one club; many take part in two or three.'],
+                ['Close', 'School ends with a structured close.', 'Teachers escort learners to bus pick-up and parent-collection points; the gate is staffed by trained security.'],
+            ];
+        @endphp
+
+        <div class="space-y-4">
+            @foreach($day as $d)
+                <div class="bg-white p-6 grid md:grid-cols-[150px_1fr] gap-4 items-baseline shadow-sm">
+                    <p class="text-accent font-display text-xl font-semibold">{{ $d[0] }}</p>
+                    <div>
+                        <p class="font-display text-lg text-primary font-semibold">{{ $d[1] }}</p>
+                        <p class="text-gray-700 text-sm mt-1">{{ $d[2] }}</p>
+                    </div>
                 </div>
-
-                <div class="mt-8">
-                    <a href="{{ route('contact') }}?tour=1" class="inline-block px-8 py-3 bg-secondary text-white rounded-lg hover:bg-secondary/90 transition-colors font-medium">
-                        Watch Our Pupils Sing with instrumemts
-                    </a>
-                </div>
-            </div>
+            @endforeach
         </div>
+    </div>
+</section>
 
-        <!-- Student Life Areas -->
-        <div class="max-w-7xl mx-auto mb-20">
-            <h3 class="text-2xl font-bold text-primary mb-10 text-center">Areas of Student Life</h3>
-
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Sports -->
-                <div class="bg-white rounded-lg shadow-sm overflow-hidden group hover:shadow-md transition-shadow">
-                    <div class="h-56 overflow-hidden relative">
-                        <img src="{{ asset('images/sports.jpg') }}" alt="Sports Programs" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-                        <div class="absolute bottom-0 left-0 p-6">
-                            <h4 class="text-xl font-bold text-white">Sports Programs</h4>
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <p class="text-gray-600 mb-4">
-                            Our comprehensive sports program develops physical fitness, teamwork, and sportsmanship through various athletic activities and competitive teams.
-                        </p>
-                        <a href="{{ route('student-life.sports') }}" class="inline-flex items-center text-primary font-medium hover:text-primary/80 transition-colors">
-                            Learn more
-                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Clubs & Activities -->
-                <div class="bg-white rounded-lg shadow-sm overflow-hidden group hover:shadow-md transition-shadow">
-                    <div class="h-56 overflow-hidden relative">
-                        <img src="{{ asset('images/IMG_6538.jpg') }}" alt="Clubs & Activities" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-                        <div class="absolute bottom-0 left-0 p-6">
-                            <h4 class="text-xl font-bold text-white">Clubs & Activities</h4>
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <p class="text-gray-600 mb-4">
-                            Students can explore interests, develop talents, and build friendships through our diverse range of clubs and extracurricular activities.
-                        </p>
-                        <a href="{{ route('student-life.clubs') }}" class="inline-flex items-center text-primary font-medium hover:text-primary/80 transition-colors">
-                            Learn more
-                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Arts & Culture -->
-                <div class="bg-white rounded-lg shadow-sm overflow-hidden group hover:shadow-md transition-shadow">
-                    <div class="h-56 overflow-hidden relative">
-                        <img src="{{ asset('images/arts.jpeg') }}" alt="Arts & Culture" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-                        <div class="absolute bottom-0 left-0 p-6">
-                            <h4 class="text-xl font-bold text-white">Arts & Culture</h4>
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <p class="text-gray-600 mb-4">
-                            Our arts program nurtures creativity and self-expression through music, drama, dance, visual arts, and cultural celebrations.
-                        </p>
-                        <a href="#" class="inline-flex items-center text-primary font-medium hover:text-primary/80 transition-colors">
-                            Learn more
-                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Leadership & Service -->
-                <div class="bg-white rounded-lg shadow-sm overflow-hidden group hover:shadow-md transition-shadow">
-                    <div class="h-56 overflow-hidden relative">
-                        <img src="{{ asset('images/1.jpg') }}" alt="Leadership & Service" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-                        <div class="absolute bottom-0 left-0 p-6">
-                            <h4 class="text-xl font-bold text-white">Leadership & Service</h4>
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <p class="text-gray-600 mb-4">
-                            Students develop leadership skills and a sense of social responsibility through various roles, initiatives, and community service projects.
-                        </p>
-                        <a href="#" class="inline-flex items-center text-primary font-medium hover:text-primary/80 transition-colors">
-                            Learn more
-                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Field Trips & Excursions -->
-                <div class="bg-white rounded-lg shadow-sm overflow-hidden group hover:shadow-md transition-shadow">
-                    <div class="h-56 overflow-hidden relative">
-                        <img src="{{ asset('images/field-trips.jpg') }}" alt="Field Trips & Excursions" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-                        <div class="absolute bottom-0 left-0 p-6">
-                            <h4 class="text-xl font-bold text-white">Field Trips & Excursions</h4>
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <p class="text-gray-600 mb-4">
-                            Educational trips and excursions extend learning beyond the classroom, providing real-world contexts and memorable experiences.
-                        </p>
-                        <a href="#" class="inline-flex items-center text-primary font-medium hover:text-primary/80 transition-colors">
-                            Learn more
-                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- School Events -->
-                <div class="bg-white rounded-lg shadow-sm overflow-hidden group hover:shadow-md transition-shadow">
-                    <div class="h-56 overflow-hidden relative">
-                        <img src="{{ asset('images/infrustructure/infrastructure3.jpg') }}" alt="School Events" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-                        <div class="absolute bottom-0 left-0 p-6">
-                            <h4 class="text-xl font-bold text-white">School Events</h4>
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <p class="text-gray-600 mb-4">
-                            Special events, ceremonies, and celebrations throughout the school year create a vibrant community and memorable experiences.
-                        </p>
-                        <a href="{{ route('events.index') }}" class="inline-flex items-center text-primary font-medium hover:text-primary/80 transition-colors">
-                            Learn more
-                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
+<!-- Pastoral Care -->
+<section class="py-16 md:py-20 bg-white">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <p class="text-accent uppercase tracking-widest text-sm font-semibold mb-3">Pastoral Care</p>
+        <h2 class="font-display text-3xl md:text-4xl font-semibold text-primary leading-tight mb-10">We take wellbeing seriously.</h2>
+        <div class="grid md:grid-cols-2 gap-6">
+            <div class="bg-gray-50 p-6 border-l-4 border-accent">
+                <h3 class="font-display text-xl text-primary font-semibold mb-2"><i class="bx bxs-first-aid mr-2 text-accent"></i>Sick Bay</h3>
+                <p class="text-gray-700 text-sm">Staffed by a trained Clinician for routine first aid and minor health complaints.</p>
             </div>
-        </div>
-
-        <!-- Student Support -->
-        <div class="max-w-5xl mx-auto mb-20">
-            <h3 class="text-2xl font-bold text-primary mb-10 text-center">Student Support & Well-being</h3>
-
-            <div class="grid md:grid-cols-2 gap-8">
-                <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
-                    <div class="flex items-center mb-4">
-                        <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mr-4">
-                            <i class='bx bx-heart-circle text-2xl text-primary'></i>
-                        </div>
-                        <h4 class="text-xl font-semibold text-primary">Pastoral Care</h4>
-                    </div>
-                    <p class="text-gray-600 mb-4">
-                        Our pastoral care system ensures that every student receives personal attention, guidance, and support. Each student is assigned to a homeroom teacher who serves as their first point of contact for any concerns or challenges.
-                    </p>
-                    <p class="text-gray-600">
-                        We maintain open communication with parents and create a nurturing environment where students feel safe, valued, and supported in their personal and academic development.
-                    </p>
-                </div>
-
-                <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
-                    <div class="flex items-center mb-4">
-                        <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mr-4">
-                            <i class='bx bx-bulb text-2xl text-primary'></i>
-                        </div>
-                        <h4 class="text-xl font-semibold text-primary">Counseling Services</h4>
-                    </div>
-                    <p class="text-gray-600 mb-4">
-                        Our school counselors provide academic, social-emotional, and career guidance to help students navigate challenges, make informed decisions, and develop effective coping strategies.
-                    </p>
-                    <p class="text-gray-600">
-                        Individual and group counseling sessions, workshops, and resources are available to support students' mental health and overall well-being.
-                    </p>
-                </div>
+            <div class="bg-gray-50 p-6 border-l-4 border-accent">
+                <h3 class="font-display text-xl text-primary font-semibold mb-2"><i class="bx bxs-conversation mr-2 text-accent"></i>Guidance &amp; Counselling</h3>
+                <p class="text-gray-700 text-sm">Trained staff with a confidential referral pathway for sensitive issues.</p>
             </div>
-        </div>
-
-        <!-- House System -->
-        <div class="max-w-5xl mx-auto mb-20">
-            <div class="bg-primary/10 p-8 rounded-lg">
-                <h3 class="text-2xl font-bold text-primary mb-6 text-center">Our House System</h3>
-
-                <p class="text-gray-600 mb-6 text-center">
-                    All students are assigned to one of four houses, creating smaller communities within our school where students develop friendships across grade levels, build team spirit, and engage in friendly competition.
-                </p>
-
-                <div class="grid md:grid-cols-4 gap-6">
-                    <!-- Eagle House -->
-                    <div class="bg-white p-5 rounded-lg text-center">
-                        <div class="w-16 h-16 rounded-full bg-red-100 flex items-center justify-center mx-auto mb-3">
-                            <span class="text-red-600 text-2xl font-bold">E</span>
-                        </div>
-                        <h4 class="font-bold text-lg text-red-600 mb-2">Lechwe House</h4>
-                        <p class="text-gray-600 text-sm">Symbolizing grace, adaptability, and resilience</p>
-                    </div>
-
-                    <!-- Lion House -->
-                    <div class="bg-white p-5 rounded-lg text-center">
-                        <div class="w-16 h-16 rounded-full bg-yellow-100 flex items-center justify-center mx-auto mb-3">
-                            <span class="text-yellow-600 text-2xl font-bold">L</span>
-                        </div>
-                        <h4 class="font-bold text-lg text-yellow-600 mb-2">Impala House</h4>
-                        <p class="text-gray-600 text-sm">Symbolizing agility, awareness, and cooperation</p>
-                    </div>
-
-                    <!-- Dolphin House -->
-                    <div class="bg-white p-5 rounded-lg text-center">
-                        <div class="w-16 h-16 rounded-full bg-blue-100 flex items-center justify-center mx-auto mb-3">
-                            <span class="text-blue-600 text-2xl font-bold">D</span>
-                        </div>
-                        <h4 class="font-bold text-lg text-blue-600 mb-2">Cheetah House</h4>
-                        <p class="text-gray-600 text-sm">Symbolizing determination, focus, and precision</p>
-                    </div>
-
-                    <!-- Rhino House -->
-                    <div class="bg-white p-5 rounded-lg text-center">
-                        <div class="w-16 h-16 rounded-full bg-green-100 flex items-center justify-center mx-auto mb-3">
-                            <span class="text-green-600 text-2xl font-bold">R</span>
-                        </div>
-                        <h4 class="font-bold text-lg text-green-600 mb-2">Leopard House</h4>
-                        <p class="text-gray-600 text-sm">Symbolizing strength, strategy, and versatility</p>
-                    </div>
-                </div>
-
-                <p class="text-gray-600 mt-6 text-center">
-                    Throughout the year, houses compete in various academic, sporting, cultural, and service activities, fostering healthy competition, teamwork, and school spirit.
-                </p>
+            <div class="bg-gray-50 p-6 border-l-4 border-accent">
+                <h3 class="font-display text-xl text-primary font-semibold mb-2"><i class="bx bxs-heart mr-2 text-accent"></i>Welfare Programme</h3>
+                <p class="text-gray-700 text-sm">Provides essential personal-care items (including sanitary supplies for girls) so that no learner misses school for reasons of dignity.</p>
             </div>
-        </div>
-
-        <!-- Student Gallery -->
-        <div class="max-w-7xl mx-auto mb-20">
-            <h3 class="text-2xl font-bold text-primary mb-10 text-center">Student Life Gallery</h3>
-
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-                <div class="relative group overflow-hidden rounded-lg aspect-square">
-                    <img src="{{ asset('images/gallery1.jpg') }}" alt="Student Life" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
-                    <div class="absolute inset-0 bg-primary/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                        <i class='bx bx-search text-white text-3xl'></i>
-                    </div>
-                </div>
-
-                <div class="relative group overflow-hidden rounded-lg aspect-square">
-                    <img src="{{ asset('images/ecl/ecl15.jpg') }}" alt="Student Life" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
-                    <div class="absolute inset-0 bg-primary/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                        <i class='bx bx-search text-white text-3xl'></i>
-                    </div>
-                </div>
-
-                <div class="relative group overflow-hidden rounded-lg aspect-square">
-                    <img src="{{ asset('images/secondary/secondary11.jpg') }}" alt="Student Life" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
-                    <div class="absolute inset-0 bg-primary/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                        <i class='bx bx-search text-white text-3xl'></i>
-                    </div>
-                </div>
-
-                <div class="relative group overflow-hidden rounded-lg aspect-square">
-                    <img src="{{ asset('images/primary/primary19.jpg') }}" alt="Student Life" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
-                    <div class="absolute inset-0 bg-primary/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                        <i class='bx bx-search text-white text-3xl'></i>
-                    </div>
-                </div>
-            </div>
-
-            <div class="text-center mt-8">
-                <a href="{{ route('gallery.index') }}" class="inline-block px-6 py-3 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors">
-                    View Full Gallery
-                </a>
-            </div>
-        </div>
-
-        <!-- Student Testimonials -->
-        <div class="max-w-4xl mx-auto mb-16">
-            <h3 class="text-2xl font-bold text-primary mb-10 text-center">Student Testimonials</h3>
-
-            <div class="grid md:grid-cols-2 gap-6">
-                <div class="bg-gray-50 p-6 rounded-lg shadow-sm relative">
-                    <div class="text-6xl text-primary/10 absolute top-4 left-4">"</div>
-                    <div class="relative z-10">
-                        <p class="text-gray-600 italic mb-6">
-                            Being part of the debate club and soccer team has helped me develop confidence, teamwork, and time management skills. I've made amazing friends and discovered talents I didn't know I had. Student life at St. Francis is vibrant and engaging!
-                        </p>
-                        <div class="flex items-center">
-                            <div class="w-12 h-12 rounded-full bg-gray-300 mr-4">
-                                <img src="{{ asset('images/staff/male.jpg') }}" alt="Student" class="w-full h-full object-cover rounded-full">
-                            </div>
-                            <div>
-                                <h4 class="font-semibold">David Mumba</h4>
-                                <p class="text-sm text-gray-500">Grade 10 Student</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="bg-gray-50 p-6 rounded-lg shadow-sm relative">
-                    <div class="text-6xl text-primary/10 absolute top-4 left-4">"</div>
-                    <div class="relative z-10">
-                        <p class="text-gray-600 italic mb-6">
-                            I love how we have so many opportunities to pursue our interests outside the classroom. The annual cultural day, sports competitions, and community service projects have been highlights of my time at St. Francis.
-                        </p>
-                        <div class="flex items-center">
-                            <div class="w-12 h-12 rounded-full bg-gray-300 mr-4">
-                                <img src="{{ asset('images/staff/female.jpg') }}" alt="Student" class="w-full h-full object-cover rounded-full">
-                            </div>
-                            <div>
-                                <h4 class="font-semibold">Rachel Banda</h4>
-                                <p class="text-sm text-gray-500">Grade 8 Student</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Call to Action -->
-        <div class="max-w-3xl mx-auto">
-            <div class="bg-primary text-white rounded-lg p-8 text-center shadow-md">
-                <h3 class="text-2xl font-bold mb-4">Join Our Vibrant School Community</h3>
-                <p class="mb-6">
-                    Experience a holistic education that nurtures academic excellence, character development, and a variety of enriching extracurricular activities.
-                </p>
-                <div class="flex flex-wrap justify-center gap-4">
-                    <a href="{{ route('admissions.apply') }}" class="px-6 py-3 bg-secondary text-white rounded-lg hover:bg-secondary/90 transition-colors font-medium">
-                        Apply Now
-                    </a>
-                    <a href="{{ route('contact') }}?tour=1" class="px-6 py-3 bg-white text-primary rounded-lg hover:bg-gray-100 transition-colors font-medium">
-                        Schedule a Tour
-                    </a>
-                </div>
+            <div class="bg-gray-50 p-6 border-l-4 border-accent">
+                <h3 class="font-display text-xl text-primary font-semibold mb-2"><i class="bx bxs-shield mr-2 text-accent"></i>Code of Conduct</h3>
+                <p class="text-gray-700 text-sm">Protects every learner from bullying, harassment, and unfair treatment, with clear reporting channels.</p>
             </div>
         </div>
     </div>

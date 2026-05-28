@@ -170,7 +170,7 @@
     <!-- Footer -->
     <div class="footer">
         <p><strong>St. Francis of Assisi Private School</strong></p>
-        <p>1310/4 East Kamenza, Chililabombwe, Zambia | info@stfrancisschool.tech</p>
+        <p>1310/4 East Kamenza, Chililabombwe, Zambia | info@stfrancisofassisizm.com</p>
         <p>© {{ date('Y') }} St. Francis of Assisi Private School. All rights reserved.</p>
     </div>
 </body>

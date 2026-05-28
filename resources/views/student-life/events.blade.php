@@ -1,10 +1,12 @@
 @extends('layouts.app')
 
+@section('title', 'Student Events')
+
 @section('content')
 <!-- Page Header -->
 <div class="relative bg-gradient-to-r from-primary/80 to-primary/60 py-32">
     <img src="{{ asset('images/events-banner.jpg') }}" alt="School Events" class="absolute inset-0 w-full h-full object-cover mix-blend-overlay"
-         onerror="this.src='https://via.placeholder.com/1920x600?text=School+Events'">
+         onerror="this.style.display='none'">
     <div class="relative container mx-auto px-4 text-center">
         <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">School Events</h1>
         <p class="text-xl text-white/90 max-w-2xl mx-auto">
@@ -137,7 +139,7 @@
                 <div class="bg-white rounded-lg shadow-sm overflow-hidden">
                     <div class="h-48">
                         <img src="{{ asset('images/graduation.jpg') }}" alt="Graduation Ceremony" class="w-full h-full object-cover"
-                             onerror="this.src='https://via.placeholder.com/400x200?text=Graduation'">
+                             onerror="this.style.display='none'">
                     </div>
                     <div class="p-6">
                         <h4 class="text-xl font-semibold text-primary mb-2">Graduation Ceremony</h4>
@@ -157,7 +159,7 @@
                 <div class="bg-white rounded-lg shadow-sm overflow-hidden">
                     <div class="h-48">
                         <img src="{{ asset('images/anniversary.jpg') }}" alt="School Anniversary" class="w-full h-full object-cover"
-                             onerror="this.src='https://via.placeholder.com/400x200?text=Anniversary'">
+                             onerror="this.style.display='none'">
                     </div>
                     <div class="p-6">
                         <h4 class="text-xl font-semibold text-primary mb-2">School Anniversary</h4>
@@ -177,7 +179,7 @@
                 <div class="bg-white rounded-lg shadow-sm overflow-hidden">
                     <div class="h-48">
                         <img src="{{ asset('images/prize-giving.jpg') }}" alt="Prize-Giving Day" class="w-full h-full object-cover"
-                             onerror="this.src='https://via.placeholder.com/400x200?text=Prize-Giving'">
+                             onerror="this.style.display='none'">
                     </div>
                     <div class="p-6">
                         <h4 class="text-xl font-semibold text-primary mb-2">Prize-Giving Day</h4>
@@ -197,7 +199,7 @@
                 <div class="bg-white rounded-lg shadow-sm overflow-hidden">
                     <div class="h-48">
                         <img src="{{ asset('images/cultural-day.jpg') }}" alt="Cultural Day" class="w-full h-full object-cover"
-                             onerror="this.src='https://via.placeholder.com/400x200?text=Cultural+Day'">
+                             onerror="this.style.display='none'">
                     </div>
                     <div class="p-6">
                         <h4 class="text-xl font-semibold text-primary mb-2">Cultural Day</h4>
@@ -217,7 +219,7 @@
                 <div class="bg-white rounded-lg shadow-sm overflow-hidden">
                     <div class="h-48">
                         <img src="{{ asset('images/science-fair.jpg') }}" alt="Science Fair" class="w-full h-full object-cover"
-                             onerror="this.src='https://via.placeholder.com/400x200?text=Science+Fair'">
+                             onerror="this.style.display='none'">
                     </div>
                     <div class="p-6">
                         <h4 class="text-xl font-semibold text-primary mb-2">Science Fair</h4>
@@ -237,7 +239,7 @@
                 <div class="bg-white rounded-lg shadow-sm overflow-hidden">
                     <div class="h-48">
                         <img src="{{ asset('images/career-day.jpg') }}" alt="Career Day" class="w-full h-full object-cover"
-                             onerror="this.src='https://via.placeholder.com/400x200?text=Career+Day'">
+                             onerror="this.style.display='none'">
                     </div>
                     <div class="p-6">
                         <h4 class="text-xl font-semibold text-primary mb-2">Career Day</h4>
@@ -262,7 +264,7 @@
             <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
                 <div class="relative group overflow-hidden rounded-lg aspect-video">
                     <img src="{{ asset('images/event-highlight1.jpg') }}" alt="Event Highlight" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                         onerror="this.src='https://via.placeholder.com/400x225?text=Event+1'">
+                         onerror="this.style.display='none'">
                     <div class="absolute inset-0 bg-primary/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                         <i class='bx bx-search text-white text-3xl'></i>
                     </div>
@@ -270,7 +272,7 @@
 
                 <div class="relative group overflow-hidden rounded-lg aspect-video">
                     <img src="{{ asset('images/event-highlight2.jpg') }}" alt="Event Highlight" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                         onerror="this.src='https://via.placeholder.com/400x225?text=Event+2'">
+                         onerror="this.style.display='none'">
                     <div class="absolute inset-0 bg-primary/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                         <i class='bx bx-search text-white text-3xl'></i>
                     </div>
@@ -278,7 +280,7 @@
 
                 <div class="relative group overflow-hidden rounded-lg aspect-video">
                     <img src="{{ asset('images/event-highlight3.jpg') }}" alt="Event Highlight" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                         onerror="this.src='https://via.placeholder.com/400x225?text=Event+3'">
+                         onerror="this.style.display='none'">
                     <div class="absolute inset-0 bg-primary/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                         <i class='bx bx-search text-white text-3xl'></i>
                     </div>
@@ -286,7 +288,7 @@
 
                 <div class="relative group overflow-hidden rounded-lg aspect-video">
                     <img src="{{ asset('images/event-highlight4.jpg') }}" alt="Event Highlight" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                         onerror="this.src='https://via.placeholder.com/400x225?text=Event+4'">
+                         onerror="this.style.display='none'">
                     <div class="absolute inset-0 bg-primary/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                         <i class='bx bx-search text-white text-3xl'></i>
                     </div>
@@ -294,7 +296,7 @@
 
                 <div class="relative group overflow-hidden rounded-lg aspect-video">
                     <img src="{{ asset('images/event-highlight5.jpg') }}" alt="Event Highlight" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                         onerror="this.src='https://via.placeholder.com/400x225?text=Event+5'">
+                         onerror="this.style.display='none'">
                     <div class="absolute inset-0 bg-primary/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                         <i class='bx bx-search text-white text-3xl'></i>
                     </div>
@@ -302,7 +304,7 @@
 
                 <div class="relative group overflow-hidden rounded-lg aspect-video">
                     <img src="{{ asset('images/event-highlight6.jpg') }}" alt="Event Highlight" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                         onerror="this.src='https://via.placeholder.com/400x225?text=Event+6'">
+                         onerror="this.style.display='none'">
                     <div class="absolute inset-0 bg-primary/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                         <i class='bx bx-search text-white text-3xl'></i>
                     </div>

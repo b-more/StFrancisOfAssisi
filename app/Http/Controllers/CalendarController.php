@@ -124,7 +124,7 @@ class CalendarController extends Controller
 
     <div style="margin-top: 40px; text-align: center; border-top: 1px solid #ccc; padding-top: 15px; color: #666;">
         <p>St. Francis of Assisi Private School | 1310/4 East Kamenza, Chililabombwe, Zambia</p>
-        <p>📞 ' . implode(' / ', $calendarData['contacts']) . ' | 📧 info@stfrancisschool.tech</p>
+        <p>📞 ' . implode(' / ', $calendarData['contacts']) . ' | 📧 info@stfrancisofassisizm.com</p>
     </div>
 </body>
 </html>';
@@ -262,8 +262,8 @@ class CalendarController extends Controller
                 ]
             ],
             'notes' => [
-                'END OF TERM TESTS: 29th JULY – 1st & 5th AUGUST (PRIMARY SECTION)',
-                '24th JULY – 1st AUGUST (SECONDARY SECTION)',
+                'END OF TERM TESTS: 29th JULY to 1st & 5th AUGUST (PRIMARY SECTION)',
+                '24th JULY to 1st AUGUST (SECONDARY SECTION)',
                 'FRUIT AND WATER DAYS: 30th MAY, 27th JUNE AND 25th JULY',
                 'MASS: 23rd MAY, 13th JUNE AND 18th JULY 2025 AND 1st AUGUST',
                 'PUBLIC HOLIDAYS: 26th MAY, 30th MAY, 1st JULY, 4th AUGUST',

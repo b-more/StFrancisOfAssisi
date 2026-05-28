@@ -18,7 +18,7 @@
             Staff
         </a>
         <a href="{{ route('gallery.category', 'ecl') }}" class="px-4 py-2 rounded-full {{ isset($category) && $category == 'ecl' ? 'bg-primary text-white' : 'bg-gray-100 hover:bg-gray-200 text-gray-800' }} transition-colors">
-            ECL
+            ECE
         </a>
         <a href="{{ route('gallery.category', 'infrastructure') }}" class="px-4 py-2 rounded-full {{ isset($category) && $category == 'infrastructure' ? 'bg-primary text-white' : 'bg-gray-100 hover:bg-gray-200 text-gray-800' }} transition-colors">
             Infrastructure

@@ -1,243 +1,98 @@
 @extends('layouts.app')
 
+@section('title', 'News & Events')
+@section('description', 'School news, upcoming events, and the monthly newsletter from St. Francis of Assisi Private School.')
+
 @section('content')
-<!-- Page Header -->
-<div class="relative bg-gradient-to-r from-primary/80 to-primary/60 py-32">
-    <img src="{{ asset('images/notices-banner.jpg') }}" alt="School Notices" class="absolute inset-0 w-full h-full object-cover mix-blend-overlay"
-         onerror="this.src='https://via.placeholder.com/1920x600?text=School+Notices'">
-    <div class="relative container mx-auto px-4 text-center">
-        <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">School Notices & Bulletins</h1>
-        <p class="text-xl text-white/90 max-w-2xl mx-auto">
-            Stay informed with the latest announcements, policies, and important information from our school
-        </p>
+<!-- Hero -->
+<section class="bg-primary text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-24">
+        <p class="text-secondary tracking-widest uppercase text-sm font-semibold mb-3">News &amp; Events</p>
+        <h1 class="font-display text-5xl md:text-6xl font-semibold leading-tight max-w-3xl">What's happening at the school.</h1>
+        <p class="mt-5 text-white/90 text-lg max-w-3xl">Academic results, staff appointments, building developments, awards, parent days, and the monthly newsletter.</p>
     </div>
-</div>
+</section>
 
-<!-- Main Content -->
-<div class="container mx-auto px-4 py-20">
-    <!-- Featured Notice -->
-    <div class="mb-16">
-        <div class="bg-gradient-to-r from-red-500 to-red-600 text-white rounded-lg p-8 mb-8 shadow-lg">
-            <div class="flex items-center mb-4">
-                <i class='bx bx-error text-3xl mr-4'></i>
-                <h2 class="text-2xl font-bold">Latest Important Notice</h2>
+<!-- The three streams -->
+<section class="py-16 md:py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid md:grid-cols-3 gap-6 mb-12">
+            <div class="bg-gray-50 p-7 border-t-4 border-primary text-center">
+                <div class="text-primary text-3xl mb-3"><i class="bx bxs-news"></i></div>
+                <h3 class="font-display text-xl text-primary font-semibold mb-2">School News</h3>
+                <p class="text-sm text-gray-700">Academic results, staff appointments, building developments, awards.</p>
             </div>
-            <p class="text-red-100 mb-4">New bulletin available with essential information for Term Two</p>
-            <a href="{{ route('notices.term-two-bulletin') }}" class="inline-flex items-center bg-white text-red-600 px-6 py-3 rounded-lg font-semibold hover:bg-red-50 transition-colors">
-                <i class='bx bx-file-blank mr-2'></i>
-                View Term Two Bulletin
-            </a>
-        </div>
-    </div>
-
-    <!-- Notices Grid -->
-    <div class="grid gap-8">
-        <div class="flex items-center justify-between mb-8">
-            <h2 class="text-3xl font-bold text-primary">All Notices & Bulletins</h2>
-            <div class="flex space-x-2">
-                <span class="px-3 py-1 bg-red-100 text-red-800 rounded-full text-xs font-medium">High Priority</span>
-                <span class="px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full text-xs font-medium">Medium Priority</span>
-                <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-xs font-medium">General Info</span>
+            <div class="bg-gray-50 p-7 border-t-4 border-primary text-center">
+                <div class="text-primary text-3xl mb-3"><i class="bx bxs-calendar-event"></i></div>
+                <h3 class="font-display text-xl text-primary font-semibold mb-2">Events</h3>
+                <p class="text-sm text-gray-700">Parents' Days, sports fixtures, club performances, the Principal's radio interviews, holiday tuition.</p>
             </div>
-        </div>
-
-        @foreach($notices as $notice)
-            <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-                <div class="p-6">
-                    <div class="flex items-start justify-between">
-                        <div class="flex-1">
-                            <!-- Priority Badge -->
-                            <div class="flex items-center mb-3">
-                                <span class="px-3 py-1 rounded-full text-xs font-medium mr-3
-                                    @if($notice['priority'] === 'high')
-                                        bg-red-100 text-red-800
-                                    @elseif($notice['priority'] === 'medium')
-                                        bg-yellow-100 text-yellow-800
-                                    @else
-                                        bg-green-100 text-green-800
-                                    @endif
-                                ">
-                                    @if($notice['priority'] === 'high')
-                                        🔴 High Priority
-                                    @elseif($notice['priority'] === 'medium')
-                                        🟡 Medium Priority
-                                    @else
-                                        🟢 General
-                                    @endif
-                                </span>
-                                <span class="text-sm text-gray-500">{{ $notice['category'] }}</span>
-                            </div>
-
-                            <!-- Notice Title -->
-                            <h3 class="text-xl font-bold text-primary mb-2 hover:text-primary/80 transition-colors">
-                                <a href="@if($notice['slug'] === 'term-two-bulletin'){{ route('notices.term-two-bulletin') }}@else{{ route('notices.show', $notice['slug']) }}@endif">
-                                    {{ $notice['title'] }}
-                                </a>
-                            </h3>
-
-                            <!-- Date and Excerpt -->
-                            <div class="flex items-center text-sm text-gray-500 mb-3">
-                                <i class='bx bx-calendar mr-2'></i>
-                                <span>{{ $notice['date'] }}</span>
-                            </div>
-
-                            <p class="text-gray-600 mb-4 leading-relaxed">{{ $notice['excerpt'] }}</p>
-
-                            <!-- Action Buttons -->
-                            <div class="flex items-center space-x-3">
-                                <a href="@if($notice['slug'] === 'term-two-bulletin'){{ route('notices.term-two-bulletin') }}@else{{ route('notices.show', $notice['slug']) }}@endif"
-                                   class="inline-flex items-center text-primary hover:text-primary/80 font-medium">
-                                    <i class='bx bx-file-blank mr-2'></i>
-                                    Read Full Notice
-                                </a>
-
-                                @if($notice['slug'] === 'term-two-bulletin')
-                                    <a href="{{ route('notices.download.term-two-bulletin') }}"
-                                       class="inline-flex items-center text-gray-600 hover:text-gray-800 font-medium">
-                                        <i class='bx bx-download mr-2'></i>
-                                        Download
-                                    </a>
-                                @endif
-                            </div>
-                        </div>
-
-                        <!-- Notice Icon -->
-                        <div class="flex-shrink-0 ml-6">
-                            <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center">
-                                @if($notice['category'] === 'General Information')
-                                    <i class='bx bx-info-circle text-2xl text-primary'></i>
-                                @elseif($notice['category'] === 'Health & Safety')
-                                    <i class='bx bx-health text-2xl text-green-600'></i>
-                                @elseif($notice['category'] === 'Events')
-                                    <i class='bx bx-calendar-event text-2xl text-purple-600'></i>
-                                @else
-                                    <i class='bx bx-file text-2xl text-primary'></i>
-                                @endif
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Notice Footer -->
-                <div class="bg-gray-50 px-6 py-3 border-t">
-                    <div class="flex items-center justify-between text-sm">
-                        <span class="text-gray-500">Last updated: {{ $notice['date'] }}</span>
-                        <div class="flex items-center space-x-4">
-                            <button onclick="shareNotice('{{ $notice['title'] }}', '{{ url()->current() }}/@if($notice['slug'] === 'term-two-bulletin'){{ route('notices.term-two-bulletin') }}@else{{ route('notices.show', $notice['slug']) }}@endif')"
-                                    class="text-gray-500 hover:text-primary transition-colors">
-                                <i class='bx bx-share'></i> Share
-                            </button>
-                            <button onclick="printNotice()" class="text-gray-500 hover:text-primary transition-colors">
-                                <i class='bx bx-printer'></i> Print
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        @endforeach
-    </div>
-
-    <!-- Call to Action -->
-    <div class="mt-16 text-center">
-        <div class="bg-primary/10 rounded-lg p-8">
-            <h3 class="text-2xl font-bold text-primary mb-4">Stay Connected</h3>
-            <p class="text-gray-600 mb-6 max-w-2xl mx-auto">
-                Don't miss important updates! Make sure to check our notices regularly and contact the school office if you have any questions about the information provided.
-            </p>
-            <div class="flex flex-wrap justify-center gap-4">
-                <a href="{{ route('contact') }}" class="inline-flex items-center bg-primary text-white px-6 py-3 rounded-lg hover:bg-primary/90 transition-colors font-medium">
-                    <i class='bx bx-phone mr-2'></i>
-                    Contact School Office
-                </a>
-                <a href="{{ route('portal') }}" class="inline-flex items-center bg-secondary text-white px-6 py-3 rounded-lg hover:bg-secondary/90 transition-colors font-medium">
-                    <i class='bx bx-user-account mr-2'></i>
-                    Parent Portal
-                </a>
-                <a href="{{ route('calendar') }}" class="inline-flex items-center bg-gray-600 text-white px-6 py-3 rounded-lg hover:bg-gray-700 transition-colors font-medium">
-                    <i class='bx bx-calendar mr-2'></i>
-                    School Calendar
-                </a>
+            <div class="bg-gray-50 p-7 border-t-4 border-primary text-center">
+                <div class="text-primary text-3xl mb-3"><i class="bx bxs-envelope"></i></div>
+                <h3 class="font-display text-xl text-primary font-semibold mb-2">Newsletters</h3>
+                <p class="text-sm text-gray-700">Our monthly digital newsletter, archived here.</p>
             </div>
         </div>
     </div>
+</section>
 
-    <!-- Important Reminders -->
-    <div class="mt-12 grid md:grid-cols-3 gap-6">
-        <div class="bg-red-50 border border-red-200 rounded-lg p-6">
-            <div class="flex items-center mb-3">
-                <i class='bx bx-health text-2xl text-red-600 mr-3'></i>
-                <h4 class="font-bold text-red-800">Health & Safety</h4>
-            </div>
-            <p class="text-red-700 text-sm">Remember to carry hand sanitizer and follow all health protocols as outlined in our notices.</p>
+<!-- Featured Post -->
+<section class="py-16 bg-gray-50">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <p class="text-accent uppercase tracking-widest text-sm font-semibold mb-3">Featured · Leadership</p>
+        <h2 class="font-display text-3xl md:text-4xl font-semibold text-primary leading-tight mb-3">A new chapter: welcoming our first School Principal.</h2>
+        <p class="text-sm text-gray-500 mb-7">Posted 1 April 2026</p>
+        <div class="aspect-[16/9] bg-gray-200 mb-6 overflow-hidden">
+            <img src="/images/campus/campus2.jpg" alt="" class="w-full h-full object-cover" loading="lazy">
         </div>
-
-        <div class="bg-green-50 border border-green-200 rounded-lg p-6">
-            <div class="flex items-center mb-3">
-                <i class='bx bx-money text-2xl text-green-600 mr-3'></i>
-                <h4 class="font-bold text-green-800">Fee Payments</h4>
-            </div>
-            <p class="text-green-700 text-sm">Ensure all fees are paid on time. Check our notices for payment deadlines and bank account details.</p>
-        </div>
-
-        <div class="bg-blue-50 border border-blue-200 rounded-lg p-6">
-            <div class="flex items-center mb-3">
-                <i class='bx bx-uniform text-2xl text-blue-600 mr-3'></i>
-                <h4 class="font-bold text-blue-800">Uniform Policy</h4>
-            </div>
-            <p class="text-blue-700 text-sm">Students must wear proper uniforms daily. Best shirts on Wednesdays, track suits on Fridays only.</p>
+        <div class="space-y-4 text-lg text-gray-700 leading-relaxed">
+            <p>We are pleased to announce the appointment of <strong>Mr. Blessmore Mulenga</strong> as the first School Principal of St. Francis of Assisi Private School. The creation of this office represents a deliberate step in the school's institutional journey, formalising academic leadership and embedding a published Strategic Plan that will guide the school from 2026 to 2028.</p>
+            <p>Mr. Mulenga's first month in office has already seen the enactment of the school's Constitution (Version 2.0) and Ethical Code of Conduct, the issuance of 2026 contracts to all staff, the rebranding of the ECE section, the repainting of Primary, and the activation of our new external playground.</p>
+            <blockquote class="border-l-4 border-accent pl-6 italic text-primary py-2">
+                "My commitment to every parent who has placed a child in our care is plain, that this school will deliver real results, treat every child with fairness, and grow steadily into the most academically respected private school in Chililabombwe."
+                <footer class="text-sm not-italic text-gray-600 mt-2">- Mr. Blessmore Mulenga, on assumption of office</footer>
+            </blockquote>
+            <p>The full <strong>2026-2028 Strategic Plan</strong> is available on request from the school office.</p>
         </div>
     </div>
-</div>
+</section>
 
-@push('scripts')
-<script>
-    function shareNotice(title, url) {
-        if (navigator.share) {
-            navigator.share({
-                title: title,
-                url: url
-            });
-        } else {
-            // Fallback: copy to clipboard
-            navigator.clipboard.writeText(url).then(() => {
-                alert('Notice link copied to clipboard!');
-            });
-        }
-    }
+<!-- Upcoming Events Strip -->
+<section class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <p class="text-accent uppercase tracking-widest text-sm font-semibold mb-3">Upcoming Events</p>
+        <h2 class="font-display text-3xl md:text-4xl font-semibold text-primary leading-tight mb-10">Save the date.</h2>
+        <div class="grid md:grid-cols-3 gap-6">
+            <div class="bg-gray-50 p-6 border-l-4 border-accent">
+                <p class="text-accent font-display text-xl font-semibold mb-1">Termly Parents' Day</p>
+                <p class="text-sm text-gray-700 mb-4">Once per term, in person, structured agenda. Your attendance matters.</p>
+                <a href="/contact" class="text-primary font-semibold text-sm hover:text-accent">Add to your diary →</a>
+            </div>
+            <div class="bg-gray-50 p-6 border-l-4 border-accent">
+                <p class="text-accent font-display text-xl font-semibold mb-1">Inter-school Football Fixture</p>
+                <p class="text-sm text-gray-700 mb-4">Boys' and girls' teams compete under our MoU with Chiko Private School.</p>
+                <a href="/student-life" class="text-primary font-semibold text-sm hover:text-accent">Sport at SFA →</a>
+            </div>
+            <div class="bg-gray-50 p-6 border-l-4 border-accent">
+                <p class="text-accent font-display text-xl font-semibold mb-1">End-of-Term Assembly &amp; Subject Mastery Awards</p>
+                <p class="text-sm text-gray-700 mb-4">Recognising distinction across academics and character.</p>
+                <a href="/calendar" class="text-primary font-semibold text-sm hover:text-accent">School calendar →</a>
+            </div>
+        </div>
+    </div>
+</section>
 
-    function printNotice() {
-        window.print();
-    }
-
-    // Add smooth scroll and other interactive features
-    document.addEventListener('DOMContentLoaded', function() {
-        // Smooth scroll for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-
-        // Add fade-in animation for notice cards
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
-                }
-            });
-        });
-
-        document.querySelectorAll('.grid > div').forEach(card => {
-            card.style.opacity = '0';
-            card.style.transform = 'translateY(20px)';
-            card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-            observer.observe(card);
-        });
-    });
-</script>
-@endpush
+<!-- Newsletter sign-up -->
+<section class="py-16 bg-primary text-white">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="font-display text-3xl md:text-4xl font-semibold mb-3">Get the monthly newsletter.</h2>
+        <p class="text-white/85 mb-6">Distributed digitally on the first week of each month, academic news, learner achievements, club activity, and forthcoming events.</p>
+        <form action="{{ route('newsletter.subscribe') }}" method="POST" class="flex flex-wrap gap-2 max-w-md mx-auto">
+            @csrf
+            <input type="email" name="email" placeholder="Your email address" required class="flex-1 min-w-[200px] border-0 text-gray-900">
+            <button type="submit" class="bg-secondary text-primary px-6 py-2 font-semibold hover:bg-yellow-300 transition">Subscribe</button>
+        </form>
+        @if(session('success'))<p class="mt-4 text-secondary text-sm">{{ session('success') }}</p>@endif
+    </div>
+</section>
 @endsection

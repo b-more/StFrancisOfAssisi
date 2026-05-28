@@ -1,10 +1,12 @@
 @extends('layouts.app')
 
+@section('title', 'Apply Now')
+
 @section('content')
 <!-- Page Header -->
 <div class="relative bg-gradient-to-r from-primary/80 to-primary/60 py-32">
     <img src="{{ asset('images/apply-banner.jpg') }}" alt="Apply Now" class="absolute inset-0 w-full h-full object-cover mix-blend-overlay"
-         onerror="this.src='https://via.placeholder.com/1920x600?text=Apply+Now'">
+         onerror="this.style.display='none'">
     <div class="relative container mx-auto px-4 text-center">
         <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">Apply Now</h1>
         <p class="text-xl text-white/90 max-w-2xl mx-auto">

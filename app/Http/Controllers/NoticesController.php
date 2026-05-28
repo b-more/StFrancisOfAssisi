@@ -132,7 +132,7 @@ class NoticesController extends Controller
                 'Mass has been scheduled to take place four times as shown in the school calendar. Kindly prepare offering for your child to promote good practice.',
                 'Fruit day has been scheduled to take place three times in a term as shown on the calendar.',
                 'School will close on Wednesday 6th August, 2025.',
-                'Open day will be conducted on Friday 8th August, 2025 from 08:00 – 15:00 hours.',
+                'Open day will be conducted on Friday 8th August, 2025 from 08:00 to 15:00 hours.',
                 'Use the following Bank accounts for:',
                 'Timetables for examination classes are out at grade 7, 9 internal/external & 12 levels.',
                 'All pupils/parents/guardians are urged to observe and follow set school rules to avoid inconveniences at all cost.'

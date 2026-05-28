@@ -11,7 +11,10 @@ return Application::configure(basePath: dirname(__DIR__))
         health: '/up',
     )
     ->withMiddleware(function (Middleware $middleware) {
-        //
+        // Trust the host nginx proxy in front of the docker container so
+        // X-Forwarded-Proto is honoured (otherwise asset() generates http:// urls
+        // and the browser blocks them as mixed content under https).
+        $middleware->trustProxies(at: '*');
     })
     ->withExceptions(function (Exceptions $exceptions) {
         //
