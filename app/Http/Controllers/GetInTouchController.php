@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\FormSubmissionNotification;
 use App\Models\GetInTouch;
 use Illuminate\Http\Request;
 
@@ -17,6 +18,8 @@ class GetInTouchController extends Controller
         ]);
 
         GetInTouch::create($validated);
+
+        FormSubmissionNotification::dispatchToAdmin('contact', $validated);
 
         return redirect()->back()->with('success', 'Thank you for your message. We will get back to you soon!');
     }

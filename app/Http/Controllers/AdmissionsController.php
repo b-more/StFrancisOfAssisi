@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\FormSubmissionNotification;
 use Illuminate\Http\Request;
 
 class AdmissionsController extends Controller
@@ -43,7 +44,6 @@ class AdmissionsController extends Controller
      */
     public function submit(Request $request)
     {
-        // Validate form inputs
         $validated = $request->validate([
             'student_name' => 'required|string|max:255',
             'date_of_birth' => 'required|date',
@@ -56,9 +56,10 @@ class AdmissionsController extends Controller
             'previous_school' => 'nullable|string|max:255',
         ]);
 
-        // TODO: Process the application (would be implemented when creating the Student model)
+        // Application data is not yet persisted to a Student/Application model;
+        // the notification email is the canonical record until that storage is wired up.
+        FormSubmissionNotification::dispatchToAdmin('admissions', $validated);
 
-        // Flash success message and redirect
         return redirect()->route('admissions.apply')
             ->with('success', 'Your application has been submitted successfully. We will contact you shortly.');
     }
