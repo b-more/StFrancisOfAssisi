@@ -9,22 +9,51 @@
 
     <!-- Styles, locally-compiled Tailwind (custom palette baked in) -->
     <link rel="stylesheet" href="{{ asset('css/tailwind.css') }}?v={{ filemtime(public_path('css/tailwind.css')) }}">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <style>
-        body {
-            font-family: 'Inter', sans-serif;
-        }
-        .transition-all {
-            transition: all 0.3s ease-in-out;
-        }
-        /* Add space for fixed navigation */
-        main {
-            padding-top: 4rem;
-        }
+        body { font-family: 'Inter', sans-serif; }
+        .font-display { font-family: 'Cormorant Garamond', Georgia, serif; }
+        .transition-all { transition: all 0.3s ease-in-out; }
+        main { padding-top: 4rem; }
+
+        /* Cloistered-editorial tokens — shared with the static homepage */
+        .bg-paper      { background-color: #F5EFE0; }
+        .bg-paper-warm { background-color: #FAF6EC; }
+        .bg-paper-deep { background-color: #EAE1CB; }
+        .border-rule   { border-color: #D8CFB6; }
+        .text-muted    { color: #6B6558; }
+
+        /* Signature: arched photo frame */
+        .arched { position: relative; border-radius: 240px 240px 8px 8px; overflow: hidden; background: #EAE1CB; }
+        .arched::after { content: ''; position: absolute; inset: 0; border: 1px solid rgba(255,215,0,.55); border-radius: inherit; pointer-events: none; }
+        .arched.arched-sm { border-radius: 160px 160px 6px 6px; }
+        .arched.arched-lg { border-radius: 280px 280px 8px 8px; }
+        .arched > img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+        /* Roman-numeral illuminated section marker */
+        .numeral { display: inline-flex; align-items: baseline; gap: .75rem; font-family: 'Cormorant Garamond', Georgia, serif; color: #B08A3E; }
+        .numeral .n { font-size: 2.4rem; font-weight: 600; letter-spacing: .04em; line-height: 1; }
+        .numeral .r { display: inline-block; width: 3rem; height: 1px; background: #B08A3E; transform: translateY(-.35rem); }
+        .numeral.on-dark    { color: #FFD700; }
+        .numeral.on-dark .r { background: #FFD700; }
+
+        /* Motto ribbon */
+        .ribbon { background: #163959; color: #FFD700; text-align: center; padding: 1rem 1.25rem;
+                  font-family: 'Cormorant Garamond', Georgia, serif; font-size: 1.05rem; letter-spacing: .28em; text-transform: uppercase; }
+        .ribbon .cross { margin: 0 1.1rem; color: rgba(255,215,0,.8); }
+        @media (max-width: 640px) { .ribbon { font-size: .78rem; letter-spacing: .2em; padding: .8rem 1rem; } .ribbon .cross { margin: 0 .5rem; } }
+
+        /* Navy-forward hero band, used on every sub-page */
+        .navy-hero { background: #1F4E79; color: #fff; position: relative; overflow: hidden; }
+        .navy-hero::before { content: ''; position: absolute; inset: 0; opacity: .05;
+            background-image: radial-gradient(circle at 20% 20%, #FFD700 1px, transparent 1px),
+                              radial-gradient(circle at 80% 60%, #FFD700 1px, transparent 1px);
+            background-size: 90px 90px, 130px 130px; pointer-events: none; }
+        .navy-hero > * { position: relative; z-index: 1; }
     </style>
 </head>
-<body class="bg-gray-50">
+<body class="bg-paper">
     <!-- Top Bar with Quick Info -->
     <div class="bg-primary text-white py-2 px-4">
         <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center">

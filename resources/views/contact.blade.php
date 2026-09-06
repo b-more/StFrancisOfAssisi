@@ -4,152 +4,167 @@
 @section('description', 'St. Francis of Assisi Private School. Plot 1310/4 East Kamenza, Chililabombwe. Phone +260 972 266 217. Email info@stfrancisofassisizm.com.')
 
 @section('content')
-<!-- Hero -->
-<section class="bg-primary text-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-24">
-        <p class="text-secondary tracking-widest uppercase text-sm font-semibold mb-3">Contact</p>
-        <h1 class="font-display text-5xl md:text-6xl font-semibold leading-tight max-w-3xl">Get in touch.</h1>
-        <p class="mt-5 text-white/90 text-lg max-w-3xl">Prospective parents, current parents, prospective staff, partners, community, we welcome enquiries from all of you.</p>
+<!-- Hero — navy-forward -->
+<section class="navy-hero">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-end">
+            <div class="lg:col-span-8">
+                <div class="numeral on-dark mb-4"><span class="n">V</span><span class="r"></span></div>
+                <p class="text-secondary tracking-[.28em] uppercase text-xs font-semibold mb-3">Get in touch</p>
+                <h1 class="font-display text-5xl md:text-7xl font-semibold leading-[1.03] tracking-tight">Talk to us.</h1>
+            </div>
+            <div class="lg:col-span-4">
+                <p class="font-display text-lg text-white/85 leading-[1.55]">
+                    Prospective parents, current parents, staff, partners — we welcome enquiries from all of you. During school hours the phone is fastest; outside hours, we reply within one working day.
+                </p>
+            </div>
+        </div>
     </div>
 </section>
 
-<!-- Contact Details + Form -->
-<section class="py-16 md:py-24 bg-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12">
+<!-- Motto -->
+<div class="ribbon">
+    <span>For God</span><span class="cross">✠</span><span>For Country</span><span class="cross">✠</span><span>For Every Child</span>
+</div>
 
-        <!-- Left: Details -->
-        <div>
-            <p class="text-accent uppercase tracking-widest text-sm font-semibold mb-3">Reach the School</p>
-            <h2 class="font-display text-3xl md:text-4xl font-semibold text-primary leading-tight mb-8">The fastest way is by phone, during school hours.</h2>
+<!-- I. Direct contact actions -->
+<section class="py-20 md:py-24 bg-paper">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-start">
+            <div class="lg:col-span-5">
+                <div class="numeral mb-4"><span class="n">I</span><span class="r"></span></div>
+                <p class="text-accent uppercase tracking-[.28em] text-xs font-semibold mb-3">Four ways to reach us</p>
+                <h2 class="font-display text-4xl md:text-5xl font-semibold text-primary leading-tight" style="max-width: 20ch;">Call, WhatsApp, email — or visit.</h2>
+                <p class="font-display text-lg text-gray-700 leading-relaxed mt-5" style="max-width: 40ch;">
+                    During school hours the phone is fastest. Outside hours, email and we'll reply within one working day.
+                </p>
+            </div>
+            <div class="lg:col-span-7 space-y-4">
+                <a href="tel:+260972266217" class="flex items-center gap-5 p-6 bg-paper-warm border-l-4 border-primary hover:shadow-lg transition group">
+                    <div class="flex-none w-14 h-14 bg-primary text-white flex items-center justify-center text-3xl"><i class="bx bxs-phone"></i></div>
+                    <div class="flex-1">
+                        <p class="text-[11px] uppercase tracking-[.22em] text-muted font-semibold mb-1">Call us</p>
+                        <p class="font-display text-2xl font-semibold text-primary leading-tight group-hover:text-accent">+260 972 266 217</p>
+                        <p class="font-display italic text-muted text-sm">Mon – Fri · 7:30 AM – 4:30 PM</p>
+                    </div>
+                </a>
 
-            <div class="space-y-5">
-                <div class="flex items-start gap-4">
-                    <div class="flex-none w-12 h-12 rounded-md bg-primary text-white flex items-center justify-center text-2xl"><i class="bx bxs-map"></i></div>
-                    <div>
-                        <p class="text-xs uppercase tracking-widest text-accent font-semibold">Address</p>
-                        <p class="text-gray-800">St. Francis of Assisi Private School<br>Plot 1310/4, East Kamenza<br>Chililabombwe, Copperbelt Province<br>Zambia</p>
+                <a href="https://wa.me/260972266217" target="_blank" rel="noopener" class="flex items-center gap-5 p-6 bg-paper-warm border-l-4 border-green-500 hover:shadow-lg transition group">
+                    <div class="flex-none w-14 h-14 bg-green-500 text-white flex items-center justify-center text-3xl"><i class="bx bxl-whatsapp"></i></div>
+                    <div class="flex-1">
+                        <p class="text-[11px] uppercase tracking-[.22em] text-muted font-semibold mb-1">WhatsApp</p>
+                        <p class="font-display text-2xl font-semibold text-primary leading-tight group-hover:text-green-700">Message the school office</p>
+                        <p class="font-display italic text-muted text-sm">+260 972 266 217 · reply usually within the hour</p>
                     </div>
-                </div>
-                <div class="flex items-start gap-4">
-                    <div class="flex-none w-12 h-12 rounded-md bg-primary text-white flex items-center justify-center text-2xl"><i class="bx bxs-phone"></i></div>
-                    <div>
-                        <p class="text-xs uppercase tracking-widest text-accent font-semibold">Telephone</p>
-                        <p class="text-gray-800"><a href="tel:+260972266217" class="hover:text-accent">+260 972 266 217</a></p>
+                </a>
+
+                <a href="mailto:info@stfrancisofassisizm.com?subject=Enquiry%20from%20school%20website" class="flex items-center gap-5 p-6 bg-paper-warm border-l-4 border-primary hover:shadow-lg transition group">
+                    <div class="flex-none w-14 h-14 bg-primary text-white flex items-center justify-center text-3xl"><i class="bx bxs-envelope"></i></div>
+                    <div class="flex-1">
+                        <p class="text-[11px] uppercase tracking-[.22em] text-muted font-semibold mb-1">Email us</p>
+                        <p class="font-display text-2xl font-semibold text-primary leading-tight group-hover:text-accent break-all">info@stfrancisofassisizm.com</p>
+                        <p class="font-display italic text-muted text-sm">Replies within one school day</p>
                     </div>
-                </div>
-                <div class="flex items-start gap-4">
-                    <div class="flex-none w-12 h-12 rounded-md bg-primary text-white flex items-center justify-center text-2xl"><i class="bx bxs-envelope"></i></div>
-                    <div>
-                        <p class="text-xs uppercase tracking-widest text-accent font-semibold">Email</p>
-                        <p class="text-gray-800"><a href="mailto:info@stfrancisofassisizm.com" class="hover:text-accent">info@stfrancisofassisizm.com</a></p>
+                </a>
+
+                <a href="https://www.google.com/maps?q=Plot+1310%2F4+East+Kamenza+Chililabombwe+Zambia" target="_blank" rel="noopener" class="flex items-center gap-5 p-6 bg-paper-warm border-l-4 border-secondary hover:shadow-lg transition group">
+                    <div class="flex-none w-14 h-14 bg-secondary text-primary flex items-center justify-center text-3xl"><i class="bx bxs-map"></i></div>
+                    <div class="flex-1">
+                        <p class="text-[11px] uppercase tracking-[.22em] text-muted font-semibold mb-1">Visit campus</p>
+                        <p class="font-display text-2xl font-semibold text-primary leading-tight group-hover:text-accent">Plot 1310/4, East Kamenza</p>
+                        <p class="font-display italic text-muted text-sm">Chililabombwe, Zambia · open in Google Maps</p>
                     </div>
-                </div>
-                <div class="flex items-start gap-4">
-                    <div class="flex-none w-12 h-12 rounded-md bg-primary text-white flex items-center justify-center text-2xl"><i class="bx bxs-time"></i></div>
-                    <div>
-                        <p class="text-xs uppercase tracking-widest text-accent font-semibold">Office Hours</p>
-                        <p class="text-gray-800">Monday, Friday · 7:30 AM, 4:30 PM<br><span class="text-sm text-gray-600">Closed on weekends and public holidays</span></p>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- II. Office hours + map -->
+<section class="py-20 md:py-24 bg-paper-deep">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
+            <div class="lg:col-span-5">
+                <div class="numeral mb-4"><span class="n">II</span><span class="r"></span></div>
+                <p class="text-accent uppercase tracking-[.28em] text-xs font-semibold mb-3">Office hours</p>
+                <h2 class="font-display text-4xl md:text-5xl font-semibold text-primary leading-tight" style="max-width: 20ch;">When you can find us on campus.</h2>
+                <div class="mt-8">
+                    <div class="grid grid-cols-12 gap-4 py-4 border-b border-rule items-baseline">
+                        <span class="col-span-6 font-display text-lg text-gray-800">Monday – Friday</span>
+                        <span class="col-span-6 text-right font-display text-lg font-semibold text-primary">07:30 – 16:30</span>
+                    </div>
+                    <div class="grid grid-cols-12 gap-4 py-4 border-b border-rule items-baseline">
+                        <span class="col-span-6 font-display text-lg text-gray-800">Office (admissions)</span>
+                        <span class="col-span-6 text-right font-display text-lg font-semibold text-primary">08:00 – 17:00</span>
+                    </div>
+                    <div class="grid grid-cols-12 gap-4 py-4 border-b border-rule items-baseline">
+                        <span class="col-span-6 font-display text-lg text-gray-800">Weekends &amp; holidays</span>
+                        <span class="col-span-6 text-right font-display italic text-lg text-muted">Closed · by appointment</span>
                     </div>
                 </div>
             </div>
-
-            <!-- Map -->
-            <div class="mt-8">
-                <p class="text-xs uppercase tracking-widest text-accent font-semibold mb-3">Find Us</p>
-                <div class="aspect-[16/10] bg-gray-100 overflow-hidden border">
+            <div class="lg:col-span-7">
+                <div class="border border-rule overflow-hidden bg-white" style="aspect-ratio: 4/3;">
                     <iframe
                         src="https://www.google.com/maps?q=Plot+1310%2F4+East+Kamenza+Chililabombwe+Zambia&output=embed"
                         width="100%" height="100%" style="border:0;" allowfullscreen=""
                         loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
+                <p class="mt-3 font-display italic text-muted text-center">Plot 1310/4 East Kamenza · Chililabombwe · Zambia</p>
             </div>
         </div>
-
-        <!-- Right: Form -->
-        <div>
-            <p class="text-accent uppercase tracking-widest text-sm font-semibold mb-3">Send Us a Message</p>
-            <h2 class="font-display text-3xl md:text-4xl font-semibold text-primary leading-tight mb-8">We respond within one working day.</h2>
-
-            @if(session('success'))
-                <div class="bg-green-50 border-l-4 border-green-500 text-green-700 p-4 mb-6">
-                    {{ session('success') }}
-                </div>
-            @endif
-
-            <form method="POST" action="{{ route('contact.submit') }}" class="space-y-5">
-                @csrf
-                <div class="grid sm:grid-cols-2 gap-5">
-                    <div>
-                        <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Full name</label>
-                        <input id="name" name="name" type="text" required class="w-full border-gray-300 focus:border-primary focus:ring-primary" autocomplete="name">
-                    </div>
-                    <div>
-                        <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Phone</label>
-                        <input id="phone" name="phone" type="tel" class="w-full border-gray-300 focus:border-primary focus:ring-primary" autocomplete="tel">
-                    </div>
-                </div>
-                <div>
-                    <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email</label>
-                    <input id="email" name="email" type="email" required class="w-full border-gray-300 focus:border-primary focus:ring-primary" autocomplete="email">
-                </div>
-                <div>
-                    <label for="subject" class="block text-sm font-medium text-gray-700 mb-1">Subject</label>
-                    <select id="subject" name="subject" class="w-full border-gray-300 focus:border-primary focus:ring-primary">
-                        <option>Admissions enquiry</option>
-                        <option>Book a school tour</option>
-                        <option>Fees &amp; financial info</option>
-                        <option>Transport</option>
-                        <option>Employment</option>
-                        <option>General enquiry</option>
-                        <option>Other</option>
-                    </select>
-                </div>
-                <div>
-                    <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message</label>
-                    <textarea id="message" name="message" rows="5" required class="w-full border-gray-300 focus:border-primary focus:ring-primary"></textarea>
-                </div>
-                <button type="submit" class="w-full bg-accent text-white px-7 py-3 rounded-md font-semibold hover:bg-accent-dark transition shadow-lg">Send Message</button>
-                <p class="text-xs text-gray-500">We respect your privacy. Your details are not shared.</p>
-            </form>
-        </div>
     </div>
 </section>
 
-<!-- Department Contacts -->
-<section class="py-16 bg-gray-50">
-    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        <p class="text-accent uppercase tracking-widest text-sm font-semibold mb-3">Department Contacts</p>
-        <h2 class="font-display text-3xl md:text-4xl font-semibold text-primary leading-tight mb-8">Reach the right office directly.</h2>
-        <div class="bg-white shadow-sm overflow-hidden">
-            <table class="w-full text-sm">
-                <thead class="bg-primary text-white">
-                    <tr>
-                        <th class="text-left py-3 px-4 font-semibold">Office</th>
-                        <th class="text-left py-3 px-4 font-semibold">When to Contact</th>
-                    </tr>
-                </thead>
-                <tbody class="divide-y divide-gray-200">
-                    <tr><td class="py-3 px-4 font-semibold text-primary">Admissions</td><td class="py-3 px-4 text-gray-700">New applications, school tours, prospectus requests</td></tr>
-                    <tr><td class="py-3 px-4 font-semibold text-primary">Accountant</td><td class="py-3 px-4 text-gray-700">Fees, statements, payment plans</td></tr>
-                    <tr><td class="py-3 px-4 font-semibold text-primary">Head Teacher · Primary</td><td class="py-3 px-4 text-gray-700">Grades 1-7 academic matters, ECE</td></tr>
-                    <tr><td class="py-3 px-4 font-semibold text-primary">Head Teacher · Secondary</td><td class="py-3 px-4 text-gray-700">Forms 1-5 academic matters</td></tr>
-                    <tr><td class="py-3 px-4 font-semibold text-primary">Office of the Principal</td><td class="py-3 px-4 text-gray-700">Strategic, governance, and serious matters</td></tr>
-                    <tr><td class="py-3 px-4 font-semibold text-primary">Transport</td><td class="py-3 px-4 text-gray-700">Bus routes, schedules, bookings</td></tr>
-                </tbody>
-            </table>
+<!-- III. Department contacts — navy anchor -->
+<section class="py-20 md:py-24 bg-primary-dark text-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="mb-12">
+            <div class="numeral on-dark mb-4"><span class="n">III</span><span class="r"></span></div>
+            <p class="text-secondary uppercase tracking-[.28em] text-xs font-semibold mb-3">Department contacts</p>
+            <h2 class="font-display text-4xl md:text-5xl font-semibold leading-tight" style="max-width: 22ch;">Reach the right office directly.</h2>
         </div>
-        <p class="mt-4 text-sm text-gray-600">All offices route through <a href="tel:+260972266217" class="text-accent hover:underline">+260 972 266 217</a> · <a href="mailto:info@stfrancisofassisizm.com" class="text-accent hover:underline">info@stfrancisofassisizm.com</a></p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-6">
+            <div class="border-l-2 border-secondary pl-5 py-2">
+                <h4 class="font-display text-xl font-semibold mb-1">Admissions</h4>
+                <p class="font-display text-white/80 leading-relaxed">New applications, school tours, prospectus requests.</p>
+            </div>
+            <div class="border-l-2 border-secondary pl-5 py-2">
+                <h4 class="font-display text-xl font-semibold mb-1">Accountant</h4>
+                <p class="font-display text-white/80 leading-relaxed">Fees, statements, payment plans.</p>
+            </div>
+            <div class="border-l-2 border-secondary pl-5 py-2">
+                <h4 class="font-display text-xl font-semibold mb-1">Head Teacher · Primary</h4>
+                <p class="font-display text-white/80 leading-relaxed">Grades 1 – 7 academic matters and ECE.</p>
+            </div>
+            <div class="border-l-2 border-secondary pl-5 py-2">
+                <h4 class="font-display text-xl font-semibold mb-1">Head Teacher · Secondary</h4>
+                <p class="font-display text-white/80 leading-relaxed">Grades 8 – 12 academic matters.</p>
+            </div>
+            <div class="border-l-2 border-secondary pl-5 py-2">
+                <h4 class="font-display text-xl font-semibold mb-1">Office of the Principal</h4>
+                <p class="font-display text-white/80 leading-relaxed">Strategic, governance, and serious matters.</p>
+            </div>
+            <div class="border-l-2 border-secondary pl-5 py-2">
+                <h4 class="font-display text-xl font-semibold mb-1">Transport</h4>
+                <p class="font-display text-white/80 leading-relaxed">Bus routes, schedules, bookings.</p>
+            </div>
+        </div>
+        <p class="mt-10 font-display italic text-white/70">
+            All offices route through <a href="tel:+260972266217" class="text-secondary hover:underline">+260 972 266 217</a> · <a href="mailto:info@stfrancisofassisizm.com" class="text-secondary hover:underline">info@stfrancisofassisizm.com</a>
+        </p>
     </div>
 </section>
 
-<!-- Connect with us -->
-<section class="py-12 bg-white">
+<!-- IV. Connect -->
+<section class="py-16 bg-paper">
     <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <p class="text-accent uppercase tracking-widest text-sm font-semibold mb-3">Connect With Us</p>
-        <div class="flex justify-center gap-4 mt-4">
-            <a href="https://www.facebook.com/profile.php?id=100086224041919" target="_blank" rel="noopener" class="w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center text-2xl hover:bg-accent transition"><i class="bx bxl-facebook"></i></a>
-            <a href="https://www.instagram.com/stfrancisofassisi/" target="_blank" rel="noopener" class="w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center text-2xl hover:bg-accent transition"><i class="bx bxl-instagram"></i></a>
-            <a href="https://wa.me/260972266217" target="_blank" rel="noopener" class="w-12 h-12 rounded-full bg-green-500 text-white flex items-center justify-center text-2xl hover:bg-green-600 transition"><i class="bx bxl-whatsapp"></i></a>
+        <div class="numeral mb-4" style="justify-content: center;"><span class="n">IV</span><span class="r"></span></div>
+        <p class="text-accent uppercase tracking-[.28em] text-xs font-semibold mb-3">Connect with us</p>
+        <div class="flex justify-center gap-4 mt-6">
+            <a href="https://www.facebook.com/profile.php?id=100086224041919" target="_blank" rel="noopener" class="w-14 h-14 rounded-full bg-primary text-white flex items-center justify-center text-2xl hover:bg-primary-dark transition"><i class="bx bxl-facebook"></i></a>
+            <a href="https://www.instagram.com/stfrancisofassisi/" target="_blank" rel="noopener" class="w-14 h-14 rounded-full bg-primary text-white flex items-center justify-center text-2xl hover:bg-primary-dark transition"><i class="bx bxl-instagram"></i></a>
+            <a href="https://wa.me/260972266217" target="_blank" rel="noopener" class="w-14 h-14 rounded-full bg-green-500 text-white flex items-center justify-center text-2xl hover:bg-green-600 transition"><i class="bx bxl-whatsapp"></i></a>
         </div>
     </div>
 </section>

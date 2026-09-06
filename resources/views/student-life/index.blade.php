@@ -5,13 +5,16 @@
 
 @section('content')
 <!-- Hero -->
-<section class="bg-primary text-white">
+<section class="navy-hero">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-24">
         <p class="text-secondary tracking-widest uppercase text-sm font-semibold mb-3">Student Life</p>
         <h1 class="font-display text-5xl md:text-6xl font-semibold leading-tight max-w-3xl">More than a classroom.</h1>
         <p class="mt-5 text-white/90 text-lg max-w-3xl">Thirteen active clubs. Year-round sport. Pastoral care. Daily formation in character, not just academics.</p>
     </div>
 </section>
+
+<div class="ribbon"><span>For God</span><span class="cross">✠</span><span>For Country</span><span class="cross">✠</span><span>For Every Child</span></div>
+
 
 <!-- Intro -->
 <section class="py-16 md:py-20 bg-white">

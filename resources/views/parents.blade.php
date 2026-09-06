@@ -5,13 +5,16 @@
 
 @section('content')
 <!-- Hero -->
-<section class="bg-primary text-white">
+<section class="navy-hero">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-24">
         <p class="text-secondary tracking-widest uppercase text-sm font-semibold mb-3">For Parents</p>
         <h1 class="font-display text-5xl md:text-6xl font-semibold leading-tight max-w-3xl">You're not just our customers. You're our partners.</h1>
         <p class="mt-5 text-white/90 text-lg max-w-3xl">Your child's success at this school depends on the working relationship between home and school. This page is your hub.</p>
     </div>
 </section>
+
+<div class="ribbon"><span>For God</span><span class="cross">✠</span><span>For Country</span><span class="cross">✠</span><span>For Every Child</span></div>
+
 
 <!-- Communication Channels -->
 <section class="py-16 md:py-20 bg-white">

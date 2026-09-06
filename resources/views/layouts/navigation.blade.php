@@ -1,5 +1,5 @@
 <!-- resources/views/layouts/navigation.blade.php -->
-<nav class="bg-white fixed w-full z-50 transition-shadow duration-300">
+<nav class="bg-paper-warm fixed w-full z-50 border-b border-rule transition-shadow duration-300">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between h-16">
             <!-- Logo Section -->
@@ -8,8 +8,8 @@
                     <img src="{{ asset('images/logo.png') }}" alt="St. Francis of Assisi" class="h-14 w-auto py-2"
                          onerror="this.style.display='none'">
                     <span class="ml-3 hidden sm:flex flex-col leading-tight">
-                        <span class="text-primary font-semibold">St. Francis of Assisi</span>
-                        <span class="text-[10px] uppercase tracking-widest text-gray-500">For God and Country</span>
+                        <span class="text-primary font-display font-semibold text-lg">St. Francis of Assisi</span>
+                        <span class="text-[10px] uppercase tracking-widest text-muted">For God and Country</span>
                     </span>
                 </a>
             </div>
@@ -44,7 +44,7 @@
                         <i class='bx bx-chevron-down ml-1 transition-transform group-hover:rotate-180'></i>
                         <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
                     </button>
-                    <div class="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-lg border opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+                    <div class="absolute top-full left-0 mt-2 w-48 bg-paper-warm shadow-lg border border-rule opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
                         <div class="py-2">
                             <a href="/calendar" class="flex items-center px-4 py-2 text-gray-700 hover:bg-primary/10 hover:text-primary transition-colors">
                                 <i class='bx bx-calendar mr-3'></i>

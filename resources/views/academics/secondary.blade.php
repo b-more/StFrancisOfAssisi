@@ -4,13 +4,16 @@
 @section('description', 'Forms 1 to 5 (Grades 8 to 12). Junior and Senior Secondary curriculum with pure sciences, languages, humanities, ICT and the arts. ECZ examination centre.')
 
 @section('content')
-<section class="bg-primary text-white">
+<section class="navy-hero">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20">
         <p class="text-xs uppercase tracking-widest text-secondary mb-3"><a href="/academics" class="hover:underline">Academics</a> · Secondary</p>
         <h1 class="font-display text-4xl md:text-6xl font-semibold leading-tight">Secondary Section.</h1>
         <p class="mt-4 text-white/90 text-lg">Forms 1 to 5, Grades 8 through 12.</p>
     </div>
 </section>
+
+<div class="ribbon"><span>For God</span><span class="cross">✠</span><span>For Country</span><span class="cross">✠</span><span>For Every Child</span></div>
+
 
 <section class="py-16 md:py-20 bg-white">
     <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
