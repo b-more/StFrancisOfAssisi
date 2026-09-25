@@ -4,12 +4,16 @@
 @section('description', 'School news, upcoming events, and the monthly newsletter from St. Francis of Assisi Private School.')
 
 @section('content')
-<!-- Hero -->
-<section class="bg-primary text-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-24">
-        <p class="text-secondary tracking-widest uppercase text-sm font-semibold mb-3">News &amp; Events</p>
-        <h1 class="font-display text-5xl md:text-6xl font-semibold leading-tight max-w-3xl">What's happening at the school.</h1>
-        <p class="mt-5 text-white/90 text-lg max-w-3xl">Academic results, staff appointments, building developments, awards, parent days, and the monthly newsletter.</p>
+{{-- HERO --}}
+<section style="background: linear-gradient(180deg, var(--site-sky) 0%, #fff 100%); padding-block: clamp(60px, 8vw, 100px) clamp(40px, 5vw, 70px);">
+    <div class="site-wrap" style="max-width: 900px;">
+        <span class="site-pill site-pill-sun">News &amp; Events</span>
+        <h1 style="margin: 20px 0 18px; font-family: var(--site-display); font-weight: 800; font-size: clamp(40px, 5.5vw, 76px); line-height: 1.02; letter-spacing: -0.03em; color: var(--site-navy);">
+            What's happening <span style="color: var(--site-red);">at the school.</span>
+        </h1>
+        <p class="site-lead" style="max-width: 60ch;">
+            Academic results, staff appointments, building developments, awards, parent days, and the monthly newsletter.
+        </p>
     </div>
 </section>
 

@@ -4,12 +4,16 @@
 @section('description', 'Join our team. We welcome applications from qualified, TCZ-registered teachers and skilled support staff who share our vision and values.')
 
 @section('content')
-<!-- Hero -->
-<section class="bg-primary text-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-24">
-        <p class="text-secondary tracking-widest uppercase text-sm font-semibold mb-3">Careers</p>
-        <h1 class="font-display text-5xl md:text-6xl font-semibold leading-tight max-w-3xl">Join our team.</h1>
-        <p class="mt-5 text-white/90 text-lg max-w-3xl">Qualified, TCZ-registered teachers and skilled support staff who share our vision and values.</p>
+{{-- HERO --}}
+<section style="background: linear-gradient(180deg, var(--site-sky) 0%, #fff 100%); padding-block: clamp(60px, 8vw, 100px) clamp(40px, 5vw, 70px);">
+    <div class="site-wrap" style="max-width: 900px;">
+        <span class="site-pill site-pill-sun">Careers</span>
+        <h1 style="margin: 20px 0 18px; font-family: var(--site-display); font-weight: 800; font-size: clamp(40px, 5.5vw, 76px); line-height: 1.02; letter-spacing: -0.03em; color: var(--site-navy);">
+            Join our <span style="color: var(--site-red);">team.</span>
+        </h1>
+        <p class="site-lead" style="max-width: 60ch;">
+            Qualified, TCZ-registered teachers and skilled support staff who share our vision and values.
+        </p>
     </div>
 </section>
 

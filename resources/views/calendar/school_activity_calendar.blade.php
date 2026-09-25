@@ -4,16 +4,17 @@
 
 @section('content')
 <!-- Page Header -->
-<div class="relative bg-gradient-to-r from-primary/80 to-primary/60 py-32">
-    <img src="{{ asset('images/calendar-banner.jpg') }}" alt="School Calendar" class="absolute inset-0 w-full h-full object-cover mix-blend-overlay"
-         onerror="this.style.display='none'">
-    <div class="relative container mx-auto px-4 text-center">
-        <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">School Activity Calendar</h1>
-        <p class="text-xl text-white/90 max-w-2xl mx-auto">
-            Stay organized and never miss important school events, activities, and deadlines
+<section style="background: linear-gradient(180deg, var(--site-sky) 0%, #fff 100%); padding-block: clamp(60px, 8vw, 100px) clamp(40px, 5vw, 70px);">
+    <div class="site-wrap" style="text-align: center; max-width: 780px;">
+        <span class="site-pill site-pill-sun">School Calendar</span>
+        <h1 style="margin: 20px 0 12px; font-family: var(--site-display); font-weight: 800; font-size: clamp(36px, 5vw, 64px); line-height: 1.02; letter-spacing: -0.03em; color: var(--site-navy);">
+            School Activity <span style="color: var(--site-red);">Calendar.</span>
+        </h1>
+        <p class="site-lead" style="margin-inline: auto; max-width: 56ch;">
+            Stay organised and never miss important school events, activities, and deadlines.
         </p>
     </div>
-</div>
+</section>
 
 <!-- Main Calendar Content -->
 <div class="container mx-auto px-4 py-20">

@@ -4,10 +4,13 @@
 @section('description', 'How St. Francis of Assisi Private School collects, processes, and stores personal data of learners, parents, staff and visitors.')
 
 @section('content')
-<section class="bg-primary text-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20">
-        <p class="text-secondary tracking-widest uppercase text-sm font-semibold mb-3">Privacy</p>
-        <h1 class="font-display text-4xl md:text-6xl font-semibold leading-tight">Our commitment to your privacy.</h1>
+{{-- HERO --}}
+<section style="background: linear-gradient(180deg, var(--site-sky) 0%, #fff 100%); padding-block: clamp(50px, 6vw, 90px) clamp(30px, 4vw, 60px);">
+    <div class="site-wrap" style="max-width: 800px;">
+        <span class="site-pill site-pill-sun">Privacy</span>
+        <h1 style="margin: 20px 0 12px; font-family: var(--site-display); font-weight: 800; font-size: clamp(36px, 5vw, 64px); line-height: 1.02; letter-spacing: -0.03em; color: var(--site-navy);">
+            Our commitment to your <span style="color: var(--site-red);">privacy.</span>
+        </h1>
     </div>
 </section>
 

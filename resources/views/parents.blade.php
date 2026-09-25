@@ -4,16 +4,24 @@
 @section('description', 'Parent app, bulk SMS, monthly newsletter, termly Parents\' Days. Everything you need to support your child at St. Francis of Assisi.')
 
 @section('content')
-<!-- Hero -->
-<section class="navy-hero">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-24">
-        <p class="text-secondary tracking-widest uppercase text-sm font-semibold mb-3">For Parents</p>
-        <h1 class="font-display text-5xl md:text-6xl font-semibold leading-tight max-w-3xl">You're not just our customers. You're our partners.</h1>
-        <p class="mt-5 text-white/90 text-lg max-w-3xl">Your child's success at this school depends on the working relationship between home and school. This page is your hub.</p>
+{{-- HERO --}}
+<section style="background: linear-gradient(180deg, var(--site-sky) 0%, #fff 100%); padding-block: clamp(60px, 8vw, 100px) clamp(40px, 5vw, 70px);">
+    <div class="site-wrap" style="max-width: 900px;">
+        <span class="site-pill site-pill-sun">For parents</span>
+        <h1 style="margin: 20px 0 18px; font-family: var(--site-display); font-weight: 800; font-size: clamp(40px, 5.5vw, 76px); line-height: 1.02; letter-spacing: -0.03em; color: var(--site-navy);">
+            Not just our customers. <span style="color: var(--site-red);">Our partners.</span>
+        </h1>
+        <p class="site-lead" style="max-width: 60ch;">
+            Your child's success at this school depends on the working relationship between home and school. This page is your hub.
+        </p>
     </div>
 </section>
 
-<div class="ribbon"><span>For God</span><span class="cross">✠</span><span>For Country</span><span class="cross">✠</span><span>For Every Child</span></div>
+<div style="background: var(--site-navy-deep); color: var(--site-sun); padding: 18px 20px; text-align: center;">
+    <span style="font-family: var(--site-display); letter-spacing: .18em; text-transform: uppercase; font-size: clamp(11px, 1.2vw, 15px); font-weight: 700;">
+        For God · For Country · For Every Child
+    </span>
+</div>
 
 
 <!-- Communication Channels -->

@@ -4,33 +4,32 @@
 @section('description', 'Download the St. Francis of Assisi Parent App. View your child\'s homework, attendance, fees, results and notices, all in one place.')
 
 @section('content')
-<!-- Hero -->
-<section class="bg-primary text-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-24 grid md:grid-cols-2 gap-10 items-center">
-        <div>
-            <p class="text-secondary tracking-widest uppercase text-sm font-semibold mb-3">Parent App</p>
-            <h1 class="font-display text-5xl md:text-6xl font-semibold leading-tight mb-5">Your child's school, in your pocket.</h1>
-            <p class="text-white/90 text-lg mb-8">
-                Homework. Attendance. Fees. Results. Notices. Pay online. Submit assignments. Talk to the school. Free for every St. Francis of Assisi parent.
-            </p>
-            <div class="flex flex-wrap gap-3">
-                <a href="/downloads/SFA-Parent-v1.0.2.apk"
-                   class="bg-secondary text-primary px-7 py-3 rounded-md font-semibold hover:bg-yellow-300 transition-all shadow-lg flex items-center gap-2">
-                    <i class="bx bxl-android text-2xl"></i>
-                    Download for Android
-                </a>
-                <a href="https://parent.stfrancisofassisizm.com" target="_blank" rel="noopener"
-                   class="bg-white/10 backdrop-blur border border-white/40 text-white px-7 py-3 rounded-md font-semibold hover:bg-white/20 transition-all flex items-center gap-2">
-                    <i class="bx bx-globe text-2xl"></i>
-                    Open in Browser (iOS)
-                </a>
+{{-- HERO --}}
+<section style="background: linear-gradient(120deg, var(--site-navy) 0%, var(--site-navy-2) 100%); color: #fff; position: relative; overflow: hidden;">
+    <div style="position:absolute; inset:0; opacity:0.08; background-image: radial-gradient(circle at 15% 20%, var(--site-sun) 1px, transparent 1px), radial-gradient(circle at 80% 70%, var(--site-sun) 1px, transparent 1px); background-size:100px 100px, 140px 140px; pointer-events:none;"></div>
+    <div class="site-wrap" style="position: relative; padding-block: clamp(60px, 8vw, 110px);">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+            <div>
+                <span class="site-kicker" style="color: var(--site-sun);">Parent App</span>
+                <h1 style="margin: 14px 0 18px; font-family: var(--site-display); font-weight: 800; font-size: clamp(40px, 5.5vw, 76px); line-height: 1.02; letter-spacing: -0.03em; color: #fff;">
+                    Your child's school, <span style="color: var(--site-sun);">in your pocket.</span>
+                </h1>
+                <p style="margin: 0 0 32px; font-size: 17.5px; line-height: 1.6; color: rgba(255,255,255,0.88); max-width: 52ch;">
+                    Homework. Attendance. Fees. Results. Notices. Pay online. Submit assignments. Talk to the school. Free for every St. Francis of Assisi parent.
+                </p>
+                <div style="display: flex; flex-wrap: wrap; gap: 12px;">
+                    <a href="/downloads/SFA-Parent-v1.0.2.apk" class="site-btn site-btn-sun">
+                        <i class="bx bxl-android" style="font-size: 22px;"></i> Download for Android
+                    </a>
+                    <a href="https://parent.stfrancisofassisizm.com" target="_blank" rel="noopener" class="site-btn site-btn-ghost-light">
+                        <i class="bx bx-globe" style="font-size: 22px;"></i> Open in Browser (iOS)
+                    </a>
+                </div>
+                <p style="margin: 14px 0 0; font-size: 13px; color: rgba(255,255,255,0.65);">Version 1.0.2 · 3.1 MB · Android 7+</p>
             </div>
-            <p class="text-xs text-white/70 mt-3">Version 1.0.2, 3.1 MB. Android 7+ supported.</p>
-        </div>
-        <div class="text-center">
-            <img src="/images/parent-app/app-icon.png" alt="SFA Parent App icon"
-                 class="mx-auto w-48 md:w-64 rounded-3xl shadow-2xl ring-1 ring-white/20"
-                 onerror="this.style.display='none'">
+            <div style="text-align: center;">
+                <img src="/images/parent-app/app-icon.png" alt="SFA Parent App icon" style="margin: 0 auto; width: clamp(180px, 24vw, 280px); border-radius: 36px; box-shadow: 0 30px 60px rgba(0,0,0,0.35); border: 1px solid rgba(255,255,255,0.15);" onerror="this.style.display='none'">
+            </div>
         </div>
     </div>
 </section>
