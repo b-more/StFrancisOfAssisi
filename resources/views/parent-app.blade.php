@@ -170,7 +170,7 @@
                 <li><strong>Android blocks the install:</strong> Settings, Apps, then your browser, then turn on "Install unknown apps" for that browser.</li>
                 <li><strong>You forgot your password:</strong> Tap "Forgot password" on the sign-in screen, or call the school office.</li>
                 <li><strong>The download fails:</strong> Try Wi-Fi instead of mobile data. The file is 3.1 MB.</li>
-                <li><strong>Still stuck:</strong> Call <a href="tel:+260972266217" class="text-accent hover:underline">+260 972 266 217</a> or email <a href="mailto:info@stfrancisofassisizm.com" class="text-accent hover:underline">info@stfrancisofassisizm.com</a>.</li>
+                <li><strong>Still stuck:</strong> Call <a href="tel:+260972266217" class="text-accent hover:underline">+260 972 266 217</a> or email <a href="mailto:stfrancisofassisi.sfa@gmail.com" class="text-accent hover:underline">stfrancisofassisi.sfa@gmail.com</a>.</li>
             </ul>
         </div>
     </div>

@@ -51,9 +51,94 @@
                               radial-gradient(circle at 80% 60%, #FFD700 1px, transparent 1px);
             background-size: 90px 90px, 130px 130px; pointer-events: none; }
         .navy-hero > * { position: relative; z-index: 1; }
+
+        /* -----------------------------------------------------------
+           Now-enrolling announcement strip — sits above the top bar
+           on every marketing page. Mirrors the homepage's announce.
+           ----------------------------------------------------------- */
+        .site-announce {
+            background: #0F2440; color: #E3EAF4;
+            font-size: 14px; font-family: 'Inter', sans-serif;
+        }
+        .site-announce .row {
+            max-width: 80rem; margin: 0 auto; padding: 8px 1rem;
+            display: flex; align-items: center; justify-content: space-between;
+            gap: 16px; flex-wrap: wrap;
+        }
+        .site-announce strong { color: #FFC83D; letter-spacing: .02em; }
+        .site-announce a { color: #FFC83D; font-weight: 700; text-decoration: none; }
+        .site-announce a:hover { color: #fff; }
+        .site-announce .contact { display: none; }
+        @media (min-width: 720px) {
+            .site-announce .contact { display: inline-flex; gap: 22px; align-items: center; white-space: nowrap; color: rgba(255,255,255,0.82); }
+            .site-announce .contact a { color: rgba(255,255,255,0.82); font-weight: 400; }
+        }
+
+        /* -----------------------------------------------------------
+           Motion — reveal on scroll + hover polish. Fully behind
+           `prefers-reduced-motion` so no jerky content for anyone
+           who has that OS preference turned on.
+           ----------------------------------------------------------- */
+        @media (prefers-reduced-motion: no-preference) {
+            @keyframes site-rise    { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: none; } }
+            @keyframes site-glow    { 0%,100% { text-shadow: 0 0 0 rgba(255,200,61,0); }
+                                      50%    { text-shadow: 0 0 14px rgba(255,200,61,.55); } }
+            @keyframes site-badge   { 0%,100% { box-shadow: 0 0 0 0 rgba(255,200,61,.35); }
+                                      50%    { box-shadow: 0 0 0 10px rgba(255,200,61,0); } }
+
+            .site-announce strong { animation: site-glow 3.2s ease-in-out infinite; }
+
+            /* Reveal-on-scroll — auto-applied by the inline script below.
+               Each element fades + rises when it scrolls into view. */
+            .reveal { opacity: 0; transform: translateY(28px);
+                      transition: opacity .75s ease-out var(--stagger, 0s),
+                                  transform .75s cubic-bezier(.2,.8,.2,1) var(--stagger, 0s); }
+            .reveal.in { opacity: 1; transform: none; }
+
+            /* Roman-numeral gold rule draws in on reveal */
+            .numeral .r { transform: scaleX(0); transform-origin: left center;
+                          transition: transform .95s cubic-bezier(.2,.8,.2,1) .15s; }
+            .reveal.in .numeral .r,
+            .reveal.numeral.in .r { transform: scaleX(1); }
+            /* Numerals in an already-visible section still show the line */
+            :not(.reveal) > .numeral .r { transform: scaleX(1); }
+
+            /* Card hover-lift for the common patterns across the marketing pages */
+            .bg-paper-warm.border-l-4, .bg-paper-warm.border-t-4,
+            .bg-white.border-l-4, .bg-white.border-t-4,
+            .bg-gray-50.border-t-4,
+            [class*="hover:shadow-lg"] {
+                transition: transform .28s cubic-bezier(.2,.8,.2,1),
+                            box-shadow .28s ease, border-color .2s ease;
+            }
+            .bg-paper-warm.border-l-4:hover, .bg-paper-warm.border-t-4:hover,
+            .bg-white.border-l-4:hover, .bg-white.border-t-4:hover,
+            .bg-gray-50.border-t-4:hover {
+                transform: translateY(-4px);
+            }
+
+            /* Every "Apply now" style button gets a physical lift + coloured shadow */
+            .bg-secondary, [class*="bg-secondary"] { transition: transform .18s, box-shadow .22s, background-color .18s; }
+            .bg-secondary:hover, [class*="bg-secondary"]:hover { transform: translateY(-1.5px); }
+
+            /* Arched photo frames — quiet gold ring shimmer on hover */
+            .arched { transition: transform .4s cubic-bezier(.2,.8,.2,1), box-shadow .4s ease; }
+            .arched:hover { transform: translateY(-3px); box-shadow: 0 22px 46px rgba(15, 30, 51, .18); }
+        }
     </style>
 </head>
 <body class="bg-paper">
+    <!-- Now-enrolling announcement strip — mirrors homepage -->
+    <div class="site-announce">
+        <div class="row">
+            <span><strong>Now enrolling</strong> · Baby Class through Grade 12 · Applications welcome year-round. <a href="/admissions">Begin an application →</a></span>
+            <span class="contact">
+                <a href="tel:+260972266217">+260 972 266 217</a>
+                <span>Plot 1310/4 East Kamenza, Chililabombwe</span>
+            </span>
+        </div>
+    </div>
+
     <!-- Top Bar with Quick Info -->
     <div class="bg-primary text-white py-2 px-4">
         <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center">
@@ -64,7 +149,7 @@
                 </div>
                 <div class="flex items-center text-sm">
                     <i class='bx bxs-envelope text-secondary mr-1'></i>
-                    <a href="mailto:info@stfrancisofassisizm.com">info@stfrancisofassisizm.com</a>
+                    <a href="mailto:stfrancisofassisi.sfa@gmail.com">stfrancisofassisi.sfa@gmail.com</a>
                 </div>
                 <div class="flex items-center text-sm">
                     <i class='bx bxs-map text-secondary mr-1'></i>
@@ -142,6 +227,52 @@
                 }, 5000); // Will hide after 5 seconds
             }
         });
+    </script>
+
+    <!-- Site-wide reveal-on-scroll (added 2026-09-25).
+         Every page gets the same subtle fade-and-rise as elements
+         enter the viewport, keyed to the classes the sub-pages already
+         use (numeral markers, bordered feature cards, etc.).
+         Disabled entirely for visitors with reduced-motion. -->
+    <script>
+    (function () {
+        if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+        var selectors = [
+            'section .numeral',
+            'section .grid > *',
+            'section .arched',
+            '.bg-paper-warm.border-l-4', '.bg-paper-warm.border-t-4',
+            '.bg-white.border-l-4', '.bg-white.border-t-4',
+            '.bg-gray-50.border-t-4',
+            'section > h1, section > h2, section > .max-w-7xl > h2',
+            'section .max-w-6xl > .grid > *',
+            'section .max-w-7xl > .grid > *'
+        ].join(',');
+
+        var els = document.querySelectorAll(selectors);
+        els.forEach(function (el, i) {
+            var parent = el.parentElement;
+            var idx = parent ? Array.prototype.indexOf.call(parent.children, el) : 0;
+            var stagger = Math.min(idx * 0.06, 0.42);
+            el.classList.add('reveal');
+            el.style.setProperty('--stagger', stagger + 's');
+        });
+
+        if (!('IntersectionObserver' in window)) {
+            els.forEach(function (el) { el.classList.add('in'); });
+            return;
+        }
+        var io = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('in');
+                    io.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.15, rootMargin: '0px 0px -60px 0px' });
+        els.forEach(function (el) { io.observe(el); });
+    })();
     </script>
 
     @stack('scripts')

@@ -224,7 +224,7 @@
                 </div>
                 <div class="flex items-center p-2 bg-gray-50 rounded">
                     <i class='bx bx-envelope text-secondary mr-3'></i>
-                    <span class="font-medium">info@stfrancisofassisizm.com</span>
+                    <span class="font-medium">stfrancisofassisi.sfa@gmail.com</span>
                 </div>
                 <div class="flex items-start p-2 bg-gray-50 rounded">
                     <i class='bx bx-map text-secondary mr-3 mt-1'></i>

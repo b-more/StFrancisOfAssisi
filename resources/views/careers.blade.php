@@ -61,7 +61,7 @@
     <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         <p class="text-accent uppercase tracking-widest text-sm font-semibold mb-3">How to Apply</p>
         <h2 class="font-display text-3xl md:text-4xl font-semibold text-primary leading-tight mb-6">Send your application to the Principal.</h2>
-        <p class="text-lg text-gray-700 leading-relaxed mb-6">Send the following to <a href="mailto:info@stfrancisofassisizm.com?subject=Application%20-%20For%20the%20attention%20of%20the%20School%20Principal" class="text-accent hover:underline">info@stfrancisofassisizm.com</a>, marked for the attention of the School Principal:</p>
+        <p class="text-lg text-gray-700 leading-relaxed mb-6">Send the following to <a href="mailto:stfrancisofassisi.sfa@gmail.com?subject=Application%20-%20For%20the%20attention%20of%20the%20School%20Principal" class="text-accent hover:underline">stfrancisofassisi.sfa@gmail.com</a>, marked for the attention of the School Principal:</p>
         <ul class="space-y-3 text-gray-700 mb-8">
             <li class="flex items-baseline gap-3"><span class="text-accent text-xl">›</span> A cover letter setting out your interest in the position</li>
             <li class="flex items-baseline gap-3"><span class="text-accent text-xl">›</span> A current curriculum vitae</li>

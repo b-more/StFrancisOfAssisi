@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('title', 'Contact')
-@section('description', 'St. Francis of Assisi Private School. Plot 1310/4 East Kamenza, Chililabombwe. Phone +260 972 266 217. Email info@stfrancisofassisizm.com.')
+@section('description', 'St. Francis of Assisi Private School. Plot 1310/4 East Kamenza, Chililabombwe. Phone +260 972 266 217. Email stfrancisofassisi.sfa@gmail.com.')
 
 @section('content')
 <!-- Hero — navy-forward -->
@@ -58,11 +58,11 @@
                     </div>
                 </a>
 
-                <a href="mailto:info@stfrancisofassisizm.com?subject=Enquiry%20from%20school%20website" class="flex items-center gap-5 p-6 bg-paper-warm border-l-4 border-primary hover:shadow-lg transition group">
+                <a href="mailto:stfrancisofassisi.sfa@gmail.com?subject=Enquiry%20from%20school%20website" class="flex items-center gap-5 p-6 bg-paper-warm border-l-4 border-primary hover:shadow-lg transition group">
                     <div class="flex-none w-14 h-14 bg-primary text-white flex items-center justify-center text-3xl"><i class="bx bxs-envelope"></i></div>
                     <div class="flex-1">
                         <p class="text-[11px] uppercase tracking-[.22em] text-muted font-semibold mb-1">Email us</p>
-                        <p class="font-display text-2xl font-semibold text-primary leading-tight group-hover:text-accent break-all">info@stfrancisofassisizm.com</p>
+                        <p class="font-display text-2xl font-semibold text-primary leading-tight group-hover:text-accent break-all">stfrancisofassisi.sfa@gmail.com</p>
                         <p class="font-display italic text-muted text-sm">Replies within one school day</p>
                     </div>
                 </a>
@@ -151,7 +151,7 @@
             </div>
         </div>
         <p class="mt-10 font-display italic text-white/70">
-            All offices route through <a href="tel:+260972266217" class="text-secondary hover:underline">+260 972 266 217</a> · <a href="mailto:info@stfrancisofassisizm.com" class="text-secondary hover:underline">info@stfrancisofassisizm.com</a>
+            All offices route through <a href="tel:+260972266217" class="text-secondary hover:underline">+260 972 266 217</a> · <a href="mailto:stfrancisofassisi.sfa@gmail.com" class="text-secondary hover:underline">stfrancisofassisi.sfa@gmail.com</a>
         </p>
     </div>
 </section>

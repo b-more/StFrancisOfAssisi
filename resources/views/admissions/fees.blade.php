@@ -37,7 +37,7 @@
             <p class="text-secondary uppercase tracking-widest text-xs font-semibold mb-2">Current Fees Schedule</p>
             <p class="font-display text-2xl mb-4">Contact the Accountant's office</p>
             <p>📞 <a href="tel:+260972266217" class="text-secondary hover:underline">+260 972 266 217</a></p>
-            <p>📧 <a href="mailto:info@stfrancisofassisizm.com" class="text-secondary hover:underline">info@stfrancisofassisizm.com</a></p>
+            <p>📧 <a href="mailto:stfrancisofassisi.sfa@gmail.com" class="text-secondary hover:underline">stfrancisofassisi.sfa@gmail.com</a></p>
         </div>
     </div>
 </section>

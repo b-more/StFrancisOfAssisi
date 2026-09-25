@@ -21,7 +21,7 @@
         <p>Parents and staff have the right to request access to, correction of, or removal of their personal data, subject to the school's legitimate retention obligations.</p>
 
         <h2>Contact</h2>
-        <p>For any privacy-related question, contact the School Principal's office at <a href="mailto:info@stfrancisofassisizm.com">info@stfrancisofassisizm.com</a> or +260 972 266 217.</p>
+        <p>For any privacy-related question, contact the School Principal's office at <a href="mailto:stfrancisofassisi.sfa@gmail.com">stfrancisofassisi.sfa@gmail.com</a> or +260 972 266 217.</p>
 
         <p class="text-sm text-gray-500 mt-12">Last updated: April 2026</p>
     </div>
