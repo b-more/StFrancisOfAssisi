@@ -1,8 +1,10 @@
 @extends('layouts.app')
 
 @section('title', 'Curriculum')
+@section('description', 'The full curriculum offered at St. Francis of Assisi Private School, ECE through Grade 12 — Zambian national curriculum blended with international best practices.')
 
 @section('content')
+
 {{-- HERO --}}
 <section style="background: linear-gradient(180deg, var(--site-sky) 0%, #fff 100%); padding-block: clamp(60px, 8vw, 100px) clamp(40px, 5vw, 70px);">
     <div class="site-wrap" style="text-align: center; max-width: 780px;">
@@ -11,295 +13,187 @@
             Our <span style="color: var(--site-red);">curriculum.</span>
         </h1>
         <p class="site-lead" style="margin-inline: auto; max-width: 56ch;">
-            A comprehensive approach to education that prepares learners for lifelong success — the Zambian national curriculum blended with international best practices.
+            The Zambian national curriculum, blended with international best practices — ECE through Grade 12. Built to develop critical thinking, creativity, and character alongside subject mastery.
         </p>
     </div>
 </section>
 
-<!-- Main Content -->
-<section class="py-20 bg-white">
-    <div class="container mx-auto px-4">
-        <!-- Introduction -->
-        <div class="max-w-4xl mx-auto mb-16">
-            <h2 class="text-3xl font-bold text-primary mb-6">Curriculum Overview</h2>
-            <p class="text-gray-600 mb-4">
-                At St. Francis of Assisi Private School, we offer a comprehensive curriculum that blends the Zambian national curriculum with international best practices to provide our students with a holistic education. Our curriculum is designed to develop critical thinking, creativity, and problem-solving skills while building a strong foundation of knowledge across various disciplines.
-            </p>
-            <p class="text-gray-600">
-                We believe in educating the whole child, focusing not only on academic achievement but also on character development, physical well-being, and social-emotional growth. Our balanced approach ensures that students are well-prepared for further education, career success, and responsible citizenship in an increasingly complex global society.
-            </p>
-        </div>
-
-        <!-- Curriculum by Level -->
-        <div class="max-w-5xl mx-auto mb-16">
-            <h3 class="text-2xl font-bold text-primary mb-6 text-center">Curriculum by Educational Level</h3>
-
-            <div class="space-y-8">
-                <!-- Early Childhood -->
-                <div class="bg-gray-50 rounded-lg shadow-sm overflow-hidden">
-                    <div class="bg-yellow-600 p-4 text-white">
-                        <h4 class="text-xl font-bold">Early Childhood Education (Baby Class - KG3)</h4>
-                    </div>
-                    <div class="p-6">
-                        <p class="text-gray-600 mb-4">
-                            Our early childhood curriculum focuses on holistic development through play-based learning, fostering curiosity, creativity, and foundational skills in literacy and numeracy.
-                        </p>
-                        <div class="grid md:grid-cols-2 gap-4">
-                            <div>
-                                <h5 class="font-semibold text-primary mb-2">Key Learning Areas:</h5>
-                                <ul class="space-y-1 text-gray-600">
-                                    <li class="flex items-start">
-                                        <svg class="w-5 h-5 text-secondary mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                        </svg>
-                                        <span>Language development and early literacy</span>
-                                    </li>
-                                    <li class="flex items-start">
-                                        <svg class="w-5 h-5 text-secondary mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                        </svg>
-                                        <span>Number concepts and early mathematics</span>
-                                    </li>
-                                    <li class="flex items-start">
-                                        <svg class="w-5 h-5 text-secondary mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                        </svg>
-                                        <span>Environmental awareness</span>
-                                    </li>
-                                    <li class="flex items-start">
-                                        <svg class="w-5 h-5 text-secondary mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                        </svg>
-                                        <span>Creative expression and arts</span>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div>
-                                <h5 class="font-semibold text-primary mb-2">Teaching Approaches:</h5>
-                                <ul class="space-y-1 text-gray-600">
-                                    <li class="flex items-start">
-                                        <svg class="w-5 h-5 text-secondary mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                        </svg>
-                                        <span>Play-based learning</span>
-                                    </li>
-                                    <li class="flex items-start">
-                                        <svg class="w-5 h-5 text-secondary mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                        </svg>
-                                        <span>Hands-on activities and exploration</span>
-                                    </li>
-                                    <li class="flex items-start">
-                                        <svg class="w-5 h-5 text-secondary mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                        </svg>
-                                        <span>Songs, stories, and rhymes</span>
-                                    </li>
-                                    <li class="flex items-start">
-                                        <svg class="w-5 h-5 text-secondary mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                        </svg>
-                                        <span>Thematic learning units</span>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Primary -->
-                <div class="bg-gray-50 rounded-lg shadow-sm overflow-hidden">
-                    <div class="bg-blue-600 p-4 text-white">
-                        <h4 class="text-xl font-bold">Primary Education (Grades 1-7)</h4>
-                    </div>
-                    <div class="p-6">
-                        <p class="text-gray-600 mb-4">
-                            Our primary curriculum builds strong foundations in core subjects while developing critical thinking, research skills, and creative expression through a balanced program.
-                        </p>
-                        <div class="grid md:grid-cols-2 gap-4">
-                            <div>
-                                <h5 class="font-semibold text-primary mb-2">Core Subjects:</h5>
-                                <ul class="space-y-1 text-gray-600">
-                                    <li class="flex items-start">
-                                        <svg class="w-5 h-5 text-secondary mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                        </svg>
-                                        <span>English Language and Literacy</span>
-                                    </li>
-                                    <li class="flex items-start">
-                                        <svg class="w-5 h-5 text-secondary mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                        </svg>
-                                        <span>Mathematics</span>
-                                    </li>
-                                    <li class="flex items-start">
-                                        <svg class="w-5 h-5 text-secondary mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                        </svg>
-                                        <span>Science</span>
-                                    </li>
-                                    <li class="flex items-start">
-                                        <svg class="w-5 h-5 text-secondary mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                        </svg>
-                                        <span>Social Studies</span>
-                                    </li>
-                                    <li class="flex items-start">
-                                        <svg class="w-5 h-5 text-secondary mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                        </svg>
-                                        <span>Religious Education</span>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div>
-                                <h5 class="font-semibold text-primary mb-2">Additional Subjects:</h5>
-                                <ul class="space-y-1 text-gray-600">
-                                    <li class="flex items-start">
-                                        <svg class="w-5 h-5 text-secondary mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                        </svg>
-                                        <span>Creative Arts (Visual Art, Music, Drama)</span>
-                                    </li>
-                                    <li class="flex items-start">
-                                        <svg class="w-5 h-5 text-secondary mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                        </svg>
-                                        <span>Physical Education</span>
-                                    </li>
-                                    <li class="flex items-start">
-                                        <svg class="w-5 h-5 text-secondary mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                        </svg>
-                                        <span>Computer Studies</span>
-                                    </li>
-                                    <li class="flex items-start">
-                                        <svg class="w-5 h-5 text-secondary mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                        </svg>
-                                        <span>Local Language (Cinyanja/Bemba)</span>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Secondary -->
-                <div class="bg-gray-50 rounded-lg shadow-sm overflow-hidden">
-                    <div class="bg-green-600 p-4 text-white">
-                        <h4 class="text-xl font-bold">Secondary Education (Grades 8-12)</h4>
-                    </div>
-                    <div class="p-6">
-                        <p class="text-gray-600 mb-4">
-                            Our secondary curriculum follows the Zambian national curriculum leading to the Grade 9 and Grade 12 national examinations, enhanced with additional content and teaching approaches.
-                        </p>
-                        <div class="grid md:grid-cols-2 gap-4">
-                            <div>
-                                <h5 class="font-semibold text-primary mb-2">Junior Secondary (Grades 8-9):</h5>
-                                <ul class="space-y-1 text-gray-600">
-                                    <li class="flex items-start">
-                                        <svg class="w-5 h-5 text-secondary mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                        </svg>
-                                        <span>English Language</span>
-                                    </li>
-                                    <li class="flex items-start">
-                                        <svg class="w-5 h-5 text-secondary mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                        </svg>
-                                        <span>Mathematics</span>
-                                    </li>
-                                    <li class="flex items-start">
-                                        <svg class="w-5 h-5 text-secondary mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                        </svg>
-                                        <span>Integrated Science</span>
-                                    </li>
-                                    <li class="flex items-start">
-                                        <svg class="w-5 h-5 text-secondary mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                        </svg>
-                                        <span>Social Studies</span>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div>
-                                <h5 class="font-semibold text-primary mb-2">Senior Secondary (Grades 10-12):</h5>
-                                <ul class="space-y-1 text-gray-600">
-                                    <li class="flex items-start">
-                                        <svg class="w-5 h-5 text-secondary mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                        </svg>
-                                        <span>Science Stream (Biology, Chemistry, Physics)</span>
-                                    </li>
-                                    <li class="flex items-start">
-                                        <svg class="w-5 h-5 text-secondary mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                        </svg>
-                                        <span>Commerce Stream (Accounts, Commerce, Economics)</span>
-                                    </li>
-                                    <li class="flex items-start">
-                                        <svg class="w-5 h-5 text-secondary mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                        </svg>
-                                        <span>Arts Stream (Literature, History, RE)</span>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+{{-- OVERVIEW --}}
+<section class="site-section" style="background: #fff;">
+    <div class="site-wrap" style="max-width: 960px;">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+            <div class="lg:col-span-4">
+                <span class="site-kicker">Overview</span>
+                <h2 class="site-h2" style="margin-top: 12px; max-width: 15ch; font-size: clamp(30px, 3.6vw, 46px);">
+                    Educating the whole child.
+                </h2>
             </div>
-        </div>
-
-        <!-- Teaching and Assessment -->
-        <div class="max-w-5xl mx-auto mb-16">
-            <h3 class="text-2xl font-bold text-primary mb-6 text-center">Teaching and Assessment</h3>
-
-            <div class="grid md:grid-cols-2 gap-8">
-                <div>
-                    <div class="bg-gray-50 p-6 rounded-lg shadow-sm h-full">
-                        <h4 class="text-xl font-semibold text-primary mb-4">Teaching Approaches</h4>
-                        <p class="text-gray-600 mb-4">
-                            We emphasize inquiry-based learning approaches that encourage students to ask questions, explore concepts, and seek solutions. Our teachers serve as facilitators who guide students through the process of discovery and learning.
-                        </p>
-                        <p class="text-gray-600">
-                            Technology is integrated across the curriculum to enhance learning experiences, provide access to information and resources, and develop digital literacy skills.
-                        </p>
-                    </div>
-                </div>
-                <div>
-                    <div class="bg-gray-50 p-6 rounded-lg shadow-sm h-full">
-                        <h4 class="text-xl font-semibold text-primary mb-4">Assessment and Reporting</h4>
-                        <p class="text-gray-600 mb-4">
-                            We use a comprehensive assessment system that provides meaningful feedback about student progress and informs teaching practices. Our approach includes both formative assessments (daily classwork, projects) and summative assessments (exams, standardized tests).
-                        </p>
-                        <p class="text-gray-600">
-                            Reports provide a holistic view of each student's progress, including academic achievement, skill development, and personal growth.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Call to Action -->
-        <div class="max-w-3xl mx-auto">
-            <div class="bg-primary text-white rounded-lg p-8 text-center shadow-md">
-                <h3 class="text-2xl font-bold mb-4">Experience Our Comprehensive Curriculum</h3>
-                <p class="mb-6">
-                    Discover how our balanced, holistic curriculum can help your child develop into a knowledgeable, skilled, and compassionate individual prepared for future success.
+            <div class="lg:col-span-8" style="font-size: 17px; line-height: 1.7; color: var(--site-body);">
+                <p style="margin: 0 0 18px;">
+                    We offer a comprehensive curriculum that blends the Zambian national curriculum with international best practices — designed to develop critical thinking, creativity, and problem-solving skills alongside a strong foundation of subject knowledge.
                 </p>
-                <div class="flex flex-wrap justify-center gap-4">
-                    <a href="{{ route('admissions.apply') }}" class="px-6 py-3 bg-secondary text-white rounded-lg hover:bg-secondary/90 transition-colors font-medium">
-                        Apply Now
-                    </a>
-                    <a href="{{ route('contact') }}?tour=1" class="px-6 py-3 bg-white text-primary rounded-lg hover:bg-gray-100 transition-colors font-medium">
-                        Schedule a Tour
-                    </a>
-                </div>
+                <p style="margin: 0;">
+                    We educate the <strong style="color: var(--site-navy);">whole child</strong> — focusing not only on academic achievement but on character development, physical well-being, and social-emotional growth. The result is a graduate prepared for further education, career, and responsible citizenship.
+                </p>
             </div>
         </div>
     </div>
 </section>
+
+{{-- CURRICULUM BY LEVEL --}}
+<section class="site-section" style="background: var(--site-ground);">
+    <div class="site-wrap" style="max-width: 1180px;">
+        <div style="margin-bottom: 48px; max-width: 720px;">
+            <span class="site-kicker">By educational level</span>
+            <h2 class="site-h2" style="margin-top: 12px;">A continuous curriculum, stage by stage.</h2>
+        </div>
+
+        @php
+            $levels = [
+                [
+                    'level'  => 'Stage 1',
+                    'grade'  => 'Early Childhood Education',
+                    'ages'   => 'Baby Class · Middle Class · Reception',
+                    'accent' => 'var(--site-sun-soft)',
+                    'ink'    => 'var(--site-sun-ink)',
+                    'blurb'  => 'Holistic development through play-based learning — fostering curiosity, creativity, and foundational literacy and numeracy.',
+                    'left'   => ['Language development and early literacy', 'Number concepts and early mathematics', 'Environmental awareness', 'Creative expression and arts'],
+                    'left_h' => 'Key learning areas',
+                    'right'  => ['Play-based learning', 'Hands-on activities and exploration', 'Songs, stories, and rhymes'],
+                    'right_h'=> 'Teaching approaches',
+                ],
+                [
+                    'level'  => 'Stage 2',
+                    'grade'  => 'Primary Education',
+                    'ages'   => 'Grades 1 – 7',
+                    'accent' => 'var(--site-sky-2)',
+                    'ink'    => 'var(--site-navy)',
+                    'blurb'  => 'Structured foundational learning across the full Zambian primary curriculum. Aptitude-tested entry into Grade 7.',
+                    'left'   => ['English', 'Mathematics', 'Integrated Science', 'Social Studies', 'Creative &amp; Technology Studies', 'iCibemba (Zambian language)', 'Religious Education', 'Home Economics · Expressive Arts (Upper Primary)'],
+                    'left_h' => 'Core subjects',
+                    'right'  => ['Structured lesson plans', 'Regular formative assessment', 'Reading focus (PRWC)', 'Preparation for Grade 7 ECZ'],
+                    'right_h'=> 'Teaching approaches',
+                ],
+                [
+                    'level'  => 'Stage 3',
+                    'grade'  => 'Junior Secondary',
+                    'ages'   => 'Forms 1 – 2 · Grades 8 – 9',
+                    'accent' => 'var(--site-sky-2)',
+                    'ink'    => 'var(--site-navy)',
+                    'blurb'  => 'Broad-based secondary foundation — sciences, humanities, ICT, technology and languages. Prepares learners for senior subject choices.',
+                    'left'   => ['English · Mathematics', 'Integrated Science', 'Civic Ed · Religious Ed', 'Computer Studies', 'Design &amp; Technology', 'Home Economics · Art', 'Zambian Language', 'Physical Education'],
+                    'left_h' => 'Compulsory subjects',
+                    'right'  => ['Foundational subject exposure', 'Guidance on senior-subject choices', 'Structured lab work in sciences', 'Regular internal assessment'],
+                    'right_h'=> 'Teaching approaches',
+                ],
+                [
+                    'level'  => 'Stage 4',
+                    'grade'  => 'Senior Secondary',
+                    'ages'   => 'Forms 3 – 5 · Grades 10 – 12',
+                    'accent' => '#F5E6D6',
+                    'ink'    => 'var(--site-red-ink)',
+                    'blurb'  => 'Specialisation through subject choice; culminates in the Grade 12 ECZ examination at our own registered centre.',
+                    'left'   => ['Physics · Chemistry · Biology', 'Mathematics · Additional Maths', 'English Language · Literature', 'Geography · History', 'Commerce · Accounts', 'Computer Studies', 'Home Management · Food &amp; Nutrition', 'Art · Music · P.E.'],
+                    'left_h' => 'Subject offering',
+                    'right'  => ['Subject-specialist teaching', 'Termly mock examinations', 'Item-level analysis of weak topics', 'Grade 12 ECZ verified by senior leadership'],
+                    'right_h'=> 'Approaches &amp; assessment',
+                ],
+            ];
+        @endphp
+
+        <div style="display: grid; grid-template-columns: 1fr; gap: 20px;">
+            @foreach($levels as $lv)
+                <article class="site-card" style="padding: 0; overflow: hidden;">
+                    <div style="display: grid; grid-template-columns: minmax(200px, 260px) 1fr; align-items: stretch;">
+                        <div style="background: {{ $lv['accent'] }}; padding: 26px 28px; display: flex; flex-direction: column; justify-content: center;">
+                            <span class="site-kicker" style="color: {{ $lv['ink'] }};">{{ $lv['level'] }}</span>
+                            <h3 style="margin: 8px 0 4px; font-family: var(--site-display); font-weight: 800; font-size: clamp(22px, 2vw, 28px); color: {{ $lv['ink'] }}; letter-spacing: -0.015em; line-height: 1.05;">{{ $lv['grade'] }}</h3>
+                            <p style="margin: 0; font-size: 14px; color: {{ $lv['ink'] }}; opacity: .78;">{!! $lv['ages'] !!}</p>
+                        </div>
+                        <div style="padding: 24px 28px; background: #fff;">
+                            <p style="margin: 0 0 16px; color: var(--site-body); font-size: 15.5px; line-height: 1.55;">{!! $lv['blurb'] !!}</p>
+                            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px;">
+                                <div>
+                                    <span class="site-kicker" style="letter-spacing: .18em;">{{ $lv['left_h'] }}</span>
+                                    <ul style="margin: 8px 0 0; padding: 0; list-style: none; color: var(--site-body); font-size: 14.5px; line-height: 1.7;">
+                                        @foreach($lv['left'] as $i)<li>› {!! $i !!}</li>@endforeach
+                                    </ul>
+                                </div>
+                                <div>
+                                    <span class="site-kicker" style="letter-spacing: .18em;">{{ $lv['right_h'] }}</span>
+                                    <ul style="margin: 8px 0 0; padding: 0; list-style: none; color: var(--site-body); font-size: 14.5px; line-height: 1.7;">
+                                        @foreach($lv['right'] as $i)<li>› {!! $i !!}</li>@endforeach
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            @endforeach
+        </div>
+
+        <style>
+            @media (max-width: 720px) {
+                article.site-card > div { grid-template-columns: 1fr !important; }
+                article.site-card > div > div:nth-child(2) > div { grid-template-columns: 1fr !important; }
+            }
+        </style>
+    </div>
+</section>
+
+{{-- TEACHING & ASSESSMENT --}}
+<section class="site-section" style="background: #fff;">
+    <div class="site-wrap" style="max-width: 1180px;">
+        <div style="margin-bottom: 48px; max-width: 720px;">
+            <span class="site-kicker">Teaching &amp; assessment</span>
+            <h2 class="site-h2" style="margin-top: 12px;">How we teach — and how we know it's working.</h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <article class="site-card">
+                <div style="width: 48px; height: 48px; border-radius: 14px; background: var(--site-sky-2); color: var(--site-navy); display: flex; align-items: center; justify-content: center; font-size: 24px; margin-bottom: 16px;">
+                    <i class='bx bxs-chalkboard'></i>
+                </div>
+                <h3 class="site-h3">Teaching approaches</h3>
+                <ul style="margin: 12px 0 0; padding: 0; list-style: none; color: var(--site-body); font-size: 15.5px; line-height: 1.7;">
+                    <li>› Structured lesson plans matched to the ECZ syllabus</li>
+                    <li>› Small-group and individualised support (PRWC)</li>
+                    <li>› Practical work in science, ICT and home-economics laboratories</li>
+                    <li>› Cross-subject projects at each grade level</li>
+                    <li>› Explicit character formation through daily routines</li>
+                </ul>
+            </article>
+            <article class="site-card">
+                <div style="width: 48px; height: 48px; border-radius: 14px; background: var(--site-sun-soft); color: var(--site-sun-ink); display: flex; align-items: center; justify-content: center; font-size: 24px; margin-bottom: 16px;">
+                    <i class='bx bxs-report'></i>
+                </div>
+                <h3 class="site-h3">Assessment and reporting</h3>
+                <ul style="margin: 12px 0 0; padding: 0; list-style: none; color: var(--site-body); font-size: 15.5px; line-height: 1.7;">
+                    <li>› End-of-term assessments at every grade</li>
+                    <li>› Termly mock examinations for Grades 7 and 12</li>
+                    <li>› Item-level analysis to identify weak topics</li>
+                    <li>› Detailed termly reports shared with parents</li>
+                    <li>› Grade 7 and 12 ECZ sat at our own examination centre</li>
+                </ul>
+            </article>
+        </div>
+    </div>
+</section>
+
+{{-- CTA --}}
+<section class="site-section" style="background: linear-gradient(120deg, var(--site-navy) 0%, var(--site-navy-2) 100%); color: #fff; text-align: center;">
+    <div class="site-wrap" style="max-width: 780px;">
+        <span class="site-kicker" style="color: var(--site-sun);">See it in practice</span>
+        <h2 style="margin: 12px 0 20px; font-family: var(--site-display); font-weight: 800; font-size: clamp(30px, 4vw, 48px); line-height: 1.05; letter-spacing: -0.03em; color: #fff;">
+            Come and sit in a lesson.
+        </h2>
+        <p style="margin: 0 auto; max-width: 55ch; font-size: 17px; line-height: 1.6; color: rgba(255,255,255,0.85);">
+            A curriculum shows better than it explains. Book a tour and see the lessons happening.
+        </p>
+        <div style="margin-top: 28px; display: flex; flex-wrap: wrap; justify-content: center; gap: 12px;">
+            <a href="/contact" class="site-btn site-btn-sun">Book a lesson visit</a>
+            <a href="/admissions" class="site-btn site-btn-ghost-light">See admissions</a>
+        </div>
+    </div>
+</section>
+
 @endsection

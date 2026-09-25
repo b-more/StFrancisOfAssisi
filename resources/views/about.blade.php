@@ -25,8 +25,8 @@
                 </div>
             </div>
             <div class="lg:col-span-5">
-                <div style="border-radius: 28px; overflow: hidden; box-shadow: 0 30px 60px -20px rgba(15, 30, 51, .35); aspect-ratio: 4/5; background: var(--site-sky-2);">
-                    <img src="/images/campus/campus2.jpg" alt="The school campus" style="width:100%; height:100%; object-fit: cover; display: block;">
+                <div style="max-width: 460px; margin: 0 auto; border-radius: 28px; overflow: hidden; box-shadow: 0 30px 60px -20px rgba(15, 30, 51, .35); aspect-ratio: 4/3; background: var(--site-sky-2);">
+                    <img src="/images/campus/campus2.jpg" alt="The school campus" style="width:100%; height:100%; object-fit: cover; display: block;" loading="lazy">
                 </div>
             </div>
         </div>
@@ -136,8 +136,8 @@
     <div class="site-wrap" style="max-width: 1180px;">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
             <div class="lg:col-span-5">
-                <div style="border-radius: 28px; overflow: hidden; box-shadow: 0 28px 56px -22px rgba(15, 30, 51, .28); aspect-ratio: 4/5; background: var(--site-sky-2);">
-                    <img src="/images/church.png" alt="Christian foundation at St. Francis" style="width: 100%; height: 100%; object-fit: cover; display: block;" onerror="this.style.display='none'; this.parentElement.style.background='linear-gradient(180deg, var(--site-sky) 0%, var(--site-sky-2) 100%)';">
+                <div style="max-width: 420px; margin: 0 auto; border-radius: 28px; overflow: hidden; box-shadow: 0 28px 56px -22px rgba(15, 30, 51, .28); aspect-ratio: 4/3; background: var(--site-sky-2);">
+                    <img src="/images/church.png" alt="Christian foundation at St. Francis" style="width: 100%; height: 100%; object-fit: cover; display: block;" loading="lazy" onerror="this.style.display='none'; this.parentElement.style.background='linear-gradient(180deg, var(--site-sky) 0%, var(--site-sky-2) 100%)';">
                 </div>
             </div>
             <div class="lg:col-span-7">

@@ -64,11 +64,53 @@
                 </div>
             @endif
 
-            <div style="background: #fff; border: 1px solid var(--site-line); border-radius: 20px; overflow: hidden; box-shadow: 0 12px 32px rgba(15,30,51,.05);">
+            <div class="apply-card" style="background: #fff; border: 1px solid var(--site-line); border-radius: 20px; overflow: hidden; box-shadow: 0 12px 32px rgba(15,30,51,.05);">
                 <div style="background: linear-gradient(120deg, var(--site-navy) 0%, var(--site-navy-2) 100%); padding: 24px 28px; color: #fff;">
                     <h3 style="margin: 0; font-family: var(--site-display); font-weight: 800; font-size: 22px; letter-spacing: -0.01em;">Student Application Form</h3>
                     <p style="margin: 6px 0 0; font-size: 14px; color: rgba(255,255,255,0.8);">Please fill out all required fields.</p>
                 </div>
+
+                <style>
+                    /* Modernise every input, select, textarea inside the apply form */
+                    .apply-card form { padding: 28px !important; }
+                    .apply-card form h4 {
+                        font-family: var(--site-display); font-weight: 800; font-size: 19px;
+                        color: var(--site-navy); letter-spacing: -0.01em;
+                        margin-bottom: 18px; padding-bottom: 10px; border-bottom: 1px solid var(--site-line);
+                    }
+                    .apply-card form label {
+                        font-family: var(--site-sans); font-weight: 600; font-size: 14px;
+                        color: var(--site-ink); margin-bottom: 6px; display: block;
+                    }
+                    .apply-card form input[type=text],
+                    .apply-card form input[type=email],
+                    .apply-card form input[type=tel],
+                    .apply-card form input[type=number],
+                    .apply-card form input[type=date],
+                    .apply-card form input[type=file],
+                    .apply-card form select,
+                    .apply-card form textarea {
+                        width: 100%; padding: 12px 14px;
+                        border: 1.5px solid var(--site-line) !important; border-radius: 12px !important;
+                        font: 400 15.5px var(--site-sans); color: var(--site-ink); background: #fff;
+                        transition: border-color .15s, box-shadow .15s;
+                    }
+                    .apply-card form input:focus,
+                    .apply-card form select:focus,
+                    .apply-card form textarea:focus {
+                        outline: none;
+                        border-color: var(--site-navy-2) !important;
+                        box-shadow: 0 0 0 3px rgba(31,78,121,0.12);
+                    }
+                    .apply-card form input.border-red-500,
+                    .apply-card form select.border-red-500 {
+                        border-color: var(--site-red) !important;
+                    }
+                    .apply-card form textarea { min-height: 120px; resize: vertical; }
+                    .apply-card form .text-red-500 {
+                        color: var(--site-red) !important; font-size: 12.5px !important; margin-top: 4px;
+                    }
+                </style>
 
                 <form action="{{ route('admissions.submit') }}" method="POST" class="p-6" enctype="multipart/form-data">
                     @csrf
