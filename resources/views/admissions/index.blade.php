@@ -10,8 +10,8 @@
      ============================================================ --}}
 <section style="background: linear-gradient(180deg, var(--site-sky) 0%, #fff 100%); padding-block: clamp(60px, 8vw, 120px) clamp(40px, 6vw, 80px);">
     <div class="site-wrap">
-        <div class="grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-12 lg:gap-16 items-center">
-            <div class="md:col-span-7">
+        <div style="display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: clamp(16px, 3vw, 64px); align-items: center;">
+            <div style="min-width: 0;">
                 <span class="site-pill site-pill-sun">Admissions · Now open</span>
                 <h1 class="font-display" style="margin: 20px 0 18px; font-size: clamp(44px, 6vw, 88px); line-height: 1.02; letter-spacing: -0.03em; color: var(--site-navy); max-width: 15ch;">
                     Bring us your <span style="color: var(--site-red);">child.</span> We'll do the rest.
@@ -24,8 +24,8 @@
                     <a href="/contact" class="site-btn site-btn-line">Book a campus visit</a>
                 </div>
             </div>
-            <div class="md:col-span-5">
-                <div style="max-width: 460px; margin: 0 auto; border-radius: 28px; overflow: hidden; box-shadow: 0 30px 60px -20px rgba(15, 30, 51, .35); aspect-ratio: 4/3; background: var(--site-sky-2);">
+            <div style="min-width: 0;">
+                <div style="max-width: 460px; margin: 0 auto; border-radius: clamp(14px, 2vw, 28px); overflow: hidden; box-shadow: 0 30px 60px -20px rgba(15, 30, 51, .35); aspect-ratio: 4/3; background: var(--site-sky-2);">
                     <img src="/images/ecl/ecl5.jpg" alt="Early Childhood classroom" style="width:100%; height:100%; object-fit: cover; display: block;" loading="lazy">
                 </div>
             </div>
