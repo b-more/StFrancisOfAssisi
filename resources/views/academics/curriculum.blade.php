@@ -3,17 +3,18 @@
 @section('title', 'Curriculum')
 
 @section('content')
-<!-- Page Header -->
-<div class="relative bg-gradient-to-r from-primary/80 to-primary/60 py-32">
-    <img src="{{ asset('images/curriculum-banner.jpg') }}" alt="Our Curriculum" class="absolute inset-0 w-full h-full object-cover mix-blend-overlay"
-         onerror="this.style.display='none'">
-    <div class="relative container mx-auto px-4 text-center">
-        <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">Our Curriculum</h1>
-        <p class="text-xl text-white/90 max-w-2xl mx-auto">
-            A comprehensive approach to education that prepares students for lifelong success
+{{-- HERO --}}
+<section style="background: linear-gradient(180deg, var(--site-sky) 0%, #fff 100%); padding-block: clamp(60px, 8vw, 100px) clamp(40px, 5vw, 70px);">
+    <div class="site-wrap" style="text-align: center; max-width: 780px;">
+        <span class="site-pill site-pill-sun">Academics · Curriculum</span>
+        <h1 style="margin: 20px 0 18px; font-family: var(--site-display); font-weight: 800; font-size: clamp(40px, 5.5vw, 76px); line-height: 1.02; letter-spacing: -0.03em; color: var(--site-navy);">
+            Our <span style="color: var(--site-red);">curriculum.</span>
+        </h1>
+        <p class="site-lead" style="margin-inline: auto; max-width: 56ch;">
+            A comprehensive approach to education that prepares learners for lifelong success — the Zambian national curriculum blended with international best practices.
         </p>
     </div>
-</div>
+</section>
 
 <!-- Main Content -->
 <section class="py-20 bg-white">

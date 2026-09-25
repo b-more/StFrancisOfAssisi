@@ -9,13 +9,88 @@
 
     <!-- Styles, locally-compiled Tailwind (custom palette baked in) -->
     <link rel="stylesheet" href="{{ asset('css/tailwind.css') }}?v={{ filemtime(public_path('css/tailwind.css')) }}">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <style>
-        body { font-family: 'Inter', sans-serif; }
-        .font-display { font-family: 'Cormorant Garamond', Georgia, serif; }
+        /* ============================================================
+           Landing-page design tokens — every marketing page inherits
+           these via the shared layout, so the whole site now uses one
+           system: Bricolage Grotesque display + DM Sans body, navy /
+           sun-yellow / red on a light ground.  (added 2026-09-25)
+           ============================================================ */
+        :root {
+            --site-navy: #15315A;    --site-navy-2: #1F4E79;   --site-navy-deep: #0F2440;
+            --site-red: #D42B2B;     --site-red-ink: #B8231F;
+            --site-sun: #FFC83D;     --site-sun-soft: #FFE7A3; --site-sun-ink: #4F3B00;
+            --site-sky: #EAF2FD;     --site-sky-2: #DCE8FB;    --site-ground: #F6F9FD;
+            --site-ink: #0F1E33;     --site-body: #3C4B60;     --site-muted: #C9D6E8;
+            --site-line: #E6ECF3;
+            --site-display: 'Bricolage Grotesque', 'DM Sans', system-ui, sans-serif;
+            --site-sans:    'DM Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+            --site-pad: clamp(20px, 5.5vw, 80px);
+            --site-section: clamp(56px, 8vw, 112px);
+        }
+
+        body { font-family: var(--site-sans); color: var(--site-ink); }
+        /* Retired: Cormorant Garamond. .font-display now uses the new
+           Bricolage Grotesque display face so any existing page that
+           uses class="font-display" is modernised for free. */
+        .font-display { font-family: var(--site-display); font-weight: 800; letter-spacing: -0.02em; }
+
         .transition-all { transition: all 0.3s ease-in-out; }
         main { padding-top: 4rem; }
+
+        /* Landing-page utility classes — small, reusable, additive.
+           Marketing pages progressively adopt these as they're rewritten
+           in the new pattern. */
+        .site-wrap    { max-width: 1440px; margin: 0 auto; padding-inline: var(--site-pad); }
+        .site-section { padding-block: var(--site-section); }
+        .site-lead    { font-size: clamp(16.5px, 1.4vw, 19px); line-height: 1.6; color: var(--site-body); margin: 0; }
+        .site-h2      { font-family: var(--site-display); font-weight: 800; font-size: clamp(34px, 4.2vw, 56px); line-height: 1.02; letter-spacing: -0.03em; color: var(--site-navy); margin: 0; }
+        .site-h3      { font-family: var(--site-display); font-weight: 700; font-size: clamp(22px, 2.2vw, 30px); line-height: 1.1; letter-spacing: -0.015em; color: var(--site-navy); margin: 0; }
+        .site-kicker  { font-size: 11px; font-weight: 700; letter-spacing: 0.28em; text-transform: uppercase; color: var(--site-red); }
+
+        .site-btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+                    white-space: nowrap; min-height: 56px; padding: 0 28px; border-radius: 999px;
+                    font: 700 17px/1 var(--site-sans); text-decoration: none; border: 2px solid transparent;
+                    transition: transform .18s, box-shadow .22s, background-color .18s, color .18s, border-color .18s; }
+        .site-btn:hover { transform: translateY(-1.5px); }
+        .site-btn-red   { background: var(--site-red); color: #fff; }
+        .site-btn-red:hover   { background: var(--site-red-ink); color: #fff; box-shadow: 0 14px 32px rgba(212,43,43,.28); }
+        .site-btn-sun   { background: var(--site-sun); color: var(--site-navy); font-weight: 800; }
+        .site-btn-sun:hover   { background: #ffd666; box-shadow: 0 14px 32px rgba(255,200,61,.35); }
+        .site-btn-line  { border-color: var(--site-navy); color: var(--site-navy); background: transparent; }
+        .site-btn-line:hover  { background: var(--site-navy); color: #fff; }
+        .site-btn-ghost-light { border-color: rgba(255,255,255,.4); color: #fff; }
+        .site-btn-ghost-light:hover { background: rgba(255,255,255,.1); color: #fff; }
+
+        .site-pill      { display: inline-flex; align-items: center; gap: 6px; font-size: 15px; font-weight: 700;
+                          padding: 8px 16px; border-radius: 999px; }
+        .site-pill-sun  { background: var(--site-sun-soft); color: var(--site-sun-ink); }
+        .site-pill-sky  { background: var(--site-sky-2);    color: var(--site-navy); }
+
+        .site-card { background: #fff; border: 1px solid var(--site-line); border-radius: 20px;
+                     padding: clamp(22px, 2.6vw, 32px); transition: transform .28s cubic-bezier(.2,.8,.2,1), box-shadow .28s ease; }
+        .site-card:hover { transform: translateY(-4px); box-shadow: 0 22px 46px rgba(15,30,51,.10); }
+        .site-card h3 { margin: 0 0 8px; }
+
+        /* Modernise the legacy signature elements so pages that still
+           use them (before we rewrite them) look consistent with the
+           new system, not the old serif-editorial one. */
+        .arched { border-radius: 32px; }  /* keep the shape name; softer, modern corners */
+        .arched::after { border-color: rgba(255,200,61,.6); }
+        .ribbon { background: var(--site-navy-deep); color: var(--site-sun); letter-spacing: .18em; font-family: var(--site-display); }
+        .navy-hero { background: linear-gradient(120deg, var(--site-navy) 0%, var(--site-navy-2) 100%); }
+
+        /* Roman numeral markers — kept, but they now read as modern
+           editorial notation over the Bricolage display face. */
+        .numeral { display: inline-flex; align-items: baseline; gap: .75rem; font-family: var(--site-display); color: var(--site-sun-ink); }
+        .numeral .n { font-size: 1.4rem; font-weight: 800; letter-spacing: .05em; line-height: 1; text-transform: uppercase; }
+        .numeral .r { display: inline-block; width: 2.6rem; height: 2px; background: var(--site-sun); transform: translateY(-.28rem); }
+        .numeral.on-dark { color: var(--site-sun); }
+        .numeral.on-dark .r { background: var(--site-sun); }
 
         /* Cloistered-editorial tokens — shared with the static homepage */
         .bg-paper      { background-color: #F5EFE0; }

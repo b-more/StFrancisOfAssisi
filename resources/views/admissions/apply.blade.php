@@ -3,64 +3,51 @@
 @section('title', 'Apply Now')
 
 @section('content')
-<!-- Page Header -->
-<div class="relative bg-gradient-to-r from-primary/80 to-primary/60 py-32">
-    <img src="{{ asset('images/apply-banner.jpg') }}" alt="Apply Now" class="absolute inset-0 w-full h-full object-cover mix-blend-overlay"
-         onerror="this.style.display='none'">
-    <div class="relative container mx-auto px-4 text-center">
-        <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">Apply Now</h1>
-        <p class="text-xl text-white/90 max-w-2xl mx-auto">
-            Start your application to St. Francis of Assisi Private School
+{{-- HERO --}}
+<section style="background: linear-gradient(180deg, var(--site-sky) 0%, #fff 100%); padding-block: clamp(60px, 8vw, 100px) clamp(40px, 5vw, 70px);">
+    <div class="site-wrap" style="text-align: center; max-width: 780px;">
+        <span class="site-pill site-pill-sun">Admissions · Apply now</span>
+        <h1 style="margin: 20px 0 18px; font-family: var(--site-display); font-weight: 800; font-size: clamp(40px, 5.5vw, 76px); line-height: 1.02; letter-spacing: -0.03em; color: var(--site-navy);">
+            Begin your child's <span style="color: var(--site-red);">journey.</span>
+        </h1>
+        <p class="site-lead" style="margin-inline: auto; max-width: 56ch;">
+            Thanks for considering St. Francis. Complete the form below to start the admission process — our team will contact you within 5 working days about next steps, including any assessment test and interview.
         </p>
     </div>
-</div>
+</section>
 
-<!-- Main Content -->
-<section class="py-20 bg-white">
-    <div class="container mx-auto px-4">
-        <!-- Introduction -->
-        <div class="max-w-4xl mx-auto mb-12">
-            <h2 class="text-3xl font-bold text-primary mb-6">Application Process</h2>
-            <p class="text-gray-600 mb-4">
-                Thank you for your interest in St. Francis of Assisi Private School. We're excited that you're considering joining our school community. Please complete the application form below to start the admission process.
-            </p>
-            <p class="text-gray-600">
-                After submitting your application, our admissions team will review it and contact you regarding the next steps, which may include scheduling an assessment test and interview.
-            </p>
+{{-- APPLICATION STEPS --}}
+<section style="background: var(--site-ground); padding-block: clamp(48px, 6vw, 80px);">
+    <div class="site-wrap" style="max-width: 1180px;">
+        <div style="margin-bottom: 32px; max-width: 720px;">
+            <span class="site-kicker">Application steps</span>
+            <h2 class="site-h2" style="margin-top: 12px; max-width: 22ch; font-size: clamp(28px, 3.4vw, 42px);">
+                Four steps from enquiry to enrolment.
+            </h2>
         </div>
-
-        <!-- Application Steps -->
-        <div class="max-w-5xl mx-auto mb-12">
-            <div class="bg-gray-50 rounded-lg p-6 shadow-sm">
-                <h3 class="text-xl font-bold text-primary mb-4">Application Steps</h3>
-
-                <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
-                    <div class="bg-white p-4 rounded-lg border border-gray-200 relative">
-                        <div class="absolute -top-3 -left-3 w-8 h-8 bg-primary rounded-full flex items-center justify-center text-white font-bold">1</div>
-                        <h4 class="font-semibold text-primary mb-2 mt-1">Complete Form</h4>
-                        <p class="text-gray-600 text-sm">Fill out the online application form with accurate information</p>
-                    </div>
-
-                    <div class="bg-white p-4 rounded-lg border border-gray-200 relative">
-                        <div class="absolute -top-3 -left-3 w-8 h-8 bg-primary rounded-full flex items-center justify-center text-white font-bold">2</div>
-                        <h4 class="font-semibold text-primary mb-2 mt-1">Pay Application Fee</h4>
-                        <p class="text-gray-600 text-sm">Pay the non-refundable application fee of K50</p>
-                    </div>
-
-                    <div class="bg-white p-4 rounded-lg border border-gray-200 relative">
-                        <div class="absolute -top-3 -left-3 w-8 h-8 bg-primary rounded-full flex items-center justify-center text-white font-bold">3</div>
-                        <h4 class="font-semibold text-primary mb-2 mt-1">Submit Documents</h4>
-                        <p class="text-gray-600 text-sm">Upload or send required documents to complete your application</p>
-                    </div>
-
-                    <div class="bg-white p-4 rounded-lg border border-gray-200 relative">
-                        <div class="absolute -top-3 -left-3 w-8 h-8 bg-primary rounded-full flex items-center justify-center text-white font-bold">4</div>
-                        <h4 class="font-semibold text-primary mb-2 mt-1">Await Response</h4>
-                        <p class="text-gray-600 text-sm">We'll contact you within 5 business days to schedule next steps</p>
-                    </div>
+        @php
+            $applySteps = [
+                ['01', 'Complete form',       'Fill out the online application form below with accurate information.'],
+                ['02', 'Pay application fee', 'Pay the non-refundable application fee of K50 at the office or via the fee schedule.'],
+                ['03', 'Submit documents',    "Upload or bring the required documents (birth certificate, most recent report, photo)."],
+                ['04', 'Await our reply',     'We contact you within 5 working days to schedule the aptitude test (if any) and next steps.'],
+            ];
+        @endphp
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+            @foreach($applySteps as $s)
+                <div class="site-card">
+                    <div style="width: 48px; height: 48px; border-radius: 14px; background: var(--site-sun); color: var(--site-navy); display: flex; align-items: center; justify-content: center; font-family: var(--site-display); font-weight: 800; font-size: 17px; margin-bottom: 14px;">{{ $s[0] }}</div>
+                    <h3 class="site-h3" style="font-size: clamp(18px, 1.6vw, 22px);">{{ $s[1] }}</h3>
+                    <p style="margin: 6px 0 0; color: var(--site-body); font-size: 15px; line-height: 1.55;">{{ $s[2] }}</p>
                 </div>
-            </div>
+            @endforeach
         </div>
+    </div>
+</section>
+
+{{-- APPLICATION FORM --}}
+<section style="background: #fff; padding-block: clamp(48px, 6vw, 96px);">
+    <div class="site-wrap" style="max-width: 900px;">
 
         <!-- Application Form -->
         <div class="max-w-4xl mx-auto">
@@ -77,10 +64,10 @@
                 </div>
             @endif
 
-            <div class="bg-white rounded-lg shadow-md overflow-hidden">
-                <div class="bg-primary p-6 text-white">
-                    <h3 class="text-xl font-bold">Student Application Form</h3>
-                    <p class="text-white/80 text-sm mt-1">Please fill out all required fields</p>
+            <div style="background: #fff; border: 1px solid var(--site-line); border-radius: 20px; overflow: hidden; box-shadow: 0 12px 32px rgba(15,30,51,.05);">
+                <div style="background: linear-gradient(120deg, var(--site-navy) 0%, var(--site-navy-2) 100%); padding: 24px 28px; color: #fff;">
+                    <h3 style="margin: 0; font-family: var(--site-display); font-weight: 800; font-size: 22px; letter-spacing: -0.01em;">Student Application Form</h3>
+                    <p style="margin: 6px 0 0; font-size: 14px; color: rgba(255,255,255,0.8);">Please fill out all required fields.</p>
                 </div>
 
                 <form action="{{ route('admissions.submit') }}" method="POST" class="p-6" enctype="multipart/form-data">
@@ -364,10 +351,11 @@
                     </div>
 
                     <!-- Submit Button -->
-                    <div class="text-center">
-                        <button type="submit" class="px-8 py-3 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors font-medium">
+                    <div class="text-center" style="margin-top: 8px;">
+                        <button type="submit" class="site-btn site-btn-red" style="min-width: 260px;">
                             Submit Application
                         </button>
+                        <p style="margin: 14px 0 0; font-size: 13.5px; color: var(--site-muted);">Our admissions team will reply within 5 working days.</p>
                     </div>
                 </form>
             </div>
@@ -382,7 +370,7 @@
                 </ol>
 
                 <p class="mt-4 text-gray-600">
-                    If you have any questions about the application process, please contact our Admissions Office at +260 977 123 456 or <a href="mailto:admissions@stfrancisschool.edu.zm" class="text-primary hover:underline">admissions@stfrancisschool.edu.zm</a>.
+                    If you have any questions about the application process, please contact our Admissions Office at <a href="tel:+260972266217" style="color: var(--site-navy-2); font-weight: 600;">+260 972 266 217</a> or <a href="mailto:stfrancisofassisi.sfa@gmail.com" style="color: var(--site-navy-2); font-weight: 600;">stfrancisofassisi.sfa@gmail.com</a>.
                 </p>
             </div>
         </div>

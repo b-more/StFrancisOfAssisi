@@ -4,44 +4,55 @@
 @section('description', 'For learners aged approximately 3 to 6 years. Baby Class, Middle Class, and Reception in dedicated child-friendly classrooms with experienced ECE teachers and trained Aunties.')
 
 @section('content')
-<section class="navy-hero">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20">
-        <p class="text-xs uppercase tracking-widest text-secondary mb-3"><a href="/academics" class="hover:underline">Academics</a> · Early Childhood</p>
-        <h1 class="font-display text-4xl md:text-6xl font-semibold leading-tight">Early Childhood Education.</h1>
-        <p class="mt-4 text-white/90 text-lg">For learners aged approximately 3 to 6 years.</p>
+
+{{-- HERO --}}
+<section style="background: linear-gradient(120deg, var(--site-navy) 0%, var(--site-navy-2) 100%); color:#fff; position:relative; overflow:hidden;">
+    <div style="position:absolute; inset:0; opacity:0.08; background-image: radial-gradient(circle at 15% 20%, var(--site-sun) 1px, transparent 1px), radial-gradient(circle at 80% 70%, var(--site-sun) 1px, transparent 1px); background-size:100px 100px, 140px 140px; pointer-events:none;"></div>
+    <div class="site-wrap" style="position:relative; padding-block: clamp(60px, 7vw, 100px);">
+        <span class="site-kicker" style="color: var(--site-sun);"><a href="/academics" style="color:inherit; text-decoration:none;">Academics</a> · Early Childhood</span>
+        <h1 style="margin: 14px 0 12px; font-family: var(--site-display); font-weight: 800; font-size: clamp(40px, 5.5vw, 76px); line-height: 1.02; letter-spacing: -0.03em; color:#fff;">
+            Early Childhood Education.
+        </h1>
+        <p class="site-lead" style="color: rgba(255,255,255,0.85); max-width: 55ch;">
+            For learners aged approximately 3 to 6 years — the first classroom experience, done well.
+        </p>
     </div>
 </section>
 
-<div class="ribbon"><span>For God</span><span class="cross">✠</span><span>For Country</span><span class="cross">✠</span><span>For Every Child</span></div>
+{{-- Motto ribbon --}}
+<div style="background: var(--site-navy-deep); color: var(--site-sun); padding: 18px 20px; text-align: center;">
+    <span style="font-family: var(--site-display); letter-spacing: .18em; text-transform: uppercase; font-size: clamp(11px, 1.2vw, 15px); font-weight: 700;">
+        For God · For Country · For Every Child
+    </span>
+</div>
 
-
-<section class="py-16 md:py-20 bg-white">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <p class="text-lg text-gray-700 leading-relaxed mb-10">
+<section class="site-section" style="background: var(--site-ground);">
+    <div class="site-wrap" style="max-width: 900px;">
+        <p style="margin: 0 0 40px; font-size: 17.5px; line-height: 1.7; color: var(--site-body);">
             The ECE section is housed in dedicated classrooms recently rebranded for a fresh, child-friendly learning environment, with experienced ECE teachers and trained Aunties supporting the youngest members of our community.
         </p>
 
-        <div class="space-y-6">
-            <div class="bg-gray-50 p-7 border-l-4 border-accent">
-                <p class="text-xs uppercase tracking-widest text-accent font-semibold mb-2">Stage 1</p>
-                <h3 class="font-display text-2xl text-primary font-semibold mb-2">Baby Class</h3>
-                <p class="text-gray-700">First formal classroom experience. Focused on socialisation, motor skills, and language exposure.</p>
-            </div>
-            <div class="bg-gray-50 p-7 border-l-4 border-accent">
-                <p class="text-xs uppercase tracking-widest text-accent font-semibold mb-2">Stage 2</p>
-                <h3 class="font-display text-2xl text-primary font-semibold mb-2">Middle Class</h3>
-                <p class="text-gray-700">Building on Baby Class with structured pre-literacy and pre-numeracy.</p>
-            </div>
-            <div class="bg-gray-50 p-7 border-l-4 border-accent">
-                <p class="text-xs uppercase tracking-widest text-accent font-semibold mb-2">Stage 3</p>
-                <h3 class="font-display text-2xl text-primary font-semibold mb-2">Reception</h3>
-                <p class="text-gray-700">Final year before Grade 1, ensuring readiness for the Primary curriculum.</p>
-            </div>
+        @php
+            $stages = [
+                ['Stage 1', 'Baby Class',   'First formal classroom experience. Focused on socialisation, motor skills, and language exposure.'],
+                ['Stage 2', 'Middle Class', 'Building on Baby Class with structured pre-literacy and pre-numeracy.'],
+                ['Stage 3', 'Reception',    'Final year before Grade 1, ensuring readiness for the Primary curriculum.'],
+            ];
+        @endphp
+        <div style="display: grid; grid-template-columns: 1fr; gap: 16px;">
+            @foreach($stages as $s)
+                <div class="site-card" style="border-left: 4px solid var(--site-red);">
+                    <span class="site-kicker">{{ $s[0] }}</span>
+                    <h3 class="site-h3" style="margin: 8px 0 6px;">{{ $s[1] }}</h3>
+                    <p style="margin: 0; color: var(--site-body); font-size: 16px; line-height: 1.6;">{{ $s[2] }}</p>
+                </div>
+            @endforeach
         </div>
 
-        <div class="mt-10 text-center">
-            <a href="/admissions/apply" class="inline-block bg-accent text-white px-7 py-3 rounded-md font-semibold hover:bg-accent-dark transition shadow-lg">Enquire about ECE admission</a>
+        <div style="margin-top: 40px; text-align: center;">
+            <a href="/admissions/apply" class="site-btn site-btn-red">Enquire about ECE admission</a>
         </div>
     </div>
 </section>
+
 @endsection
