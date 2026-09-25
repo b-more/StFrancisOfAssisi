@@ -58,6 +58,14 @@
                                 <i class='bx bx-image mr-3'></i>
                                 Gallery
                             </a>
+                            <a href="/fee-schedule" class="flex items-center px-4 py-2 text-gray-700 hover:bg-primary/10 hover:text-primary transition-colors">
+                                <i class='bx bx-file mr-3'></i>
+                                Fee Schedule
+                            </a>
+                            <a href="/downloads/" class="flex items-center px-4 py-2 text-gray-700 hover:bg-primary/10 hover:text-primary transition-colors">
+                                <i class='bx bx-download mr-3'></i>
+                                Downloads
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -137,6 +145,18 @@
                               transition-all duration-300 font-medium">
                         <i class='bx bx-image mr-3'></i>
                         Gallery
+                    </a>
+                    <a href="/fee-schedule"
+                       class="flex items-center px-4 py-3 rounded-lg text-gray-600 hover:bg-primary/10 hover:text-primary
+                              transition-all duration-300 font-medium">
+                        <i class='bx bx-file mr-3'></i>
+                        Fee Schedule
+                    </a>
+                    <a href="/downloads/"
+                       class="flex items-center px-4 py-3 rounded-lg text-gray-600 hover:bg-primary/10 hover:text-primary
+                              transition-all duration-300 font-medium">
+                        <i class='bx bx-download mr-3'></i>
+                        Downloads
                     </a>
                 </div>
 

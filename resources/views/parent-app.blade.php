@@ -14,7 +14,7 @@
                 Homework. Attendance. Fees. Results. Notices. Pay online. Submit assignments. Talk to the school. Free for every St. Francis of Assisi parent.
             </p>
             <div class="flex flex-wrap gap-3">
-                <a href="/downloads/SFA-Parent-v1.0.1.apk"
+                <a href="/downloads/SFA-Parent-v1.0.2.apk"
                    class="bg-secondary text-primary px-7 py-3 rounded-md font-semibold hover:bg-yellow-300 transition-all shadow-lg flex items-center gap-2">
                     <i class="bx bxl-android text-2xl"></i>
                     Download for Android
@@ -25,7 +25,7 @@
                     Open in Browser (iOS)
                 </a>
             </div>
-            <p class="text-xs text-white/70 mt-3">Version 1.0.1, 3.1 MB. Android 7+ supported.</p>
+            <p class="text-xs text-white/70 mt-3">Version 1.0.2, 3.1 MB. Android 7+ supported.</p>
         </div>
         <div class="text-center">
             <img src="/images/parent-app/app-icon.png" alt="SFA Parent App icon"
@@ -48,7 +48,7 @@
                 ['bxs-credit-card', 'Fee statements', 'Outstanding balance, payment history, term-by-term breakdown.'],
                 ['bxs-book-content', 'Homework', 'Tonight\'s homework, due dates, attachment downloads, and photo submission.'],
                 ['bxs-bell', 'Push notifications', 'Important notices, fee reminders, and school closures, straight to your phone.'],
-                ['bxs-receipt', 'Pay fees online', 'Mobile money, bank transfer, or card. Receipts emailed instantly.'],
+                ['bxs-receipt', 'Pay fees, instant receipt', 'Mobile money, bank transfer or card — every payment sends an instant SMS receipt and an emailed copy.'],
                 ['bxs-conversation', 'Talk to teachers', 'Send a complaint or enquiry directly to the right office.'],
             ];
         @endphp
@@ -60,6 +60,21 @@
                     <p class="text-sm text-gray-700">{{ $f[2] }}</p>
                 </div>
             @endforeach
+        </div>
+
+        <!-- USSD fallback for parents without a smartphone -->
+        <div class="mt-12 bg-primary-dark text-white p-8 md:p-10 flex flex-col md:flex-row gap-6 items-start md:items-center">
+            <div class="flex-shrink-0 w-14 h-14 rounded-lg bg-white/10 border border-secondary/50 flex items-center justify-center text-secondary text-2xl">
+                <i class='bx bxs-phone'></i>
+            </div>
+            <div class="flex-1">
+                <p class="text-secondary uppercase tracking-widest text-xs font-semibold mb-2">No smartphone? No internet?</p>
+                <h3 class="font-display text-2xl md:text-3xl font-semibold mb-2 leading-tight">Dial <a href="tel:*388*100%23" class="text-secondary underline decoration-secondary/40 underline-offset-4 hover:decoration-secondary">*388*100#</a> from any handset.</h3>
+                <p class="text-white/85 leading-relaxed max-w-2xl">Check your child's fee balance in seconds, view results and attendance, or pay fees. Every payment lands with an <strong class="text-white">instant SMS receipt</strong> on your phone. Works on any mobile — no app required.</p>
+            </div>
+            <a href="tel:*388*100%23" class="flex-shrink-0 inline-flex items-center bg-secondary text-primary px-6 py-3 font-semibold hover:bg-yellow-300 transition-all whitespace-nowrap">
+                <i class='bx bx-phone-call mr-2 text-lg'></i> Dial *388*100#
+            </a>
         </div>
     </div>
 </section>
@@ -85,7 +100,7 @@
                 <div class="p-6">
                     @php
                         $androidSteps = [
-                            ['Tap the download button above', 'The file SFA-Parent-v1.0.1.apk will download to your phone.'],
+                            ['Tap the download button above', 'The file SFA-Parent-v1.0.2.apk will download to your phone.'],
                             ['Allow installation from your browser', 'When asked, tap "Settings", enable "Allow from this source", then go back.'],
                             ['Open the file', 'Pull down your notification panel and tap the downloaded file, or open it from Files.'],
                             ['Tap Install', 'Confirm the install prompt. The app icon will appear on your home screen.'],
@@ -103,7 +118,7 @@
                             </li>
                         @endforeach
                     </ol>
-                    <a href="/downloads/SFA-Parent-v1.0.1.apk"
+                    <a href="/downloads/SFA-Parent-v1.0.2.apk"
                        class="mt-6 block w-full bg-accent text-white text-center py-3 rounded-md font-semibold hover:bg-accent-dark transition shadow">
                         <i class="bx bx-download mr-2"></i>Download APK now
                     </a>
@@ -237,7 +252,7 @@
         <h2 class="font-display text-3xl md:text-4xl font-semibold mb-3">Ready to install?</h2>
         <p class="text-white/85 mb-7">Three minutes from download to dashboard.</p>
         <div class="flex flex-wrap justify-center gap-3">
-            <a href="/downloads/SFA-Parent-v1.0.1.apk"
+            <a href="/downloads/SFA-Parent-v1.0.2.apk"
                class="bg-secondary text-primary px-7 py-3 rounded-md font-semibold hover:bg-yellow-300 transition shadow-lg flex items-center gap-2">
                 <i class="bx bxl-android text-2xl"></i>Android APK
             </a>
@@ -246,7 +261,7 @@
                 <i class="bx bx-globe text-2xl"></i>Open in browser
             </a>
         </div>
-        <p class="text-xs text-white/70 mt-4">Version 1.0.1, 3.1 MB.</p>
+        <p class="text-xs text-white/70 mt-4">Version 1.0.2, 3.1 MB.</p>
     </div>
 </section>
 @endsection

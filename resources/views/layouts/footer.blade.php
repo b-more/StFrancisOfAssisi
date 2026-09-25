@@ -18,6 +18,8 @@
                     <li><a href="/about" class="text-white/80 hover:text-secondary transition-colors">About</a></li>
                     <li><a href="/academics" class="text-white/80 hover:text-secondary transition-colors">Academics</a></li>
                     <li><a href="/admissions" class="text-white/80 hover:text-secondary transition-colors">Admissions</a></li>
+                    <li><a href="/fee-schedule" class="text-white/80 hover:text-secondary transition-colors">Fee Schedule</a></li>
+                    <li><a href="/downloads/" class="text-white/80 hover:text-secondary transition-colors">Downloads</a></li>
                     <li><a href="/student-life" class="text-white/80 hover:text-secondary transition-colors">Student Life</a></li>
                     <li><a href="/parents" class="text-white/80 hover:text-secondary transition-colors">Parents</a></li>
                     <li><a href="/gallery" class="text-white/80 hover:text-secondary transition-colors">Gallery</a></li>

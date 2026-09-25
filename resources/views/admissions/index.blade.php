@@ -148,6 +148,49 @@
     </div>
 </section>
 
+<!-- IV.b. Forms & Downloads -->
+<section class="py-20 md:py-24 bg-paper-warm border-t border-rule">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="mb-12 max-w-3xl">
+            <p class="text-accent uppercase tracking-[.28em] text-xs font-semibold mb-3">Forms &amp; Downloads</p>
+            <h2 class="font-display text-4xl md:text-5xl font-semibold text-primary leading-tight" style="max-width: 22ch;">Download and fill in ahead of your visit.</h2>
+            <p class="font-display text-lg text-gray-700 leading-relaxed mt-5">
+                Print the three forms below, complete them at home, and bring them to the school office on the day of your visit. Each is a PDF that opens on any phone or computer.
+            </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <a href="/documents/1-admission-enrolment-form.pdf" download
+               class="block bg-white p-7 border-l-4 border-primary hover:shadow-lg transition group">
+                <div class="text-xs uppercase tracking-[.22em] text-accent font-semibold mb-2">Form I</div>
+                <h3 class="font-display text-2xl font-semibold text-primary mb-2 group-hover:text-accent transition">Admission Enrolment Form</h3>
+                <p class="font-display text-gray-700 text-base leading-relaxed mb-4">Start here. Complete this form for every child you are enrolling — new or returning.</p>
+                <span class="inline-flex items-center gap-2 text-sm font-semibold text-primary group-hover:underline">
+                    <i class='bx bx-download text-lg'></i> Download PDF
+                </span>
+            </a>
+            <a href="/documents/2-medical-information-form.pdf" download
+               class="block bg-white p-7 border-l-4 border-primary hover:shadow-lg transition group">
+                <div class="text-xs uppercase tracking-[.22em] text-accent font-semibold mb-2">Form II</div>
+                <h3 class="font-display text-2xl font-semibold text-primary mb-2 group-hover:text-accent transition">Medical Information Form</h3>
+                <p class="font-display text-gray-700 text-base leading-relaxed mb-4">Allergies, medications and emergency contacts. Held confidentially by the school nurse.</p>
+                <span class="inline-flex items-center gap-2 text-sm font-semibold text-primary group-hover:underline">
+                    <i class='bx bx-download text-lg'></i> Download PDF
+                </span>
+            </a>
+            <a href="/documents/3-consent-forms.pdf" download
+               class="block bg-white p-7 border-l-4 border-primary hover:shadow-lg transition group">
+                <div class="text-xs uppercase tracking-[.22em] text-accent font-semibold mb-2">Form III</div>
+                <h3 class="font-display text-2xl font-semibold text-primary mb-2 group-hover:text-accent transition">Consent Forms</h3>
+                <p class="font-display text-gray-700 text-base leading-relaxed mb-4">Photo, transport, trips and school-clinic authorisations. Parent or guardian to sign.</p>
+                <span class="inline-flex items-center gap-2 text-sm font-semibold text-primary group-hover:underline">
+                    <i class='bx bx-download text-lg'></i> Download PDF
+                </span>
+            </a>
+        </div>
+        <p class="mt-8 font-display text-sm text-gray-600 italic">Looking for more? See every school document on the <a href="/downloads/" class="text-primary underline hover:text-accent">Downloads</a> page.</p>
+    </div>
+</section>
+
 <!-- V. Fees, transport, what to bring -->
 <section class="py-20 md:py-24 bg-paper">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
