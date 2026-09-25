@@ -132,7 +132,7 @@ class UssdSessionController extends Controller
 
         // Initial Menu
         if ($case_no == 0 && $step_no == 1) {
-            $message_string = "Welcome to His Kingdom Church.\nSelect:\n1. Givings & Offerings\n2. Membership Registration\n3. Check Membership Status\n4. Prayer Request\n5. Admin Login";
+            $message_string = "Welcome to St. Francis of Assisi.\nSelect:\n1. Givings & Offerings\n2. Membership Registration\n3. Check Membership Status\n4. Prayer Request\n5. Admin Login";
             $request_type = "2";
 
             // Update session
@@ -215,7 +215,7 @@ class UssdSessionController extends Controller
                         break;
 
                     case '0': // Return to main menu
-                        $message_string = "Welcome to His Kingdom Church.\nSelect:\n1. Givings & Offerings\n2. Membership Registration\n3. Check Membership Status\n4. Prayer Request\n5. Admin Login";
+                        $message_string = "Welcome to St. Francis of Assisi.\nSelect:\n1. Givings & Offerings\n2. Membership Registration\n3. Check Membership Status\n4. Prayer Request\n5. Admin Login";
                         UssdSession::where('session_id', $session_id)->update([
                             "case_no" => 1,
                             "step_no" => 1
@@ -428,7 +428,7 @@ class UssdSessionController extends Controller
 
                                 // Prepare SMS message
                                 $message = "DIGITAL RECEIPT\n"
-                                    . "His Kingdom Church\n"
+                                    . "St. Francis of Assisi\n"
                                     . "-------------\n"
                                     . "Name: {$full_name}\n"
                                     . "Type: {$giving_type}\n"
@@ -573,7 +573,7 @@ class UssdSessionController extends Controller
         ]);
 
         return $this->ussdResponse(
-            "Welcome to His Kingdom Church.\nSelect:\n1. Givings & Offerings\n2. Membership Registration\n3. Check Membership Status\n4. Prayer Request\n5. Admin Login",
+            "Welcome to St. Francis of Assisi.\nSelect:\n1. Givings & Offerings\n2. Membership Registration\n3. Check Membership Status\n4. Prayer Request\n5. Admin Login",
             "2"
         );
     }

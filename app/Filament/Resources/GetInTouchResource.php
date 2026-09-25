@@ -90,7 +90,7 @@ class GetInTouchResource extends Resource
                                     ->rows(3)
                                     ->helperText('This message will be sent via SMS to the contact')
                                     ->required()
-                                    ->default('Thank you for contacting His Kingdom Church. We have received your message and will get back to you soon.'),
+                                    ->default('Thank you for contacting St. Francis of Assisi. We have received your message and will get back to you soon.'),
                             ]),
                         ])->visible(fn (callable $get) => $get('is_read') === '1'),
                 ]),
@@ -169,7 +169,7 @@ class GetInTouchResource extends Resource
                         Textarea::make('response_message')
                             ->label('Response Message')
                             ->required()
-                            ->default('Thank you for contacting His Kingdom Church. We have received your message and will get back to you soon.')
+                            ->default('Thank you for contacting St. Francis of Assisi. We have received your message and will get back to you soon.')
                             ->rows(3),
                     ])
                     ->action(function (GetInTouch $record, array $data): void {
@@ -217,7 +217,7 @@ class GetInTouchResource extends Resource
                                     try {
                                         $record->update(['is_read' => true]);
 
-                                        $message = "Thank you for contacting His Kingdom Church. We have received your message and will get back to you soon.";
+                                        $message = "Thank you for contacting St. Francis of Assisi. We have received your message and will get back to you soon.";
                                         SmsService::send($message, $record->phone);
 
                                         Log::info('Message marked as read (bulk)', [
