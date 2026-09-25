@@ -8,7 +8,7 @@
 {{-- HERO --}}
 <section style="background: linear-gradient(180deg, var(--site-sky) 0%, #fff 100%); padding-block: clamp(60px, 8vw, 120px) clamp(40px, 6vw, 80px);">
     <div class="site-wrap">
-        <div style="display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: clamp(16px, 3vw, 64px); align-items: center;">
+        <div class="site-hero-split">
             <div style="min-width: 0;">
                 <span class="site-pill site-pill-sun">Academics</span>
                 <h1 class="font-display" style="margin: 20px 0 18px; font-size: clamp(44px, 6vw, 88px); line-height: 1.02; letter-spacing: -0.03em; color: var(--site-navy); max-width: 15ch;">

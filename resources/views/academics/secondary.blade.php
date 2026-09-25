@@ -44,7 +44,7 @@
                 <span class="site-kicker">Senior Secondary</span>
                 <h3 class="site-h3" style="margin: 8px 0 12px;">Forms 3 to 5 · Grades 10 to 12</h3>
                 <p style="margin: 0 0 8px; font-size: 14px; color: var(--site-muted);">Subject offering:</p>
-                <ul style="margin: 0; padding: 0; list-style: none; color: var(--site-body); font-size: 15px; line-height: 1.7; display: grid; grid-template-columns: 1fr 1fr; gap: 4px 16px;">
+                <ul style="margin: 0; padding: 0; list-style: none; color: var(--site-body); font-size: 15px; line-height: 1.7; display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 4px 16px;">
                     <li>› Physics</li><li>› Chemistry</li>
                     <li>› Biology</li><li>› Mathematics</li>
                     <li>› Add. Maths</li><li>› English Lang.</li>

@@ -394,7 +394,7 @@
 
                     <!-- Submit Button -->
                     <div class="text-center" style="margin-top: 8px;">
-                        <button type="submit" class="site-btn site-btn-red" style="min-width: 260px;">
+                        <button type="submit" class="site-btn site-btn-red" style="min-width: min(260px, 100%); padding: 0 40px;">
                             Submit Application
                         </button>
                         <p style="margin: 14px 0 0; font-size: 13.5px; color: var(--site-muted);">Our admissions team will reply within 5 working days.</p>

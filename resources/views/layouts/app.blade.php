@@ -200,6 +200,45 @@
             .arched { transition: transform .4s cubic-bezier(.2,.8,.2,1), box-shadow .4s ease; }
             .arched:hover { transform: translateY(-3px); box-shadow: 0 22px 46px rgba(15, 30, 51, .18); }
         }
+
+        /* -----------------------------------------------------------
+           Mobile-responsive safety net (added 2026-09-25).
+           Every modernised page needs to survive 320-640px viewports:
+           no horizontal scroll, images cap at container width, hero
+           side-by-side splits stack under 620px, buttons downshift so
+           a `min-width` doesn't punch through a narrow column.
+           ----------------------------------------------------------- */
+        html, body { overflow-x: hidden; }
+        main img, section img { max-width: 100%; height: auto; }
+
+        /* Hero split — the 7fr / 5fr pattern used on about, admissions,
+           academics. Class replaces the previous inline grid so we can
+           stack cleanly on true-phone widths without an !important war. */
+        .site-hero-split {
+            display: grid;
+            grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
+            gap: clamp(16px, 3vw, 64px);
+            align-items: center;
+        }
+        @media (max-width: 620px) {
+            .site-hero-split { grid-template-columns: 1fr; gap: 28px; }
+            .site-hero-split > div:last-child > div { max-width: 360px; margin-inline: auto; }
+        }
+
+        /* Buttons scale down and can grow to fill their container on
+           phones, so an inline `min-width` never causes overflow. */
+        @media (max-width: 520px) {
+            .site-btn { min-height: 50px; padding: 0 22px; font-size: 15.5px; max-width: 100%; }
+            .site-btn[style*="min-width"] { min-width: 0 !important; width: 100%; }
+        }
+
+        /* Any 2-column grid inside a card collapses to 1 col on phones. */
+        @media (max-width: 520px) {
+            ul[style*="grid-template-columns: 1fr 1fr"],
+            div[style*="grid-template-columns: 1fr 1fr"] {
+                grid-template-columns: 1fr !important;
+            }
+        }
     </style>
 </head>
 <body class="bg-paper">
