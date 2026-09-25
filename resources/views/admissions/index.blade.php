@@ -45,11 +45,11 @@
      ============================================================ --}}
 <section class="site-section" style="background: #fff;">
     <div class="site-wrap" style="max-width: 1000px;">
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
-            <div class="lg:col-span-3">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-10 items-start">
+            <div class="md:col-span-3">
                 <span class="site-kicker">A word first</span>
             </div>
-            <div class="lg:col-span-9">
+            <div class="md:col-span-9">
                 <p style="margin: 0; font-family: var(--site-display); font-weight: 500; font-size: clamp(22px, 2.2vw, 28px); line-height: 1.35; letter-spacing: -0.01em; color: var(--site-ink);">
                     Choosing a school is one of the most important decisions you will make for your child. Come and visit, meet our staff, see the classrooms, and ask any question you wish before you decide. Applications are accepted throughout the year, but priority is given to those received <strong style="color: var(--site-red);">at least four weeks</strong> before the start of each term.
                 </p>
@@ -142,8 +142,8 @@
      ============================================================ --}}
 <section class="site-section" style="background: #fff;">
     <div class="site-wrap" style="max-width: 1180px;">
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-start">
-            <div class="lg:col-span-5">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-10 lg:gap-16 items-start">
+            <div class="md:col-span-5">
                 <span class="site-kicker">What to bring</span>
                 <h2 class="site-h2" style="margin-top: 12px; max-width: 15ch;">
                     Documents you'll need.
@@ -152,7 +152,7 @@
                     Have these ready before you visit — the school office collects each at application.
                 </p>
             </div>
-            <div class="lg:col-span-7">
+            <div class="md:col-span-7">
                 @php
                     $docs = [
                         'The completed application form (available from the school office).',

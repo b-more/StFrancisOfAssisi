@@ -45,14 +45,14 @@
      ============================================================ --}}
 <section class="site-section" style="background: #fff;">
     <div class="site-wrap" style="max-width: 1180px;">
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-start">
-            <div class="lg:col-span-4">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-10 lg:gap-16 items-start">
+            <div class="md:col-span-4">
                 <span class="site-kicker">Our story</span>
                 <h2 class="site-h2" style="margin-top: 12px; max-width: 14ch;">
                     From a small early-years group to ECE through Grade 12.
                 </h2>
             </div>
-            <div class="lg:col-span-8" style="font-size: 17.5px; line-height: 1.7; color: var(--site-body);">
+            <div class="md:col-span-8" style="font-size: 17.5px; line-height: 1.7; color: var(--site-body);">
                 <p style="margin: 0 0 18px;">
                     St. Francis of Assisi Private School was founded in <strong style="color: var(--site-navy);">2021 by Mr Francis Mulenga</strong> as an answer to a clear local need: a private school in Chililabombwe that would deliver quality education on a Christian foundation, with teachers who hold real credentials and a learning environment that rewards both effort and character.
                 </p>
@@ -134,13 +134,13 @@
      ============================================================ --}}
 <section class="site-section" style="background: #fff;">
     <div class="site-wrap" style="max-width: 1180px;">
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
-            <div class="lg:col-span-5">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-10 lg:gap-16 items-center">
+            <div class="md:col-span-5">
                 <div style="max-width: 420px; margin: 0 auto; border-radius: 28px; overflow: hidden; box-shadow: 0 28px 56px -22px rgba(15, 30, 51, .28); aspect-ratio: 4/3; background: var(--site-sky-2);">
                     <img src="/images/assisi.jpg" alt="St. Francis of Assisi — the school's namesake" style="width: 100%; height: 100%; object-fit: cover; display: block;" loading="lazy" onerror="this.style.display='none'; this.parentElement.style.background='linear-gradient(180deg, var(--site-sky) 0%, var(--site-sky-2) 100%)';">
                 </div>
             </div>
-            <div class="lg:col-span-7">
+            <div class="md:col-span-7">
                 <span class="site-kicker">Christian foundation</span>
                 <h2 class="site-h2" style="margin-top: 12px; max-width: 22ch;">
                     Faith as foundation, not condition.

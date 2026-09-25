@@ -41,12 +41,12 @@
 {{-- OVERVIEW --}}
 <section class="site-section" style="background: #fff;">
     <div class="site-wrap" style="max-width: 1180px;">
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-start">
-            <div class="lg:col-span-4">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-10 lg:gap-16 items-start">
+            <div class="md:col-span-4">
                 <span class="site-kicker">Overview</span>
                 <h2 class="site-h2" style="margin-top: 12px; max-width: 15ch;">Beyond passing, toward distinction.</h2>
             </div>
-            <div class="lg:col-span-8" style="font-size: 17.5px; line-height: 1.7; color: var(--site-body);">
+            <div class="md:col-span-8" style="font-size: 17.5px; line-height: 1.7; color: var(--site-body);">
                 <p style="margin: 0 0 18px;">
                     We offer the full Zambian national curriculum from Early Childhood Education through Grade 12, taught by TCZ-licensed teachers in classrooms supported by science, computer, and home economics laboratories, a library, and the discipline of regular internal assessment.
                 </p>

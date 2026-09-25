@@ -21,14 +21,14 @@
 {{-- OVERVIEW --}}
 <section class="site-section" style="background: #fff;">
     <div class="site-wrap" style="max-width: 960px;">
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
-            <div class="lg:col-span-4">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-10 items-start">
+            <div class="md:col-span-4">
                 <span class="site-kicker">Overview</span>
                 <h2 class="site-h2" style="margin-top: 12px; max-width: 15ch; font-size: clamp(30px, 3.6vw, 46px);">
                     Educating the whole child.
                 </h2>
             </div>
-            <div class="lg:col-span-8" style="font-size: 17px; line-height: 1.7; color: var(--site-body);">
+            <div class="md:col-span-8" style="font-size: 17px; line-height: 1.7; color: var(--site-body);">
                 <p style="margin: 0 0 18px;">
                     We offer a comprehensive curriculum that blends the Zambian national curriculum with international best practices — designed to develop critical thinking, creativity, and problem-solving skills alongside a strong foundation of subject knowledge.
                 </p>

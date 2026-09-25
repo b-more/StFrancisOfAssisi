@@ -314,13 +314,21 @@
         if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
 
         var selectors = [
+            /* legacy patterns still in use on a few pages */
             'section .numeral',
-            'section .grid > *',
             'section .arched',
             '.bg-paper-warm.border-l-4', '.bg-paper-warm.border-t-4',
             '.bg-white.border-l-4', '.bg-white.border-t-4',
             '.bg-gray-50.border-t-4',
-            'section > h1, section > h2, section > .max-w-7xl > h2',
+            /* modernised .site-* vocabulary */
+            'section .site-card',
+            'section .site-wrap > .site-kicker',
+            'section .site-wrap > h1',
+            'section .site-wrap > h2',
+            'section .site-wrap > .grid > *',
+            /* generic fallbacks — first-level heading and grid items */
+            'section .grid > *',
+            'section > h1, section > h2',
             'section .max-w-6xl > .grid > *',
             'section .max-w-7xl > .grid > *'
         ].join(',');

@@ -8,14 +8,14 @@
 {{-- HERO --}}
 <section style="background: linear-gradient(180deg, var(--site-sky) 0%, #fff 100%); padding-block: clamp(60px, 8vw, 100px) clamp(40px, 6vw, 70px);">
     <div class="site-wrap">
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-end">
-            <div class="lg:col-span-8">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-10 items-end">
+            <div class="md:col-span-8">
                 <span class="site-pill site-pill-sun">Get in touch</span>
                 <h1 style="margin: 20px 0 12px; font-family: var(--site-display); font-weight: 800; font-size: clamp(48px, 6.5vw, 96px); line-height: 1.0; letter-spacing: -0.03em; color: var(--site-navy);">
                     Talk to <span style="color: var(--site-red);">us.</span>
                 </h1>
             </div>
-            <div class="lg:col-span-4">
+            <div class="md:col-span-4">
                 <p class="site-lead" style="max-width: 44ch;">
                     Prospective parents, current parents, staff, partners — we welcome enquiries from all of you. During school hours the phone is fastest; outside hours, we reply within one working day.
                 </p>
@@ -33,15 +33,15 @@
 {{-- FOUR WAYS TO REACH US --}}
 <section class="site-section" style="background: #fff;">
     <div class="site-wrap" style="max-width: 1180px;">
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-start">
-            <div class="lg:col-span-4">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-10 lg:gap-16 items-start">
+            <div class="md:col-span-4">
                 <span class="site-kicker">Four ways to reach us</span>
                 <h2 class="site-h2" style="margin-top: 12px; max-width: 15ch;">Call, WhatsApp, email — or visit.</h2>
                 <p class="site-lead" style="margin-top: 20px; max-width: 40ch;">
                     During school hours the phone is fastest. Outside hours, email and we'll reply within one working day.
                 </p>
             </div>
-            <div class="lg:col-span-8" style="display: flex; flex-direction: column; gap: 14px;">
+            <div class="md:col-span-8" style="display: flex; flex-direction: column; gap: 14px;">
                 @php
                     $channels = [
                         ['tel:+260972266217',                                     'bxs-phone',    'var(--site-navy)',  'Call us',       '+260 972 266 217',                     'Mon – Fri · 07:30 – 16:30'],
@@ -70,8 +70,8 @@
 {{-- OFFICE HOURS + MAP --}}
 <section class="site-section" style="background: var(--site-ground);">
     <div class="site-wrap" style="max-width: 1180px;">
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
-            <div class="lg:col-span-5">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-10 lg:gap-16 items-center">
+            <div class="md:col-span-5">
                 <span class="site-kicker">Office hours</span>
                 <h2 class="site-h2" style="margin-top: 12px; max-width: 18ch;">When you can find us on campus.</h2>
                 <div style="margin-top: 32px;">
@@ -90,7 +90,7 @@
                     @endforeach
                 </div>
             </div>
-            <div class="lg:col-span-7">
+            <div class="md:col-span-7">
                 <div style="border-radius: 24px; overflow: hidden; box-shadow: 0 24px 48px -20px rgba(15,30,51,.25); aspect-ratio: 4/3; background: var(--site-sky-2);">
                     <iframe src="https://www.google.com/maps?q=Plot+1310%2F4+East+Kamenza+Chililabombwe+Zambia&output=embed" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
